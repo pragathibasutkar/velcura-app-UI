@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#ffdeaa","on-primary-fixed":"#002022","primary":"#00363a","on-background":"#181c1b","surface-container-lowest":"#ffffff","surface-dim":"#d8dbd9","surface-container":"#eceeed","tertiary":"#263424","outline":"#707979","secondary":"#7d5700","surface-bright":"#f7faf8","on-surface-variant":"#404849","primary-fixed":"#b7ecf0","on-tertiary-fixed-variant":"#3c4b39","on-error":"#ffffff","on-secondary-fixed-variant":"#5f4100","surface-container-highest":"#e0e3e1","background":"#f7faf8","surface-tint":"#32666a","surface":"#f7faf8","inverse-surface":"#2d3130","on-tertiary-container":"#a9baa3","error-container":"#ffdad6","tertiary-fixed":"#d6e8cf","on-secondary-container":"#704e00","on-secondary":"#ffffff","tertiary-fixed-dim":"#bacbb4","on-primary-container":"#8abec2","outline-variant":"#bfc8c9","surface-container-high":"#e6e9e7","on-error-container":"#93000a","inverse-primary":"#9bd0d4","primary-fixed-dim":"#9bd0d4","surface-container-low":"#f1f4f2","on-tertiary-fixed":"#111f10","on-secondary-fixed":"#271900","on-surface":"#181c1b","error":"#ba1a1a","secondary-fixed-dim":"#fbbc43","inverse-on-surface":"#eef1ef","surface-variant":"#e0e3e1","on-primary-fixed-variant":"#164e52","primary-container":"#164e52","on-tertiary":"#ffffff","tertiary-container":"#3c4b39","secondary-container":"#febe46","on-primary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1rem","margin-desktop":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xl":"2rem","margin":"1rem"},"fontFamily":{"body-sm":["Inter"],"headline-lg-mobile":["Newsreader"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Newsreader"],"headline-md":["Inter"],"figure-display":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"figure-display":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[264px] bg-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full overflow-hidden"><div class="h-[72px] flex items-center px-space-lg gap-space-sm shrink-0"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-surface font-semibold">Velcura</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Clinical Governance</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Core</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="overview" href="#"><span class="font-body-md text-body-md font-medium">Overview</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="orders" href="#"><span class="font-body-md text-body-md font-medium">Orders</span><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">12</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="products" href="#"><span class="font-body-md text-body-md font-medium">Products</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="inventory" href="#"><span class="font-body-md text-body-md font-medium">Inventory</span><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-primary-container text-primary-fixed font-label-sm text-[10px]">4</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">B2B &amp; Operations</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="b2b-quotes" href="#"><span class="font-body-md text-body-md font-medium">B2B Quotes</span><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">3</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="production" href="#"><span class="font-body-md text-body-md font-medium">Production</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="customers" href="#"><span class="font-body-md text-body-md font-medium">Customers</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Growth &amp; System</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="marketing" href="#"><span class="font-body-md text-body-md font-medium">Marketing</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="reports" href="#"><span class="font-body-md text-body-md font-medium">Reports</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-all duration-150 bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="settings" href="#"><span class="font-body-md text-body-md font-medium">Settings</span></a></nav></div></div><div class="p-space-sm bg-primary-container/40 m-space-sm rounded-xl"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-fixed text-[20px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-surface font-semibold truncate">Ananya Sen</span><span class="font-label-sm text-label-sm text-on-primary-container truncate">Operations Lead</span><span class="font-body-sm text-body-sm text-primary-fixed-dim/80 truncate text-[10px]">Vastram Central Atelier</span></div></div><button class="p-1.5 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" title="Switch Facility" type="button"><span class="material-symbols-outlined text-[18px]">sync_alt</span></button></div></div></div></aside><div class="pl-[264px] min-h-screen flex flex-col bg-surface"><header class="fixed top-0 left-[264px] right-0 h-[72px] bg-surface/80 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-low text-on-surface placeholder:text-outline/70 text-body-md font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all" placeholder="Search batches, formulas, records..." type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span><span>Oct 01 – Oct 28, 2024</span></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden sm:block"></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 w-full pt-[72px] bg-surface p-space-lg max-w-[1440px] mx-auto"><div class="flex flex-col w-full space-y-space-lg">
+<!-- BREADCRUMB & CONTEXT BANNER -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Settings</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Team &amp; Roles</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-outline">Governance Ledger</span>
+</nav>
+<div class="flex items-center gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface text-[12px] font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+        Workspace ID: <span class="font-mono font-semibold">VLC-BLR-094</span>
+</span>
+<span class="text-outline">|</span>
+<span>Policy Revision: v4.8.2</span>
+</div>
+</div>
+<!-- WORKSPACE SPLIT CONTAINER (240px internal settings menu + main workspace) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT INTERNAL SETTINGS SIDEBAR (240px calibrated on desktop) -->
+<div class="lg:col-span-3 xl:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div class="px-space-sm py-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Configuration Suite</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Atelier operational rules</p>
+</div>
+<nav class="flex flex-col space-y-1">
+<a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">store</span>
+<span class="font-body-md text-body-md font-medium">Store details</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span class="font-body-md text-body-md font-medium">Shipping &amp; Logistics</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="font-body-md text-body-md font-medium">Taxes &amp; GST</span>
+</div>
+<span class="text-[10px] font-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">12% HC</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span class="font-body-md text-body-md font-medium">Payments &amp; Gateways</span>
+</a>
+<!-- ACTIVE ITEM -->
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-label-lg shadow-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span class="font-body-md text-body-md font-semibold text-on-primary">Team and Roles</span>
+</div>
+<span class="w-1.5 h-4 rounded-full bg-secondary-container"></span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span class="font-body-md text-body-md font-medium">Notifications &amp; Alerts</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</a>
+<a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span class="font-body-md text-body-md font-medium">Integrations &amp; Webhooks</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">security</span>
+<span class="font-body-md text-body-md font-medium">Audit Logs &amp; Security</span>
+</a>
+</nav>
+</div>
+<!-- Quick Summary Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md text-on-surface space-y-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span>Compliance Tier</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Clinical data protocols conform with CDSCO medical device governance and ISO 27701 privacy protocols.
+        </p>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" href="#">
+<span>Download Audit Dossier</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- MAIN RIGHT CONTENT COLUMN -->
+<div class="lg:col-span-9 xl:col-span-9 flex flex-col space-y-space-lg">
+<!-- SECTION HEADER WITH BESPOKE TYPOGRAPHY -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md">
+<div class="max-w-xl space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm tracking-wider uppercase px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed">Privileged Ledger</span>
+<span class="text-outline text-body-sm">· Updated 18m ago</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-semibold">
+              Team &amp; Access Control
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Manage clinical operations staff, allocate institutional permissions, and audit role-based access across Velcura Atelier.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md h-10 rounded-lg bg-surface-container text-primary font-label-lg text-label-lg hover:bg-surface-container-high transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Export Roles CSV</span>
+</button>
+<button class="px-space-md h-10 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-sm flex items-center gap-2" id="open-invite-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Invite Member</span>
+</button>
+</div>
+</div>
+<!-- KPI SUMMARY TILES -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total Seats</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display text-on-surface font-semibold">12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 20 Allocated</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Active Roles</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display text-primary font-semibold">4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tiers Defined</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary mt-2">Owner, Admin, Mgr, Staff</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">2FA Compliance</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display text-tertiary font-semibold">100%</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Hardware &amp; TOTP enforced</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Pending Invites</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display text-secondary font-semibold">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Awaiting accept</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-2">Expiring within 48h</span>
+</div>
+</div>
+<!-- SEARCH AND FILTER CONTROLS -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<div class="relative w-full md:w-80 flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Filter members by name or email..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Role:</span>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer">
+<option>All Privileges</option>
+<option>Owner (1)</option>
+<option>Admin (1)</option>
+<option>Manager (3)</option>
+<option>Staff (7)</option>
+</select>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">Department:</span>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer">
+<option>All Divisions</option>
+<option>Executive Atelier</option>
+<option>Clinical Governance</option>
+<option>Institutional Accounts</option>
+<option>Cleanroom QC</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTIVE CLINICAL STAFF TABLE CONTAINER -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md flex items-center justify-between bg-surface-container-low/40">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Active Members &amp; Privileged Credentials</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Individuals authenticated to access administrative modules and client telemetry.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface">5 Active Profiles</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-lg">User</th>
+<th class="py-3 px-space-md">Email</th>
+<th class="py-3 px-space-md">Role</th>
+<th class="py-3 px-space-md">Department / Unit</th>
+<th class="py-3 px-space-md">Two-Factor</th>
+<th class="py-3 px-space-md">Last Active</th>
+<th class="py-3 px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- ROW 1: Ananya Sen (You / Owner) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+                      AS
+                    </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Ananya Sen</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-sm bg-primary-container/20 text-primary font-bold uppercase">You</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Lead Architect</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-body-sm text-on-surface-variant">
+                  ananya.sen@velcura.in
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-label-sm font-semibold bg-tertiary-container text-surface-container-lowest">
+                    Owner
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  Executive Operations &amp; Atelier
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 text-body-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Enforced</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="text-body-sm font-medium text-tertiary">Active Now</span>
+</div>
+</td>
+<td class="py-3.5 px-space-lg text-right">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Manage member">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 2: Dr. Rajesh Varma (Admin) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+                      RV
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Dr. Rajesh Varma</span>
+<span class="font-body-sm text-body-sm text-outline">Clinical Director</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-body-sm text-on-surface-variant">
+                  rajesh.varma@velcura.in
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-label-sm font-semibold bg-primary-fixed text-primary">
+                    Admin
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  Clinical Governance &amp; OT Sizing
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 text-body-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Enforced</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  14 mins ago
+                </td>
+<td class="py-3.5 px-space-lg text-right">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Manage member">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 3: Meera Nair (Manager) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+                      MN
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Meera Nair</span>
+<span class="font-body-sm text-body-sm text-outline">Procurement Head</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-body-sm text-on-surface-variant">
+                  meera.nair@velcura.in
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-label-sm font-semibold bg-primary-fixed-dim/50 text-on-primary-fixed">
+                    Manager
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  Institutional Accounts &amp; Hospital RFQs
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 text-body-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Enforced</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  2 hours ago
+                </td>
+<td class="py-3.5 px-space-lg text-right">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Manage member">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 4: Vikram Deshmukh (Staff) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+                      VD
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Vikram Deshmukh</span>
+<span class="font-body-sm text-body-sm text-outline">Cleanroom Associate</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-body-sm text-on-surface-variant">
+                  vikram.d@velcura.in
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
+                    Staff
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  Cleanroom Fulfilment &amp; QC
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 text-body-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Enforced</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  Yesterday, 18:42
+                </td>
+<td class="py-3.5 px-space-lg text-right">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Manage member">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 5: Kavita Raman (Staff) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-lg">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+                      KR
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Kavita Raman</span>
+<span class="font-body-sm text-body-sm text-outline">Clinician Support</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-mono text-body-sm text-on-surface-variant">
+                  kavita.r@velcura.in
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-label-sm font-semibold bg-surface-container text-on-surface-variant">
+                    Staff
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  DTC Experience &amp; Concierge
+                </td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 text-body-sm text-tertiary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Enforced</span>
+</span>
+</td>
+<td class="py-3.5 px-space-md text-body-sm text-on-surface-variant">
+                  3 days ago
+                </td>
+<td class="py-3.5 px-space-lg text-right">
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Manage member">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- PENDING INVITATIONS EXPANSION PANEL -->
+<div class="p-space-lg bg-surface-container-low/30 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">mail</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Pending Invitations (1)</span>
+<span class="text-body-sm text-outline">· Valid for 7 days</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-label-md text-label-md font-semibold">
+                AS
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Dr. Arvind Swaminathan</span>
+<span class="font-mono text-body-sm text-outline">arvind.s@astercare.org</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm bg-primary-fixed-dim/40 text-primary font-medium">Invited as Manager</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assigned Unit: Institutional Liaison · Sent 2 days ago</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="px-3 py-1.5 rounded-lg text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors">
+                Resend Invite
+              </button>
+<button class="px-3 py-1.5 rounded-lg text-error hover:bg-error-container/30 font-label-sm text-label-sm transition-colors">
+                Revoke
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ROLE PERMISSIONS MATRIX SECTION -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight font-semibold">
+              Role Permissions Matrix
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Define granular read, write, and approval privileges across Velcura modules.
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed text-[11px] font-label-sm font-semibold">
+              Unsaved Matrix Edits
+            </span>
+</div>
+</div>
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md w-2/5">Module &amp; Capabilities</th>
+<th class="py-3 px-space-md text-center">Owner</th>
+<th class="py-3 px-space-md text-center">Admin</th>
+<th class="py-3 px-space-md text-center bg-primary-fixed-dim/20">Manager</th>
+<th class="py-3 px-space-md text-center">Staff</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- CATEGORY 1: Orders & Fulfilment -->
+<tr class="bg-surface-container-low/60 font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<td class="py-2.5 px-space-md font-bold" colspan="5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_mall</span>
+<span>1. Orders &amp; Fulfilment</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">View &amp; search clinical orders</div>
+<div class="font-body-sm text-body-sm text-outline">Access general dispatch pipeline and order metadata</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Edit shipping &amp; dispatch orders</div>
+<div class="font-body-sm text-body-sm text-outline">Modify courier partners, cleanroom AWB, and batch lot splits</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center">
+<!-- TOGGLE ON FOR STAFF -->
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Issue refunds &amp; cancel requisitions</div>
+<div class="font-body-sm text-body-sm text-outline">Reverse payments to institutional accounts and write off stock</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<!-- TOGGLE OFF FOR MANAGER -->
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span></td>
+</tr>
+<!-- CATEGORY 2: Products & Catalog -->
+<tr class="bg-surface-container-low/60 font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<td class="py-2.5 px-space-md font-bold" colspan="5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+<span>2. Products &amp; Catalog</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Manage scrub collections &amp; pricing</div>
+<div class="font-body-sm text-body-sm text-outline">Set institutional slab rates and surgical grade attributes</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Publish new fabric lines &amp; technical specs</div>
+<div class="font-body-sm text-body-sm text-outline">Authorize antimicrobial efficacy sheets and yarn weave certificates</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<!-- CATEGORY 3: Customers & Clinical Accounts -->
+<tr class="bg-surface-container-low/60 font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<td class="py-2.5 px-space-md font-bold" colspan="5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>3. Customers &amp; Clinical Accounts</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">View doctor profiles &amp; sizing specs</div>
+<div class="font-body-sm text-body-sm text-outline">Browse hospital physician roasters and bespoke ergonomic measurements</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Edit doctor measurements &amp; monograms</div>
+<div class="font-body-sm text-body-sm text-outline">Input manual adjustments, shoulder drops, and caduceus embroidery</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Export clinician PII &amp; GSTIN records</div>
+<div class="font-body-sm text-body-sm text-outline">Bulk download tax IDs, mobile numbers, and clinic addresses</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<!-- CATEGORY 4: Reports & Clinical Analytics -->
+<tr class="bg-surface-container-low/60 font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<td class="py-2.5 px-space-md font-bold" colspan="5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">bar_chart</span>
+<span>4. Reports &amp; Clinical Analytics</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">View revenue, GMV &amp; financial telemetry</div>
+<div class="font-body-sm text-body-sm text-outline">Real-time settlement numbers and institution credit aging</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Export audit reports &amp; CAD production logs</div>
+<div class="font-body-sm text-body-sm text-outline">Raw vector cuts and laser-grading operational logs</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10">
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+</tr>
+<!-- CATEGORY 5: Settings & Governance -->
+<tr class="bg-surface-container-low/60 font-label-sm text-label-sm text-primary uppercase tracking-wider">
+<td class="py-2.5 px-space-md font-bold" colspan="5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">admin_panel_settings</span>
+<span>5. Settings &amp; Governance</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Manage team roles &amp; system integrations</div>
+<div class="font-body-sm text-body-sm text-outline">API keys, Webhook secrets, and OAuth identity provider linkage</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-primary rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-4 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10"><span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Configure payment gateways &amp; GST filings</div>
+<div class="font-body-sm text-body-sm text-outline">Settlement accounts, Razorpay direct credentials, and e-invoicing tokens</div>
+</td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-tertiary text-[20px]">check_circle</span></td>
+<td class="py-3 px-space-md text-center">
+<button class="w-10 h-6 bg-surface-container-highest rounded-full relative inline-flex items-center p-0.5 cursor-pointer" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full transform translate-x-0 transition-transform shadow-xs"></span>
+</button>
+</td>
+<td class="py-3 px-space-md text-center bg-primary-fixed-dim/10"><span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span></td>
+<td class="py-3 px-space-md text-center"><span class="material-symbols-outlined text-outline text-[20px]">do_not_disturb_on</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- DANGER ZONE CARD -->
+<div class="rounded-xl bg-error-container/20 p-space-lg flex flex-col space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[22px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm text-error font-semibold">Danger Zone</h3>
+</div>
+<div class="space-y-space-md divide-y-0">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm bg-surface-container-lowest/80 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Transfer Atelier Ownership</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transfer full workspace ownership, GST legal responsibility, and billing governance to another verified admin.</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors shrink-0" type="button">
+              Transfer Ownership
+            </button>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest/80 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-error font-semibold">Deactivate Administrative Workspace</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Temporarily suspend admin console access, freeze batch release queues, and revoke active third-party API tokens.</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-opacity shrink-0" type="button">
+              Deactivate Workspace
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FLOATING UNSAVED CHANGES STICKY ACTION BAR -->
+<div class="sticky bottom-6 z-30 w-full max-w-4xl mx-auto px-space-md">
+<div class="bg-primary text-on-primary rounded-xl px-space-lg py-3.5 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></div>
+<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+<span class="font-label-lg text-label-lg text-surface font-semibold">Unsaved Role Changes</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Modified Manager permissions in Orders &amp; Catalog</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<button class="px-3.5 py-1.5 rounded-lg text-on-primary-container hover:text-surface font-label-md text-label-md transition-colors" type="button">
+          Reset to Default
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold hover:bg-secondary-fixed transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Role Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- "INVITE MEMBER" MODAL OVERLAY (Controlled via vanilla JS) -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-xs flex items-center justify-center p-space-md hidden" id="invite-modal-backdrop">
+<div class="bg-surface-container-lowest text-on-surface w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Invite New Team Member</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Grant operational access to Velcura Admin and assign role privileges.</p>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container-high hover:text-on-surface transition-colors" id="close-invite-modal" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg space-y-space-md overflow-y-auto max-h-[75vh]">
+<!-- Email field -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center justify-between">
+<span>Corporate / Clinical Email</span>
+<span class="text-outline font-normal">Must use verified domain</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">mail</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="e.g. clinician.ops@velcura.in" type="email" value="priya.nambiar@velcura.in"/>
+</div>
+</div>
+<!-- Role Selector & Description -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Role Tier</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer">
+<option>Staff (General Atelier View)</option>
+<option selected="">Manager (Institutional Operations)</option>
+<option>Admin (Governance &amp; Financials)</option>
+<option>Owner (Full Root Authority)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Department / Unit</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer">
+<option selected="">Institutional Procurement &amp; Atelier</option>
+<option>Clinical Operations &amp; Sizing</option>
+<option>Cleanroom QC &amp; Sterilization</option>
+<option>Executive Governance</option>
+</select>
+</div>
+</div>
+<div class="p-space-sm bg-primary-fixed/20 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant">
+<strong>Manager Privilege Preview:</strong> Can manage hospital purchase orders, review RFQs, and edit clinician measurement specs. Restricted from financial reports and tax filings.
+          </p>
+</div>
+<!-- Granular Access Checkboxes -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Preset Module Privileges</span>
+<div class="space-y-2 bg-surface-container-low p-space-md rounded-lg">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Orders &amp; Fulfilment</span>
+<span class="font-body-sm text-body-sm text-outline">Read, edit dispatch, and batch release</span>
+</div>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Products &amp; Catalog</span>
+<span class="font-body-sm text-body-sm text-outline">Read-only catalog &amp; technical fabric specs</span>
+</div>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Customers &amp; Accounts</span>
+<span class="font-body-sm text-body-sm text-outline">Full access to physician sizes &amp; monograms</span>
+</div>
+</label>
+<label class="flex items-center gap-3 cursor-pointer opacity-60">
+<input class="w-4 h-4 rounded" disabled="" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Reports &amp; Financials</span>
+<span class="font-body-sm text-body-sm text-outline">Restricted for Manager tier</span>
+</div>
+</label>
+<label class="flex items-center gap-3 cursor-pointer opacity-60">
+<input class="w-4 h-4 rounded" disabled="" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Settings &amp; Billing</span>
+<span class="font-body-sm text-body-sm text-outline">Restricted to Admin &amp; Owner</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Personal Message Area -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Invitation Message (Optional)</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-colors" rows="2">Welcome to the Velcura team. Please set up your two-factor authentication and review Aster Care procurement RFQs.</textarea>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Requires TOTP onboarding</span>
+</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md h-10 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="cancel-invite-modal" type="button">
+            Cancel
+          </button>
+<button class="px-space-md h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm flex items-center gap-1.5" type="button">
+<span>Send Invitation</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE JS FOR MODAL AND TOGGLE DEMONSTRATION -->
+<script>
+    (function initTeamSettings() {
+      const openBtn = document.getElementById('open-invite-btn');
+      const closeBtn = document.getElementById('close-invite-modal');
+      const cancelBtn = document.getElementById('cancel-invite-modal');
+      const modalBackdrop = document.getElementById('invite-modal-backdrop');
+
+      function showModal() {
+        if (modalBackdrop) modalBackdrop.classList.remove('hidden');
+      }
+
+      function hideModal() {
+        if (modalBackdrop) modalBackdrop.classList.add('hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', showModal);
+      if (closeBtn) closeBtn.addEventListener('click', hideModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', hideModal);
+
+      // Close modal on backdrop click outside dialog
+      if (modalBackdrop) {
+        modalBackdrop.addEventListener('click', function(e) {
+          if (e.target === modalBackdrop) hideModal();
+        });
+      }
+
+      // Matrix interactive toggle switches
+      const toggles = document.querySelectorAll('table button[type="button"]');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const thumb = this.querySelector('span');
+          if (!thumb) return;
+          const isChecked = this.classList.contains('bg-primary');
+          if (isChecked) {
+            this.classList.remove('bg-primary');
+            this.classList.add('bg-surface-container-highest');
+            thumb.classList.remove('translate-x-4');
+            thumb.classList.add('translate-x-0');
+          } else {
+            this.classList.remove('bg-surface-container-highest');
+            this.classList.add('bg-primary');
+            thumb.classList.remove('translate-x-0');
+            thumb.classList.add('translate-x-4');
+          }
+        });
+      });
+    })();
+  </script>
+</div></main></div></body></html>

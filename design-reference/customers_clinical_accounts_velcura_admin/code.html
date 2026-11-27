@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "error-container": "#ffdad6",
+          "outline-variant": "#bfc8c9",
+          "on-background": "#181c1b",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#164e52",
+          "background": "#f7faf8",
+          "secondary-fixed": "#ffdeaa",
+          "inverse-on-surface": "#eef1ef",
+          "on-secondary-container": "#704e00",
+          "secondary-container": "#febe46",
+          "primary-container": "#164e52",
+          "inverse-primary": "#9bd0d4",
+          "on-surface-variant": "#404849",
+          "primary": "#00363a",
+          "surface-container-low": "#f1f4f2",
+          "primary-fixed": "#b7ecf0",
+          "on-secondary-fixed-variant": "#5f4100",
+          "surface-bright": "#f7faf8",
+          "tertiary": "#263424",
+          "tertiary-container": "#3c4b39",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "error": "#ba1a1a",
+          "surface-container-high": "#e6e9e7",
+          "on-secondary-fixed": "#271900",
+          "on-primary-fixed": "#002022",
+          "tertiary-fixed": "#d6e8cf",
+          "surface": "#f7faf8",
+          "secondary-fixed-dim": "#fbbc43",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#32666a",
+          "surface-container": "#eceeed",
+          "on-tertiary-fixed": "#111f10",
+          "on-surface": "#181c1b",
+          "surface-variant": "#e0e3e1",
+          "surface-container-highest": "#e0e3e1",
+          "on-error-container": "#93000a",
+          "surface-dim": "#d8dbd9",
+          "outline": "#707979",
+          "tertiary-fixed-dim": "#bacbb4",
+          "on-primary-container": "#8abec2",
+          "inverse-surface": "#2d3130",
+          "secondary": "#7d5700",
+          "on-tertiary-fixed-variant": "#3c4b39",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#a9baa3",
+          "primary-fixed-dim": "#9bd0d4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "1.5rem",
+          "space-md": "1rem",
+          "gutter-desktop": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2rem",
+          "gutter": "1rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin": "1rem"
+        },
+        "fontFamily": {
+          "body-sm": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Newsreader"
+          ],
+          "figure-display": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "figure-display": [
+            "24px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[264px] bg-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-semibold">Velcura</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Clinical Ops</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70">Core</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="overview" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></div></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md">Orders</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">12</span></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="products" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md">Products</span></div></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="inventory" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warehouse</span><span class="font-body-md text-body-md">Inventory</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">4</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70">B2B &amp; Operations</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="b2b-quotes" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="font-body-md text-body-md">B2B Quotes</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">3</span></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="production" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md">Production</span></div></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Customers</span></div></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70">Growth &amp; System</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="marketing" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-body-md text-body-md">Marketing</span></div></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md">Reports</span></div></a><a class="group flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div></div></div><div class="p-space-sm m-space-sm rounded-xl bg-primary-container/40"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg text-on-primary truncate font-medium">Ananya Sen</span><span class="font-label-sm text-label-sm text-primary-fixed-dim truncate">Operations Lead / Admin</span><span class="font-label-sm text-label-sm text-primary-fixed-dim/80 truncate">Vastram Central Atelier</span></div></div></div></aside><div class="pl-[264px]"><header class="fixed top-0 left-[264px] right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-16 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center flex-1 max-w-md"><div class="w-full flex items-center gap-space-sm px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-secondary-container"><span class="material-symbols-outlined text-[18px] text-outline">search</span><span class="font-body-sm text-body-sm text-outline flex-1">Search ledger, batches, clients...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_today</span><span class="font-label-md text-label-md text-on-surface">This Quarter (Oct - Dec)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span></button><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full relative">
+<!-- Interactive View Controller Meta Script embedded directly -->
+<script>
+    function toggleDrawer(open) {
+      const drawer = document.getElementById('customer-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      if (open) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+    function toggleBulkBar(show) {
+      const bar = document.getElementById('bulk-action-bar');
+      if (show) {
+        bar.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      } else {
+        bar.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }
+    }
+  </script>
+<!-- Main View Container -->
+<div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Action Breadcrumb & Title Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Customers &amp; Accounts</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium">3,420 accounts</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            Live Sync Active
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central registry of institutional health systems, clinical ateliers, and verified surgeons across India.</p>
+</div>
+<!-- Header CTAs -->
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-2 px-space-md py-2 h-10 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors shadow-sm font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 h-10 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm font-label-lg text-label-lg font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Add Customer</span>
+</button>
+</div>
+</div>
+<!-- Segment Filter Tabs -->
+<div class="flex items-center justify-between bg-surface-container-low p-1 rounded-xl">
+<div class="flex items-center gap-1 overflow-x-auto">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-label-lg text-label-lg font-semibold transition-all" type="button">
+<span>All</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-label-sm text-label-sm">3,420</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-lg text-label-lg" type="button">
+<span>Retail Clinicians</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">2,890</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-lg text-label-lg" type="button">
+<span>Institutions &amp; Hospitals</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">410</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-lg text-label-lg" type="button">
+<span>Repeat Buyers</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">840</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Refreshed 2m ago</span>
+</div>
+</div>
+<!-- Search & Multi-Filter Control Plane -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-space-sm">
+<!-- Search Field -->
+<div class="relative flex-1 min-w-[320px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-outline">search</span>
+<input class="w-full h-10 pl-10 pr-20 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Search by clinician name, hospital, phone, GSTIN or email... (Cmd+K)" type="text" value=""/>
+<kbd class="absolute right-3 top-2.5 px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">⌘K</kbd>
+</div>
+<!-- Filter Dropdown Trigger Pills -->
+<div class="flex items-center gap-2 flex-wrap">
+<button class="flex items-center gap-1.5 h-10 px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-label-md font-label-md transition-colors" type="button">
+<span class="text-outline">Account Type:</span>
+<span class="font-semibold text-primary">All</span>
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span>
+</button>
+<button class="flex items-center gap-1.5 h-10 px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-label-md font-label-md transition-colors" type="button">
+<span class="text-outline">City:</span>
+<span class="font-semibold text-primary">All India</span>
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span>
+</button>
+<button class="flex items-center gap-1.5 h-10 px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-label-md font-label-md transition-colors" type="button">
+<span class="text-outline">LTV Range:</span>
+<span class="font-semibold text-primary">All</span>
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span>
+</button>
+<button class="flex items-center gap-1.5 h-10 px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-label-md font-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">label</span>
+<span class="text-outline">Tags:</span>
+<span class="font-semibold text-primary">High Value, VIP</span>
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span>
+</button>
+<button class="flex items-center gap-1 h-10 px-3 text-secondary hover:text-on-secondary-container text-label-md font-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset filters</span>
+</button>
+</div>
+</div>
+<!-- Active Filter Pill Ledger -->
+<div class="flex items-center gap-2 pt-1 overflow-x-auto">
+<span class="text-outline font-label-sm text-label-sm uppercase tracking-wider">Active:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+          Node: Southern Health Clusters
+          <button class="hover:text-error ml-1"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm">
+          Tag: VIP Clinician
+          <button class="hover:text-error ml-1"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+          Status: Active (Last 60d)
+          <button class="hover:text-error ml-1"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+</div>
+</div>
+<!-- Customer Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider h-11 select-none">
+<th class="w-12 px-4 py-2 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" onchange="toggleBulkBar(this.checked)" type="checkbox"/>
+</th>
+<th class="px-4 py-2 font-semibold">Customer / Clinical Facility</th>
+<th class="px-4 py-2 font-semibold">Account Type</th>
+<th class="px-4 py-2 font-semibold">City &amp; Node</th>
+<th class="px-4 py-2 font-semibold text-right">Orders</th>
+<th class="px-4 py-2 font-semibold text-right">Lifetime Value (₹)</th>
+<th class="px-4 py-2 font-semibold">Last Order</th>
+<th class="px-4 py-2 font-semibold">Clinical Tags</th>
+<th class="w-12 px-4 py-2 text-center"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-md font-body-md text-on-surface">
+<!-- ROW 1: Dr. Radhika Iyer (SELECTED & DRAWER OPEN) -->
+<tr class="bg-primary-fixed/20 hover:bg-primary-fixed/30 cursor-pointer transition-colors group" onclick="toggleDrawer(true)">
+<td class="w-12 px-4 py-3 text-center" onclick="event.stopPropagation()">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm font-semibold shrink-0 ring-2 ring-primary/20">
+                    RI
+                  </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold truncate">Dr. Radhika Iyer</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary" title="Verified Surgical Specialist">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Senior Cardiologist · Fortis Bannerghatta</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Retail Clinician
+                </span>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Bengaluru</span>
+<span class="font-body-sm text-body-sm text-outline">KA · South Node 02</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<span class="font-semibold text-primary">8</span>
+<span class="text-outline text-body-sm block">0 returns</span>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-primary">₹48,200</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% YoY
+                  </span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Today, 14:22</span>
+<span class="font-body-sm text-body-sm text-outline">#ORD-9428</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-medium">VIP Clinician</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Ayur-Flex</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Caduceus</span>
+</div>
+</td>
+<td class="w-12 px-4 py-3 text-center" onclick="event.stopPropagation()">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 2: Aster Care Hospital (INSTITUTION) -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors group">
+<td class="w-12 px-4 py-3 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary">Aster Care Hospital</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">HQ</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Central Procurement · Attn: Meera Nair</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">domain</span>
+                  Institution
+                </span>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Bengaluru</span>
+<span class="font-body-sm text-body-sm text-outline">Central Hub · Tier 1</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<span class="font-semibold text-on-surface">14</span>
+<span class="text-outline text-body-sm block">B2B PO batch</span>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-primary font-figure-display text-headline-sm">₹18,42,500</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">north_east</span> Contracted
+                  </span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Oct 28, 2024</span>
+<span class="font-body-sm text-body-sm text-outline">#B2B-4819</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">Key Account</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">OT Replenish</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">CAD Crest</span>
+</div>
+</td>
+<td class="w-12 px-4 py-3 text-center">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 3: Dr. Tanmay Mehta -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors group">
+<td class="w-12 px-4 py-3 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-semibold shrink-0">
+                    TM
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary">Dr. Tanmay Mehta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pulmonologist · Apollo Hospitals Greams Rd</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Retail Clinician
+                </span>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Chennai</span>
+<span class="font-body-sm text-body-sm text-outline">TN · Coastal Hub</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<span class="font-semibold text-on-surface">5</span>
+<span class="text-outline text-body-sm block">All fulfilled</span>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-primary">₹24,850</span>
+<span class="text-outline font-label-sm text-label-sm">Standard AOV</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Yesterday, 19:04</span>
+<span class="font-body-sm text-body-sm text-outline">#ORD-9411</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Lab Coat Spec</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Autoclave Care</span>
+</div>
+</td>
+<td class="w-12 px-4 py-3 text-center">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 4: Medanta The Medicity -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors group">
+<td class="w-12 px-4 py-3 text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">corporate_fare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary">Medanta The Medicity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Procurement Cell · Gurugram Campus</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">domain</span>
+                  Institution
+                </span>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Delhi NCR</span>
+<span class="font-body-sm text-body-sm text-outline">HR · North Cluster</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<span class="font-semibold text-on-surface">9</span>
+<span class="text-outline text-body-sm block">Fleet order</span>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-primary font-figure-display text-headline-sm">₹14,20,000</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> GST Validated
+                  </span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Oct 24, 2024</span>
+<span class="font-body-sm text-body-sm text-outline">#B2B-4702</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Cath Lab Fleet</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">PO Auto-Bill</span>
+</div>
+</td>
+<td class="w-12 px-4 py-3 text-center">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- ROW 5: Dr. Priya Sharma -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors group">
+<td class="w-12 px-4 py-3 text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-secondary-container accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm font-semibold shrink-0">
+                    PS
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary">Dr. Priya Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pediatric Surgeon · Manipal Hospital Millers Rd</span>
+</div>
+</div>
+</td>
+<td class="px-4 py-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Retail Clinician
+                </span>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Bengaluru</span>
+<span class="font-body-sm text-body-sm text-outline">KA · Central Node</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<span class="font-semibold text-on-surface">6</span>
+<span class="text-outline text-body-sm block">Recurring</span>
+</td>
+<td class="px-4 py-3 text-right tabular-nums">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-primary">₹31,400</span>
+<span class="text-outline font-label-sm text-label-sm">+8% MoM</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Oct 20, 2024</span>
+<span class="font-body-sm text-body-sm text-outline">#ORD-9022</span>
+</div>
+</td>
+<td class="px-4 py-3">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">Repeat Buyer</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Maternity Fit</span>
+</div>
+</td>
+<td class="w-12 px-4 py-3 text-center">
+<button class="p-1.5 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Ledger -->
+<div class="flex flex-wrap items-center justify-between px-space-md py-3 bg-surface-container-low text-body-sm font-body-sm text-on-surface-variant gap-4">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-on-surface font-semibold">1-5</strong> of <strong class="text-on-surface font-semibold">3,420</strong> accounts</span>
+<span class="text-outline">·</span>
+<div class="flex items-center gap-1.5">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest px-2 py-1 rounded text-on-surface font-label-sm outline-none cursor-pointer">
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-on-primary font-label-sm text-label-sm font-semibold" type="button">1</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">68</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Bulk Action Ribbon Bar (Anchored at bottom center) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 ml-[132px] z-30 transition-all duration-300 ease-out transform" id="bulk-action-bar">
+<div class="bg-primary text-on-primary px-space-md py-2.5 rounded-2xl shadow-xl flex items-center gap-space-md">
+<div class="flex items-center gap-2 pl-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-lg text-label-lg font-semibold text-surface-container-lowest">3 customers selected</span>
+</div>
+<div class="h-6 w-px bg-on-primary/20"></div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-surface-container-low hover:text-primary transition-colors text-label-md font-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">label</span>
+<span>Add Tag</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-surface-container-low hover:text-primary transition-colors text-label-md font-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Selected (.CSV)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors text-label-md font-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">forward_to_inbox</span>
+<span>Send Message (WhatsApp/Email)</span>
+</button>
+</div>
+<button class="p-1 rounded-full hover:bg-primary-container text-primary-fixed-dim hover:text-on-primary transition-colors" onclick="toggleBulkBar(false)" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Backdrop for Right Drawer (Light scrim click to dismiss) -->
+<div class="fixed inset-0 bg-primary/20 z-40 backdrop-blur-[2px] transition-opacity duration-300" id="drawer-backdrop" onclick="toggleDrawer(false)"></div>
+<!-- RIGHT DOCKED PROFILE DRAWER (560px Wide Desk View) -->
+<aside class="fixed right-0 top-0 bottom-0 w-[560px] bg-surface-container-lowest shadow-2xl z-50 flex flex-col transform transition-transform duration-300 ease-out translate-x-0" id="customer-drawer">
+<!-- Drawer Header Bar -->
+<div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest shrink-0 border-b border-surface-container">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline truncate">Customers</span>
+<span class="text-outline font-label-sm">/</span>
+<span class="font-label-lg text-label-lg font-semibold text-primary truncate">Dr. Radhika Iyer</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-semibold shrink-0">Active · High LTV</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg text-tertiary hover:bg-tertiary-fixed/40 transition-colors" title="WhatsApp Chat" type="button">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</button>
+<button class="p-2 rounded-lg text-outline hover:text-error hover:bg-error-container/40 transition-colors ml-1" onclick="toggleDrawer(false)" title="Close Drawer" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Drawer Scrollable Interior Canvas -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg bg-background">
+<!-- Profile Hero Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-2xl bg-primary text-on-primary flex items-center justify-center font-headline-lg text-headline-lg font-semibold shrink-0 shadow-md">
+            RI
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold truncate">Dr. Radhika Iyer</h2>
+<span class="material-symbols-outlined text-[18px] text-tertiary" title="Verified Master Clinician">verified</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Senior Interventional Cardiologist, Fortis Hospital</p>
+<div class="mt-2 flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container/15 text-primary-container font-label-sm text-label-sm font-semibold">
+                Verified Clinician (Retail &amp; Private Practice)
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+                Atelier Client #4102
+              </span>
+</div>
+</div>
+</div>
+<!-- Clinical Contact Metadata Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-space-xs text-body-sm font-body-sm">
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">call</span>
+<span class="tabular-nums font-medium">+91 98450 22319</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary" title="WhatsApp Active">check_circle</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">mail</span>
+<span class="truncate font-medium">r.iyer@fortishealthcare.com</span>
+</div>
+<div class="sm:col-span-2 flex items-center gap-2 p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">receipt</span>
+<span>GSTIN:</span>
+<span class="font-mono text-on-surface font-medium select-all">29AABCF1234K1Z5</span>
+<span class="ml-auto text-tertiary font-semibold">Self-Employed MD</span>
+</div>
+</div>
+</div>
+<!-- Key Statistics Triad Row -->
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Lifetime Value</span>
+<span class="font-figure-display text-headline-md text-primary font-semibold mt-1">₹48,200</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5 flex items-center">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> Top 2%
+          </span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Total Orders</span>
+<span class="font-figure-display text-headline-md text-on-surface font-semibold mt-1">8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">0 returns</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Average Basket</span>
+<span class="font-figure-display text-headline-md text-on-surface font-semibold mt-1">₹6,025</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5">+14% vs avg</span>
+</div>
+</div>
+<!-- Lifetime Value Trajectory Mini Chart Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">12-Month LTV Trajectory</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">₹5,600 → ₹48,200</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">8 Re-orders</span>
+</div>
+<!-- Inline SVG Line Sparkline Chart -->
+<div class="w-full h-24 pt-2">
+<svg class="w-full h-full overflow-visible" viewbox="0 0 460 90">
+<defs>
+<lineargradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#164E52" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#164E52" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Area fill -->
+<path d="M 10,75 L 70,68 L 130,58 L 190,52 L 250,44 L 310,32 L 380,24 L 450,10 L 450,85 L 10,85 Z" fill="url(#chartGradient)"></path>
+<!-- Line -->
+<path d="M 10,75 L 70,68 L 130,58 L 190,52 L 250,44 L 310,32 L 380,24 L 450,10" fill="none" stroke="#00363a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Data Dots -->
+<circle cx="10" cy="75" fill="#f7faf8" r="3.5" stroke="#00363a" stroke-width="2"></circle>
+<circle cx="70" cy="68" fill="#f7faf8" r="3" stroke="#00363a" stroke-width="1.5"></circle>
+<circle cx="130" cy="58" fill="#f7faf8" r="3" stroke="#00363a" stroke-width="1.5"></circle>
+<circle cx="190" cy="52" fill="#f7faf8" r="3" stroke="#00363a" stroke-width="1.5"></circle>
+<circle cx="250" cy="44" fill="#febe46" r="3.5" stroke="#704e00" stroke-width="2"></circle>
+<circle cx="310" cy="32" fill="#f7faf8" r="3" stroke="#00363a" stroke-width="1.5"></circle>
+<circle cx="380" cy="24" fill="#f7faf8" r="3" stroke="#00363a" stroke-width="1.5"></circle>
+<circle cx="450" cy="10" fill="#00363a" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm border-t border-surface-container pt-1">
+<span>Nov '23 (First Order)</span>
+<span>May '24 (Cath Fleet)</span>
+<span>Today (₹48.2k)</span>
+</div>
+</div>
+<!-- Clinical Fit Specifications & Ergonomics -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">straighten</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Atelier Fit &amp; Measurements</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Laser-calibrated</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="text-outline font-label-sm text-label-sm uppercase">Top Fit</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">Size M</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Petite Inseam</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="text-outline font-label-sm text-label-sm uppercase">Trouser Fit</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">28W / 30L</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Ergonomic Cargo</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="text-outline font-label-sm text-label-sm uppercase">Sleeve</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">16.5"</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Sterile Taper</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">stylus</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Monogram Caduceus Spec</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">"Dr. R. Iyer · Cardiology" (Gold thread #1982, left chest pocket)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+</div>
+</div>
+<!-- Mini Order History -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">receipt_long</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Order History (8)</span>
+</div>
+<a class="text-primary hover:underline font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#">
+            View all 8 orders <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col divide-y divide-surface-container">
+<!-- Order item 1 -->
+<div class="py-2.5 flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-primary">#ORD-9428</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Unfulfilled</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">UPI Paid</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Today · 3 items (Ayur-Flex Cadmium Scrub Set + Monogram)</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary tabular-nums">₹5,697</span>
+</div>
+<!-- Order item 2 -->
+<div class="py-2.5 flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">#ORD-9104</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Delivered</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sep 14, 2024 · 2 items (Petite Cargo Trouser)</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface tabular-nums">₹4,198</span>
+</div>
+<!-- Order item 3 -->
+<div class="py-2.5 flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">#ORD-8720</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Delivered</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jul 02, 2024 · 4 items (Cardiology OT Fleet Special)</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface tabular-nums">₹12,450</span>
+</div>
+</div>
+</div>
+<!-- Timeline & Engagement Ledger -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Timeline &amp; Interactions</span>
+<span class="font-label-sm text-label-sm text-outline">WhatsApp Verified Sync</span>
+</div>
+<div class="relative pl-6 space-y-4 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Event 1 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-tertiary ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Order Confirmation WhatsApp</span>
+<span class="text-outline font-label-sm text-label-sm">Today 14:23 IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated dispatch preview sent to +91 98450 22319. Status: Read by recipient.</p>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Customer Support Call (4m 12s)</span>
+<span class="text-outline font-label-sm text-label-sm">Oct 26 11:30 IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Clinician called to inquire about upcoming Autumn Plum scrub colorway release and fabric GSM.</p>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-surface-variant ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Delivery CSAT Verified 5★</span>
+<span class="text-outline font-label-sm text-label-sm">Sep 15 16:40 IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 italic">"Ayur-Flex fabric withstands 14-hour cath lab shifts effortlessly."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Internal Atelier Operational Notes -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">push_pin</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Atelier Notes</span>
+</div>
+<span class="text-outline font-label-sm text-label-sm">Pinned for Packing Station</span>
+</div>
+<!-- Pinned Note from Ananya -->
+<div class="p-3 rounded-lg bg-surface-container-low border-l-4 border-secondary-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Ananya Sen (Operations Lead)</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday 17:15 IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="text-primary font-semibold">@Operations:</span> Dr. Iyer requests high-contrast gold thread (#1982) on all upcoming cadmium-wash tops. Always ship in sterile autoclave pouches.
+          </p>
+</div>
+<!-- Input to Add New Internal Note -->
+<div class="relative mt-1">
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container resize-none" placeholder="Add internal clinical note... mention team with @" rows="2"></textarea>
+<div class="flex justify-between items-center mt-2">
+<div class="flex items-center gap-1 text-outline">
+<button class="p-1 hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[16px]">alternate_email</span></button>
+<button class="p-1 hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[16px]">attach_file</span></button>
+</div>
+<button class="px-3 py-1 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors" type="button">Post Note</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Sticky Operational Footer -->
+<div class="h-20 px-space-lg bg-surface-container-lowest border-t border-surface-container flex items-center justify-between gap-space-md shrink-0 shadow-lg">
+<button class="flex-1 h-10 px-space-md rounded-lg bg-surface-container-low text-primary hover:bg-surface-container font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Create Manual Order</span>
+</button>
+<button class="flex-1 h-10 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="toggleDrawer(false)" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Customer Updates</span>
+</button>
+</div>
+</aside>
+</div></main></div></body></html>

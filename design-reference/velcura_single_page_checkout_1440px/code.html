@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#fbbc43","on-primary":"#ffffff","surface-container":"#eceeed","on-tertiary-container":"#a9baa3","surface-variant":"#e0e3e1","outline-variant":"#bfc8c9","error":"#ba1a1a","primary-container":"#164e52","on-background":"#181c1b","secondary-fixed":"#ffdeaa","inverse-on-surface":"#eef1ef","tertiary-fixed-dim":"#bacbb4","surface-bright":"#f7faf8","surface-container-lowest":"#ffffff","outline":"#707979","on-secondary-fixed":"#271900","on-secondary-container":"#704e00","surface-container-high":"#e6e9e7","tertiary":"#263424","surface":"#f7faf8","on-primary-fixed-variant":"#164e52","on-secondary":"#ffffff","primary-fixed":"#b7ecf0","on-error-container":"#93000a","tertiary-fixed":"#d6e8cf","on-tertiary":"#ffffff","surface-container-low":"#f1f4f2","error-container":"#ffdad6","on-primary-fixed":"#002022","surface-dim":"#d8dbd9","primary":"#00363a","surface-tint":"#32666a","inverse-primary":"#9bd0d4","on-primary-container":"#8abec2","surface-container-highest":"#e0e3e1","on-tertiary-fixed-variant":"#3c4b39","secondary":"#7d5700","on-error":"#ffffff","tertiary-container":"#3c4b39","on-surface-variant":"#404849","on-tertiary-fixed":"#111f10","inverse-surface":"#2d3130","background":"#f7faf8","on-secondary-fixed-variant":"#5f4100","primary-fixed-dim":"#9bd0d4","secondary-container":"#febe46","on-surface":"#181c1b"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","space-sm":"0.5rem","gutter":"1rem","margin-desktop":"1.5rem","margin":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","gutter-desktop":"1.5rem"},fontFamily:{"label-md":["Inter"],"label-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"figure-display":["Inter"],"label-lg":["Inter"],"headline-lg":["Newsreader"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-lg-mobile":["Newsreader"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"figure-display":["24px",{lineHeight:"30px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-[72px] max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center"><a class="group flex flex-col" data-path="checkout" href="#"><span class="font-['Fraunces'] text-headline-md tracking-tight text-primary font-medium group-hover:text-primary-container transition-colors">Velcura</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant opacity-75 -mt-1">by Vastram</span></a></div><div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-primary"><span class="material-symbols-outlined text-[16px] text-primary">lock</span><span class="font-label-md text-label-md text-primary font-medium tracking-wide">Secure Checkout</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors group" data-path="cart" href="#"><span class="material-symbols-outlined text-[18px] transition-transform group-hover:-translate-x-1">arrow_back</span><span>Return to Cart</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[72px] bg-surface flex-grow"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-lg">
+<!-- Breadcrumb & Administrative Trust Notice -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Cart</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Institutional Checkout</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface-variant/60">Dispatch Confirmation</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1 rounded-full text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>NABH Hospital Procurement Gateway • Encrypted Session #VLC-9802</span>
+</div>
+</div>
+<!-- Main Two-Column Layout (7 cols / 5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: Step Panels (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg min-w-0">
+<!-- STEP 1: Contact Information (Completed / Valid State) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">1. Contact Information</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Primary institutional email & tracking phone</p>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span>Change</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Official Clinical Email or Mobile</label>
+<div class="relative">
+<input class="w-full h-10 px-3.5 pr-10 rounded-lg bg-surface-bright border border-tertiary text-on-surface font-body-md text-body-md focus:outline-none" readonly="" type="email" value="dr.ananya.roy@apollohospitals.com"/>
+<span class="material-symbols-outlined text-tertiary absolute right-3 top-2.5 text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 text-tertiary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Verified clinician profile linked (Apollo Hospitals - Bengaluru)</span>
+</div>
+</div>
+<label class="flex items-start gap-2.5 cursor-pointer pt-1">
+<input checked="" class="mt-0.5 w-4 h-4 rounded border-outline-variant text-primary focus:ring-secondary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+                Email and WhatsApp me order tracking, autoclave care protocols & clinical size replenishment notices.
+              </span>
+</label>
+</div>
+</section>
+<!-- STEP 2: Delivery Address (Active with Inline Error Demo) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-label-lg text-label-lg font-semibold">
+                2
+              </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">2. Clinical Delivery Address</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct hospital, OT desk, or clinic departmental hand-off</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed uppercase tracking-wider font-semibold">
+              Step Active
+            </span>
+</div>
+<!-- Address Type Chips -->
+<div class="mb-space-md">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Location Classification</label>
+<div class="flex flex-wrap gap-2">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">local_hospital</span>
+<span>Hospital / Clinic (Work)</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Residential (Home)</span>
+</button>
+</div>
+</div>
+<!-- Form Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Full Name & Title</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-surface border border-outline-variant text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" type="text" value="Dr. Ananya Roy"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Contact Phone</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-surface border border-outline-variant text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" type="tel" value="+91 98201 44521"/>
+</div>
+<!-- Pincode with Auto-filled Tag -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-on-surface">PIN Code</label>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+                  Auto-detected
+                </span>
+</div>
+<div class="relative">
+<input class="w-full h-10 px-3.5 pr-20 rounded-lg bg-surface border border-outline-variant font-body-md text-body-md text-on-surface focus:border-primary focus:outline-none font-medium" type="text" value="560038"/>
+<span class="absolute right-2.5 top-2 px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-medium">
+                  KA / BLR
+                </span>
+</div>
+</div>
+<!-- State & City (Pre-filled / Read-only state) -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">City</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container text-on-surface-variant font-body-md text-body-md cursor-not-allowed" disabled="" type="text" value="Bengaluru"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">State</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container text-on-surface-variant font-body-md text-body-md cursor-not-allowed" disabled="" type="text" value="Karnataka"/>
+</div>
+</div>
+<!-- Address Line 1 -->
+<div class="sm:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1">Institution & Street Address</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-surface border border-outline-variant text-on-surface font-body-md text-body-md focus:border-primary focus:outline-none" type="text" value="Dept of Orthopaedics, OPD Block 4, Apollo Hospitals, 154/11 Bannerghatta Road"/>
+</div>
+<!-- Address Line 2 / Landmark WITH INTENTIONAL ERROR STATE -->
+<div class="sm:col-span-2">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-error font-medium">Department Landmark / Internal Room No.</label>
+<span class="font-label-sm text-label-sm text-error">Missing precise location</span>
+</div>
+<div class="relative">
+<input class="w-full h-10 px-3.5 pr-10 rounded-lg bg-error-container/20 border-2 border-error text-on-surface font-body-md text-body-md focus:outline-none" type="text" value="Near OT 3"/>
+<span class="material-symbols-outlined text-error absolute right-3 top-2.5 text-[20px]">error</span>
+</div>
+<p class="font-label-md text-label-md text-error mt-1.5 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                Please provide complete building wing, level, or room details for secure courier hand-off.
+              </p>
+</div>
+</div>
+<!-- Shift Hours Option -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high">
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-0.5 w-4 h-4 rounded border-outline-variant text-primary focus:ring-secondary-container" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">
+                Deliver strictly during hospital daytime duty shift hours (<span class="font-semibold text-primary">8:00 AM – 6:00 PM</span>) via Medical Staff Reception.
+              </span>
+</label>
+</div>
+</section>
+<!-- STEP 3: Delivery Method -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-label-lg text-label-lg font-semibold">
+                3
+              </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">3. Delivery Method</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select sterilized logistics handling speed</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Option A: Standard (Selected) -->
+<label class="relative flex flex-col justify-between p-space-md rounded-xl border-2 border-primary bg-primary-fixed/20 cursor-pointer transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 text-primary focus:ring-secondary" name="delivery_method" type="radio"/>
+<span class="font-headline-sm text-headline-sm text-on-surface">Standard Clinical</span>
+</div>
+<span class="font-label-lg text-label-lg text-tertiary font-bold tracking-tight">FREE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Estimated 3 to 5 business days delivery via specialized dry cargo.</p>
+<div class="flex items-center gap-1.5 self-start px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm border border-outline-variant/40">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+<span>Tamper-evident cold sealed</span>
+</div>
+</label>
+<!-- Option B: Express Air (Unselected) -->
+<label class="relative flex flex-col justify-between p-space-md rounded-xl border border-outline-variant bg-surface hover:border-primary-container cursor-pointer transition-all">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 text-primary focus:ring-secondary" name="delivery_method" type="radio"/>
+<span class="font-headline-sm text-headline-sm text-on-surface">Express Next-Day</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">₹149</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Air cargo dispatch directly to Apollo Central Supply Desk.</p>
+<div class="flex items-center gap-1.5 self-start px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>Order before 2 PM for tomorrow</span>
+</div>
+</label>
+</div>
+</section>
+<!-- STEP 4: Payment Method (UPI Selected + Expanded) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-label-lg text-label-lg font-semibold">
+                4
+              </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">4. Payment Method</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All transactions are 256-bit encrypted and clinical grade protected</p>
+</div>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>NPCI Certified</span>
+</div>
+</div>
+<div class="space-y-3">
+<!-- 1. UPI Method (SELECTED) -->
+<div class="rounded-xl border-2 border-primary bg-primary-fixed/10 p-space-md">
+<div class="flex items-center justify-between cursor-pointer">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary focus:ring-secondary" name="payment_mode" type="radio"/>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block font-semibold">UPI Payment (Fastest)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Google Pay, PhonePe, Paytm, BHIM or any institutional UPI ID</span>
+</div>
+</label>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm font-bold shadow-xs">GPay</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm font-bold shadow-xs">PhonePe</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm font-bold shadow-xs">BHIM</span>
+</div>
+</div>
+<!-- Expanded VPA Field -->
+<div class="mt-space-md pt-space-md border-t border-primary/20">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Enter Clinician UPI ID / Virtual Payment Address (VPA)</label>
+<div class="flex gap-2">
+<div class="relative flex-grow">
+<input class="w-full h-10 px-3.5 rounded-lg bg-surface-container-lowest border border-primary text-on-surface font-body-md text-body-md focus:outline-none" placeholder="e.g. drananya@okaxis" type="text" value="drananya@okaxis"/>
+<span class="absolute right-3 top-2.5 text-tertiary material-symbols-outlined text-[18px]">verified</span>
+</div>
+<button class="px-4 h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shrink-0" type="button">
+                    Verify VPA
+                  </button>
+</div>
+<div class="flex items-center justify-between mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>A collect request of <strong>₹3,498.00</strong> will be triggered immediately.</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+                    VPA Verified (Ananya Roy)
+                  </span>
+</div>
+</div>
+</div>
+<!-- 2. Credit / Debit Cards -->
+<div class="rounded-xl border border-surface-container-high bg-surface-container-low/40 p-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between cursor-pointer">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-secondary" name="payment_mode" type="radio"/>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block font-semibold">Credit / Debit Cards</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Corporate, Institutional & Personal Cards accepted</span>
+</div>
+</label>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+</div>
+</div>
+</div>
+<!-- 3. Net Banking -->
+<div class="rounded-xl border border-surface-container-high bg-surface-container-low/40 p-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between cursor-pointer">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-secondary" name="payment_mode" type="radio"/>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block font-semibold">Net Banking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All major Indian medical trust & commercial banks</span>
+</div>
+</label>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+</div>
+</div>
+<!-- 4. Cash on Delivery (Hospital Desk COD) -->
+<div class="rounded-xl border border-surface-container-high bg-surface-container-low/40 p-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between cursor-pointer">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-secondary" name="payment_mode" type="radio"/>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block font-semibold">Pay on Delivery (Hospital Desk COD)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Requires departmental ID verification upon drop-off</span>
+</div>
+</label>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">
+                  +₹50 handling
+                </span>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 5: Institutional GST Invoicing Toggle -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-label-lg text-label-lg font-semibold">
+                5
+              </div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">5. Institutional & Tax Invoicing</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hospital expense reimbursement & clinical GST input claim</p>
+</div>
+</div>
+<!-- Toggle Switch ON -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="space-y-space-md bg-surface-container-low/50 p-space-md rounded-xl">
+<div class="flex items-center gap-2 text-tertiary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Claim 12% Healthcare Apparel GST Input Tax Credit (ITC)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Hospital / Clinic GSTIN</label>
+<div class="relative">
+<input class="w-full h-10 px-3.5 pr-8 rounded-lg bg-surface-container-lowest border border-tertiary text-on-surface font-body-md text-body-md uppercase font-semibold" type="text" value="29AABCU9603R1ZM"/>
+<span class="material-symbols-outlined text-tertiary absolute right-2.5 top-2.5 text-[18px]">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary mt-1 block">Valid Karnataka GSTIN verified</span>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Company / Entity Registered Legal Name</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md text-body-md font-medium" type="text" value="Apollo Hospitals Enterprises Ltd"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Tax invoice will be attached directly to consignment</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA & Primary Processing Action Button -->
+<div class="pt-space-xs">
+<!-- Primary Button with Processing State -->
+<button class="w-full h-14 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-md flex items-center justify-center gap-3 transition-all hover:bg-primary-container focus:ring-4 focus:ring-primary/20 cursor-pointer" type="button">
+<!-- Animated Spinner Icon -->
+<svg class="animate-spin h-5 w-5 text-on-primary" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+<span class="tracking-wide">Processing Secure Payment • ₹3,498.00</span>
+</button>
+<!-- Trust Badges Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-space-md pt-space-md border-t border-surface-container-high text-on-surface-variant">
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span>256-Bit SSL Encrypted & Certified</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">autorenew</span>
+<span>15-Day Unwashed Sizing Exchange</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">support_agent</span>
+<span>24/7 Clinical Concierge on WhatsApp</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Order Summary (5 Cols) -->
+<div class="lg:col-span-5 sticky top-24 min-w-0">
+<aside class="bg-surface-container-low/70 backdrop-blur-md rounded-2xl p-space-lg border border-outline-variant/30 shadow-sm flex flex-col gap-space-md">
+<!-- Summary Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-2">
+<h2 class="font-['Fraunces'] text-headline-md text-primary font-medium">Order Summary</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-semibold">
+                3 Garments
+              </span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">Edit Cart</a>
+</div>
+<!-- Line Items List -->
+<div class="space-y-space-md py-space-xs">
+<!-- Item 1 -->
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Editorial product photograph of a modern Deep Teal clinical medical scrub top tailored for doctors, folded neatly on a textured ivory cloth surface with clean surgical seams visible and soft morning clinic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0O99_EttWMCxW1zRkZgWu2MaTjO1Q-Ouee40IWu322xPn86KmxBU6dKajpBVgVpFxOJr8nl4fksVIfBtQ8hH-5tauRfeLU_PAIQyowXyv2bvRqcpTABJZfammWNl9HvWqDrE9LDr4RAPd8sKF7XEig-sg3F0xk-sm_7oR-fHq8DThQ7R_4KiNPtFaEZpriTOWVym8L5_JJDlp3VLqR6aoXMFRFnB6i973ujpF0-M"/>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Classic V-Neck Scrub Top</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#164E52]"></span>
+<span>Deep Teal</span>
+<span>•</span>
+<span>Size: M (38)</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₹1,899</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant line-through">₹2,199</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Detailed studio apparel shot of premium clinical scrub jogger pants in Deep Teal fabric with ribbed ankle cuffs and 6 utility cargo pockets, styled on minimal pale stone plinth in natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr3-9cyhYOe-GCF_HUCXs_twgluYHrkvjjU5Ou6j8EagnyK9QwOeoINcHjWjNNkS7QepCIPNz9Zlaml3QvWftywxA69WpfgEWjAYfTBR1t03I4DSUTErmlHbwF8-kTIbt83D9ddVrbGnxdwl-SQLwrngy-qQQ3yJAjLWWNirMTcdKGlKu__BxR2S2zh0-EQyzaSmycV7o0Y1fQBurf-SDQekMXXFsW6ZmVUOkqeiw"/>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Caduceus Scrub Jogger</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#164E52]"></span>
+<span>Deep Teal</span>
+<span>•</span>
+<span>Size: M (Reg)</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₹2,299</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant line-through">₹2,699</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Close up product photograph of a surgical scrub cap and antimicrobial mask in matching deep teal breathable clinical cotton blend, laid out flat with subtle herbal leaf embroidery pattern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNqx0Qb70Tef8WwyUoERvRxf2aOI1B-VsDYZAc_zfO2Mf36XxAXU06nAhxT3d6WaNk029IKDLs77KvUZ4l0lUMZEbT3QAKQ2lSD0uL72BtaQScfWL6VYfypYKlUTXYKtskQnetA-YJDcP9_Qq_mNL5EO13tK_IJziHFJbpXAnCZTQ66qRSO7Gqw1VcOZe1uKghKaid8TVyx6xSgAfWhtu92Q-pm4ED3_IP6orvjvc"/>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Botanical Scrub Cap & Mask</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#164E52]"></span>
+<span>Deep Teal</span>
+<span>•</span>
+<span>One Size</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₹498</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant line-through">₹699</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Applied Box -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl border border-tertiary-fixed-dim/60">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">local_offer</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold tracking-wider text-on-surface uppercase">VELCURA10</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-tertiary-fixed text-tertiary font-bold">Applied</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">10% Clinician inaugural discount applied</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">-₹469.60</span>
+</div>
+</div>
+<!-- Financial Breakdown Table -->
+<div class="space-y-2.5 pt-space-xs font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Garment Subtotal</span>
+<span class="text-on-surface font-medium">₹4,696.00</span>
+</div>
+<div class="flex items-center justify-between text-tertiary">
+<span class="flex items-center gap-1">
+<span>Clinician Discount</span>
+<span class="material-symbols-outlined text-[14px]">info</span>
+</span>
+<span class="font-medium">-₹469.60</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span>Standard Logistics Dispatch</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-1.5 py-0.2 rounded font-semibold">Free</span>
+</span>
+<span class="text-on-surface font-medium">₹0.00</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span>Healthcare GST (12% Included)</span>
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+</span>
+<span class="text-on-surface font-medium">₹374.88</span>
+</div>
+<!-- Total Divider -->
+<div class="pt-space-sm border-t border-surface-container-highest flex items-baseline justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block font-bold">Total Payable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Incl. of all clinical duties & GST</span>
+</div>
+<div class="text-right">
+<span class="font-['Fraunces'] text-headline-lg text-primary font-bold tracking-tight">₹3,498.00</span>
+<span class="block font-label-sm text-label-sm text-tertiary font-medium">You saved ₹1,198 in total</span>
+</div>
+</div>
+</div>
+<!-- Hospital Compliance Seal -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-highest/60 flex items-start gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">verified_user</span>
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface font-semibold">NABH & ISO 13485 Compliant Packaging</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Direct hospital dispatch sealed in tamper-proof medical polythene with batch sterility certificates.
+              </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop"><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pb-space-lg mb-space-lg"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[20px] text-tertiary-container">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">256-Bit SSL Encryption</span><span class="font-body-sm text-body-sm text-on-surface-variant">Bank-grade security protocol for all transactional data</span></div></div><div class="flex flex-wrap items-center gap-space-xs"><div class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider">UPI</div><div class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider">RUPAY</div><div class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider">VISA</div><div class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider">MASTERCARD</div><div class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold tracking-wider">NETBANKING</div></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-1.5"><span>All transactions comply with Indian Goods and Services Tax (GST) regulations. Invoices issued upon dispatch.</span></div><div class="flex items-center gap-4"><span>© 2025 Velcura by Vastram Healthcare LLP. All rights reserved.</span></div></div></div></footer></body></html>

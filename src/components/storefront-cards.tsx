@@ -1,0 +1,17 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { Heart, ShoppingBag, Star, Eye } from "lucide-react";
+import { useState } from "react";
+import { Button, Badge, Modal } from "@/components/ui";
+import { useCartStore } from "@/lib/stores/cart";
+import type { Product } from "@/lib/mock-data";
+
+export function ProductCard({ product, onQuickView }: { product: Product; onQuickView?: (product: Product) => void }) {
+  const [saved, setSaved] = useState(false);
+  const addItem = useCartStore((state) => state.addItem);
+  return <article className="group relative overflow-hidden rounded-card border border-sand bg-surface transition hover:-translate-y-0.5 hover:shadow-botanical"><div className="relative aspect-[0.82] overflow-hidden bg-mint"><Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover transition duration-500 group-hover:scale-105" /><div className="absolute left-3 top-3"><Badge tone={product.inventory < 20 ? "danger" : "warning"}>{product.inventory < 20 ? "Low stock" : "Bestseller"}</Badge></div><button aria-label={saved ? "Remove from wishlist" : "Add to wishlist"} className="absolute right-3 top-3 rounded-full bg-surface/90 p-2 hover:text-terracotta" onClick={() => setSaved((value) => !value)}><Heart size={16} fill={saved ? "currentColor" : "none"} /></button>{onQuickView && <button className="absolute inset-x-3 bottom-3 flex min-h-10 translate-y-2 items-center justify-center gap-2 rounded-control bg-surface/95 text-sm font-semibold opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100" onClick={() => onQuickView(product)}><Eye size={16} /> Quick view</button>}</div><div className="p-4"><div className="mb-2 flex items-center gap-1 text-xs text-muted"><span className="size-2 rounded-full bg-primary" /><span className="size-2 rounded-full bg-info" /><span className="size-2 rounded-full bg-plum" /> · <Star size={12} fill="currentColor" className="text-saffron" /> 4.8</div><Link href={`/products/${product.id}`} className="font-medium hover:text-primary">{product.name}</Link><p className="mt-1 text-xs text-muted">{product.category} · {product.color}</p><div className="mt-3 flex items-center justify-between"><span className="tabular font-semibold">₹{product.price.toLocaleString("en-IN")}</span><button aria-label={`Quick add ${product.name}`} className="rounded p-2 text-primary hover:bg-mint" onClick={() => addItem(product.id)}><ShoppingBag size={16} /></button></div></div></article>;
+}
+
+export function QuickViewModal({ product, onClose }: { product: Product | null; onClose: () => void }) { const addItem = useCartStore((state) => state.addItem); return <Modal open={Boolean(product)} title={product?.name ?? "Quick view"} onClose={onClose}>{product && <div className="grid gap-4 sm:grid-cols-2"><Image src={product.image} alt={product.name} width={420} height={500} className="h-64 w-full rounded-card object-cover" /><div><p className="text-sm text-muted">{product.category} · {product.color}</p><p className="mt-3 text-2xl font-semibold tabular">₹{product.price.toLocaleString("en-IN")}</p><p className="mt-3 text-sm leading-6 text-muted">Four-way botanical stretch, antimicrobial silver-ion protection, and an ergonomic fit for long clinical shifts.</p><div className="mt-5 grid gap-2"><Button onClick={() => { addItem(product.id); onClose(); }}>Add to cart</Button><Button variant="secondary" href={`/products/${product.id}`}>View full details</Button></div></div></div>}</Modal>; }

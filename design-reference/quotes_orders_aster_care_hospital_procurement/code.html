@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#404849", "on-primary-fixed-variant": "#164e52", "primary": "#00363a", "inverse-surface": "#2d3130", "on-tertiary": "#ffffff", "surface-dim": "#d8dbd9", "error": "#ba1a1a", "primary-container": "#164e52", "tertiary-container": "#3c4b39", "background": "#f7faf8", "surface-variant": "#e0e3e1", "primary-fixed": "#b7ecf0", "tertiary": "#263424", "on-secondary": "#ffffff", "inverse-primary": "#9bd0d4", "secondary-fixed": "#ffdeaa", "error-container": "#ffdad6", "surface-container-high": "#e6e9e7", "surface-container-lowest": "#ffffff", "surface-bright": "#f7faf8", "surface-container-low": "#f1f4f2", "surface-container": "#eceeed", "on-error-container": "#93000a", "outline-variant": "#bfc8c9", "on-primary-container": "#8abec2", "secondary": "#7d5700", "secondary-container": "#febe46", "on-tertiary-container": "#a9baa3", "on-secondary-fixed-variant": "#5f4100", "inverse-on-surface": "#eef1ef", "tertiary-fixed-dim": "#bacbb4", "on-secondary-fixed": "#271900", "outline": "#707979", "surface-tint": "#32666a", "on-tertiary-fixed-variant": "#3c4b39", "on-background": "#181c1b", "on-primary-fixed": "#002022", "on-primary": "#ffffff", "tertiary-fixed": "#d6e8cf", "on-error": "#ffffff", "surface": "#f7faf8", "primary-fixed-dim": "#9bd0d4", "on-tertiary-fixed": "#111f10", "secondary-fixed-dim": "#fbbc43", "surface-container-highest": "#e0e3e1", "on-secondary-container": "#704e00", "on-surface": "#181c1b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-desktop": "1.5rem", "gutter": "1rem", "margin": "1rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "figure-display": ["Inter"], "headline-sm": ["Inter"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "figure-display": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[264px] bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container font-headline-md font-bold">V</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold">VELCURA</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">by Vastram</span></div></div><div class="mt-space-md p-space-sm rounded-lg bg-primary/40 flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-fixed text-[18px]">corporate_fare</span><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-primary truncate font-semibold">Aster Care Hospital</span><span class="font-label-sm text-label-sm text-on-primary-container truncate">Group Account</span></div><span class="material-symbols-outlined text-on-primary-container text-[16px] ml-auto">unfold_more</span></div></div><nav class="flex flex-col px-space-sm gap-1" data-active-classes="bg-primary text-on-primary font-semibold shadow-[inset_3px_0_0_0_#febe46]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Overview</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="quotes" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span>Quotes</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span>Orders</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="team-sizes" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Team sizes</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="designs" href="#"><span class="material-symbols-outlined text-[20px]">palette</span>Designs</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Invoices</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="reorder" href="#"><span class="material-symbols-outlined text-[20px]">autorenew</span>Reorder</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-primary-container hover:bg-primary/30 hover:text-on-primary transition-colors" data-path="support" href="#"><span class="material-symbols-outlined text-[20px]">contact_support</span>Support</a></nav></div><div class="p-space-md m-space-sm rounded-lg bg-primary/50 flex flex-col gap-space-xs"><div class="flex items-center justify-between text-on-primary-container font-label-sm text-label-sm"><span>FACILITY ID</span><span class="material-symbols-outlined text-[14px]">verified</span></div><span class="font-label-md text-label-md font-semibold text-on-primary tracking-wide">FAC-AST-BLR-04</span><div class="h-[1px] bg-primary/60 my-space-xs"></div><a class="flex items-center gap-space-xs text-on-primary-container hover:text-on-primary font-label-sm text-label-sm transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">logout</span><span>Sign out</span></a></div></aside><div class="pl-[264px] min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-[264px] right-0 h-[72px] bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="w-9 h-9 rounded-lg bg-primary-container/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary-container text-[20px]">local_hospital</span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Aster Care Hospital</span><span class="font-label-sm text-label-sm text-on-surface-variant">Bangalore Central Unit</span></div></div><div class="flex-1 max-w-xl mx-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary-container" placeholder="Search POs, SKU, ward orders, invoices..." type="text"/></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm font-semibold text-on-surface leading-tight">Meera Nair</span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed font-label-sm text-[10px] text-on-tertiary-fixed font-medium">Key Institutional</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">+91 80 4920 8820</span></div><a class="flex items-center gap-1 h-8 px-space-sm rounded-lg bg-tertiary-container text-on-tertiary font-label-sm text-label-sm hover:bg-tertiary transition-colors ml-space-xs" href="https://wa.me/918049208820" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp</span></a></div></div></header><main class="relative pt-[72px] bg-surface flex-1 w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Executive Header -->
+<div class="flex flex-col gap-space-xs pb-space-md">
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant/80">
+<span class="hover:text-primary transition-colors cursor-pointer">Institutional Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Aster Care Hospital</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Requisitions &amp; Contracts</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Quotes &amp; Orders</span>
+</nav>
+<!-- Header Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Institutional Quotes &amp; Orders Ledger</h1>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold tracking-wide uppercase">FY24-25 Q3</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Review formal RFQs, approve department scrub consignments, and coordinate custom embroidery specifications with your Velcura institutional account desk.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Export Audit CSV</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-lg text-label-lg flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Create New RFQ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Status Tabs Navigation -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mt-space-sm bg-surface-container-lowest p-space-xs rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-all">
+<span>Quotes (3 Active)</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</button>
+<button class="h-10 px-space-md rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-lg text-label-lg flex items-center gap-space-xs transition-colors">
+<span>Orders in Production</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">2</span>
+</button>
+<button class="h-10 px-space-md rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-lg text-label-lg flex items-center gap-space-xs transition-colors">
+<span>Fabric &amp; Fit Samples</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">4</span>
+</button>
+<button class="h-10 px-space-md rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-lg text-label-lg flex items-center gap-space-xs transition-colors">
+<span>Archived &amp; Settled</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">38</span>
+</button>
+</div>
+<!-- Quick Ledger Metric Indicator -->
+<div class="hidden xl:flex items-center gap-space-lg px-space-md text-right">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Pipeline</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">₹18,20,500</span>
+</div>
+<div class="w-px h-6 bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cleanroom SLA</span>
+<span class="font-label-lg text-label-lg text-tertiary-container font-bold flex items-center gap-1 justify-end">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+          100% On-Track
+        </span>
+</div>
+</div>
+</div>
+<!-- Filtration Bar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm mt-space-md">
+<!-- Search Bar -->
+<div class="md:col-span-5 relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Filter by quote ref (e.g. Q-4091), PO number, department, or surgeon..." type="text" value="Hebbal &amp; Whitefield OT Fleet"/>
+</div>
+<!-- Department Selector -->
+<div class="md:col-span-2 relative flex items-center">
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container appearance-none cursor-pointer">
+<option>All Departments</option>
+<option selected="">OT &amp; Surgical Wings</option>
+<option>Critical Care &amp; ICU</option>
+<option>Emergency &amp; Trauma</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Status Selector -->
+<div class="md:col-span-2 relative flex items-center">
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container appearance-none cursor-pointer">
+<option>All Statuses</option>
+<option selected="">Pending Approval</option>
+<option>Under Revision</option>
+<option>Approved</option>
+<option>In Cleanroom</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Date Range Picker -->
+<div class="md:col-span-2 relative flex items-center">
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container appearance-none cursor-pointer">
+<option selected="">Current FY24-25 Q3</option>
+<option>Previous Quarter (Q2)</option>
+<option>Custom Date Span</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm text-on-surface-variant text-[18px] pointer-events-none">date_range</span>
+</div>
+<!-- Bulk Action Trigger -->
+<div class="md:col-span-1 relative flex items-center">
+<button class="w-full h-11 px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm transition-colors">
+<span class="font-bold text-primary">1</span>
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Main Canvas split: Left Table + Right Detail Drawer -->
+<div class="mt-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Procurement Data Table Container (7 Cols on desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider h-11">
+<th class="px-space-md py-space-xs w-10">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary-container cursor-pointer" type="checkbox"/>
+</th>
+<th class="px-space-md py-space-xs font-semibold cursor-pointer select-none">
+<div class="flex items-center gap-1">Reference ID <span class="material-symbols-outlined text-[14px]">arrow_drop_down</span></div>
+</th>
+<th class="px-space-md py-space-xs font-semibold">Issue Date</th>
+<th class="px-space-md py-space-xs font-semibold">Clinical Specification</th>
+<th class="px-space-md py-space-xs font-semibold text-right">Units</th>
+<th class="px-space-md py-space-xs font-semibold text-right">Value (INR)</th>
+<th class="px-space-md py-space-xs font-semibold text-center">Status</th>
+<th class="px-space-md py-space-xs text-center w-12">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: SELECTED & ACTIVE IN DRAWER -->
+<tr class="bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer group">
+<td class="px-space-md py-space-md">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary-container group-hover:underline">#Q-4091</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Whitefield OT Wing</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-on-surface-variant">Oct 24, 2024</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ayur-Flex™ V-Neck Tops &amp; Cargo Pants</span>
+<span class="text-[11px] text-on-surface-variant">Deep Teal &amp; Dusty Blue · 14.2k Stitch Crest</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-medium tabular-nums">450 sets <span class="text-on-surface-variant text-[11px] block">(900 pcs)</span></td>
+<td class="px-space-md py-space-md text-right font-bold text-primary tabular-nums">₹8,42,500 <span class="font-normal text-[10px] text-on-surface-variant block">incl. GST</span></td>
+<td class="px-space-md py-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Pending Approval
+                  </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="px-space-md py-space-md">
+<input class="w-4 h-4 rounded text-primary accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">#Q-4088</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Pediatric Isolation</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-on-surface-variant">Oct 21, 2024</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Sage Botanical Antimicrobial Tunics</span>
+<span class="text-[11px] text-on-surface-variant">Silver-Neem finish · Comfort fit</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-medium tabular-nums">120 sets</td>
+<td class="px-space-md py-space-md text-right font-bold text-on-surface tabular-nums">₹2,24,000</td>
+<td class="px-space-md py-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                    Approved · Awaiting PO
+                  </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">file_open</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="px-space-md py-space-md">
+<input class="w-4 h-4 rounded text-primary accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">#Q-4075</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Consultant Suite</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-on-surface-variant">Oct 15, 2024</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Barrier Fluid-Repel Consultant Lab Coats</span>
+<span class="text-[11px] text-on-surface-variant">Silver-Weave collar · Custom name monogram</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-medium tabular-nums">60 coats</td>
+<td class="px-space-md py-space-md text-right font-bold text-on-surface tabular-nums">₹1,86,000</td>
+<td class="px-space-md py-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    Changes Requested
+                  </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="px-space-md py-space-md">
+<input class="w-4 h-4 rounded text-primary accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">#PO-AST-9824</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Emergency Trauma Care</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-on-surface-variant">Oct 10, 2024</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Ayur-Flex™ Trauma Fleet with Caduceus</span>
+<span class="text-[11px] text-on-surface-variant">High-visibility reflective piping</span>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-medium tabular-nums">300 sets</td>
+<td class="px-space-md py-space-md text-right font-bold text-on-surface tabular-nums">₹5,68,000</td>
+<td class="px-space-md py-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    In Cleanroom
+                  </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer & Pagination -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing <strong class="text-on-surface">1–4</strong> of <strong class="text-on-surface">9</strong> active requisitions</span>
+<span class="w-px h-3 bg-outline-variant"></span>
+<div class="flex items-center gap-1">
+<span>Show</span>
+<select class="bg-surface-container-lowest rounded px-1.5 py-0.5 text-on-surface font-semibold focus:outline-none">
+<option>10 per page</option>
+<option>25 per page</option>
+<option>50 per page</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex items-center justify-center disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high flex items-center justify-center">3</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Operational Metrics Card Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Standard Sterility</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">ISO 20743</span>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold">100 washes verified</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">price_change</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Contract Tier Discount</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">15% Locked</span>
+<span class="font-label-sm text-[10px] text-secondary font-semibold">Orders &gt; 400 sets</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Production Lead</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">14 Days SLA</span>
+<span class="font-label-sm text-[10px] text-primary font-semibold">Cleanroom pack included</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right-Hand Dedicated Detail Drawer Panel (5 Cols on desktop) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-md flex flex-col overflow-hidden relative">
+<!-- Drawer Top Bar -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<select class="h-8 pl-space-sm pr-7 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold focus:outline-none shadow-sm cursor-pointer appearance-none">
+<option selected="">Version 2.1 (Current · Oct 26)</option>
+<option>Version 2.0 (Oct 23)</option>
+<option>Version 1.0 Initial Draft (Oct 18)</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1.5 text-on-surface-variant text-[16px] pointer-events-none">expand_more</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-semibold uppercase">Hebbal Sync</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center shadow-sm" title="Print or Export Quote PDF">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center shadow-sm" title="Full Screen Expanded View">
+<span class="material-symbols-outlined text-[18px]">open_in_full</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant hover:text-error transition-colors flex items-center justify-center shadow-sm" title="Close Drawer">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Drawer Headline & Facility Identification -->
+<div class="p-space-md pb-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">Quote #Q-4091</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" title="Priority Procurement Requisition">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">Created: 18 Oct 2024</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-surface-variant font-medium mt-0.5">
+          Aster Care Hospital — Whitefield &amp; Hebbal OT Complex
+        </p>
+</div>
+<!-- Prominent Approved State / Requisition Alert Banner -->
+<div class="mx-space-md mb-space-sm p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] flex-shrink-0 mt-0.5">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold">Quote Approved by Aster Procurement Committee</span>
+<span class="font-body-sm text-[12px] leading-tight opacity-90 mt-0.5">
+            Pending formal PO generation. Pricing contract locked until Nov 15, 2024. Reviewing Rev 2.1 custom embroidery digitized proofs.
+          </span>
+</div>
+</div>
+<!-- Drawer Scrollable Body Content -->
+<div class="flex-1 overflow-y-auto px-space-md pb-space-lg flex flex-col gap-space-lg max-h-[600px]">
+<!-- Section A: Line Items Breakdown -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Section A: Requisition Itemization</span>
+<span class="font-label-sm text-[11px] text-primary-container font-semibold">3 Line Items</span>
+</div>
+<div class="bg-surface-container-low/60 rounded-lg p-space-sm flex flex-col gap-space-xs">
+<!-- Line Item 1 -->
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Ayur-Flex™ Surgeon V-Neck Tops</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Deep Teal · Chest 36"-44" (M:120, L:100, XL:80)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-0.5">300 units @ ₹1,150 / unit</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface tabular-nums">₹3,45,000</span>
+</div>
+<!-- Line Item 2 -->
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Ayur-Flex™ 8-Pocket Cargo Pants</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Deep Teal · Antimicrobial waist elastane</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-0.5">300 units @ ₹1,100 / unit</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface tabular-nums">₹3,30,000</span>
+</div>
+<!-- Line Item 3 -->
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-start justify-between gap-space-sm shadow-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Critical Care Tunics (Silver-Neem)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Dusty Blue · Mandarin Collar OT Cut</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-0.5">150 units @ ₹1,120 / unit</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface tabular-nums">₹1,68,000</span>
+</div>
+<!-- Subtotals & Discount Breakdown -->
+<div class="pt-space-xs flex flex-col gap-1 font-body-sm text-[12px] text-on-surface-variant px-space-xs">
+<div class="flex justify-between">
+<span>Gross Requisition Subtotal</span>
+<span class="tabular-nums font-semibold text-on-surface">₹8,43,000</span>
+</div>
+<div class="flex justify-between text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_offer</span>
+                  Institutional Fleet Discount (-15%)
+                </span>
+<span class="tabular-nums font-semibold">-₹1,26,450</span>
+</div>
+<div class="flex justify-between">
+<span>Cleanroom Packaging &amp; Monogramming</span>
+<span class="tabular-nums font-semibold text-on-surface">₹25,950</span>
+</div>
+<div class="flex justify-between">
+<span>Applicable GST (12% Institutional Composite)</span>
+<span class="tabular-nums font-semibold text-on-surface">₹1,00,000</span>
+</div>
+<div class="h-px bg-outline-variant/50 my-1"></div>
+<div class="flex justify-between font-label-lg text-label-lg text-primary-container font-bold">
+<span>Net Total Contract Value</span>
+<span class="tabular-nums">₹8,42,500</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section B: Customisation & Hospital Identity -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Section B: Hospital Identity &amp; Embroidery</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold">Digitized Proof Approved</span>
+</div>
+<div class="bg-surface-container-low/60 rounded-lg p-space-md flex flex-col gap-space-sm">
+<!-- Embroidered Swatch Visual Representation -->
+<div class="relative w-full h-36 rounded-lg bg-primary-container overflow-hidden flex items-center justify-center shadow-inner group">
+<!-- Background woven texture simulation -->
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#9bd0d4_1px,transparent_1px)] [background-size:8px_8px]"></div>
+<!-- Embroidered Caduceus Emblem -->
+<div class="relative z-10 flex flex-col items-center text-center p-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/10 backdrop-blur-sm flex items-center justify-center text-secondary-container shadow-md">
+<span class="material-symbols-outlined text-[28px]">medical_services</span>
+</div>
+<span class="font-headline-sm text-[14px] text-on-primary font-bold tracking-wider uppercase mt-1">ASTER CARE HOSPITALS</span>
+<span class="font-label-sm text-[10px] text-primary-fixed uppercase tracking-widest font-semibold">OT SURGICAL DIVISION</span>
+</div>
+<!-- Thread Code Overlay Badge -->
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-[9px] backdrop-blur-sm">
+                Madeira Polyneon: #1801 Silver · #1982 Gold
+              </div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-[9px] backdrop-blur-sm">
+                14,200 Stitches
+              </div>
+</div>
+<!-- Embroidery Technical Specifications -->
+<div class="grid grid-cols-2 gap-space-xs text-[12px]">
+<div class="p-space-xs rounded bg-surface-container-lowest flex flex-col shadow-sm">
+<span class="text-on-surface-variant text-[10px] font-semibold uppercase">Placement</span>
+<span class="font-medium text-on-surface">Left Chest Pocket (75mm x 45mm)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest flex flex-col shadow-sm">
+<span class="text-on-surface-variant text-[10px] font-semibold uppercase">Clinician Personalization</span>
+<span class="font-medium text-on-surface">2-Line Monogram (e.g. Dr. Priya, MS)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section C: Vertical Procurement Timeline -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Section C: Requisition Governance Trail</span>
+<div class="bg-surface-container-low/60 rounded-lg p-space-md flex flex-col">
+<!-- Timeline Item 1 -->
+<div class="flex items-start gap-space-md relative pb-space-md">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="absolute left-3 top-6 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">RFQ Submitted by Aster Care</span>
+<span class="text-[11px] text-on-surface-variant">Oct 18, 11:20 AM</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">By Dr. M. Ramanathan (Chief of Surgery)</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex items-start gap-space-md relative pb-space-md">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="absolute left-3 top-6 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Formulary &amp; Fabric Verification</span>
+<span class="text-[11px] text-on-surface-variant">Oct 19, 03:45 PM</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Autoclave tolerance certified by Vastram Quality Lab</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex items-start gap-space-md relative pb-space-md">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="absolute left-3 top-6 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Digitized Crest Swatch Approved</span>
+<span class="text-[11px] text-on-surface-variant">Oct 22, 05:10 PM</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Platinum &amp; gold thread specs signed off</span>
+</div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="flex items-start gap-space-md relative pb-space-md">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="absolute left-3 top-6 bottom-0 w-0.5 bg-secondary-container"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Rev 2 Bulk Tariff Discount Applied</span>
+<span class="text-[11px] text-on-surface-variant">Oct 24, 09:15 AM</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">15% institutional tier lock applied by Meera Nair</span>
+</div>
+</div>
+<!-- Timeline Item 5: CURRENT ACTIVE MILESTONE -->
+<div class="flex items-start gap-space-md relative pb-space-md">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 z-10 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+</div>
+<div class="absolute left-3 top-6 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">Clinical Committee Sign-off (Current)</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] font-bold">ACTIVE</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Final PO execution pending from Aster Finance Desk</span>
+</div>
+</div>
+<!-- Timeline Item 6: PENDING -->
+<div class="flex items-start gap-space-md relative">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center flex-shrink-0 z-10">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">Scheduled Cleanroom Dispatch</span>
+<span class="text-[11px] text-on-surface-variant font-medium">Est. Nov 06, 2024</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Direct delivery to Bangalore Central OT Dock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section D: Account Manager Interaction Thread -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Section D: Dedicated Institutional Desk</span>
+<span class="font-label-sm text-[11px] text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Meera Nair Online
+            </span>
+</div>
+<div class="bg-surface-container-low/60 rounded-lg p-space-md flex flex-col gap-space-sm">
+<!-- Message bubble from Meera Nair -->
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[12px] font-bold flex-shrink-0">
+                MN
+              </div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Meera Nair · Head of Accounts</span>
+<span class="text-[10px] text-on-surface-variant">Today, 02:14 PM</span>
+</div>
+<div class="mt-1 p-space-sm rounded-xl rounded-tl-none bg-surface-container-lowest text-on-surface font-body-sm text-[12px] leading-relaxed shadow-sm">
+                  Good afternoon Dr. Ramanathan and Aster Procurement team. I've updated Quote #Q-4091 with the 15% tier discount for the 450 scrub sets and attached the autoclave shrinkage test report (ISO 20743 verified). Let me know if you need physical sample sets delivered to the Hebbal unit before PO generation.
+                </div>
+<!-- Attached File Card -->
+<div class="mt-2 p-space-xs px-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors flex items-center justify-between gap-space-sm shadow-sm cursor-pointer border border-transparent">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">attachment</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">ISO_20743_Aster_Fabric_Audit.pdf</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">1.4 MB</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">download</span>
+</div>
+</div>
+</div>
+<!-- Quick Reply Input Box -->
+<div class="mt-space-xs relative flex items-center">
+<input class="w-full h-10 pl-space-md pr-10 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Reply to Meera Nair or add internal audit note..." type="text"/>
+<button class="absolute right-2 w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Sticky Governance Footer -->
+<div class="p-space-md bg-surface-container-lowest border-t border-surface-container-high/60 flex flex-col gap-space-xs shadow-lg">
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Request Changes</span>
+</button>
+<button class="flex-1 h-11 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-md group">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Approve &amp; Issue PO</span>
+</button>
+</div>
+<p class="font-label-sm text-[10px] text-center text-on-surface-variant leading-tight mt-1">
+          Compliant with Aster Group Master Healthcare Agreement #MHA-2024-BLR · 14-day delivery SLA applies from PO confirmation date.
+        </p>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-sm px-gutter-desktop shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="w-full flex flex-col md:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span>GSTIN: 29AABCV9821K1ZX · ISO 13485:2016 Certified Cleanroom Textile Manufacturer</span><span>Velcura Institutional Governance by Vastram Enterprise · Clinical Support: 1800 425 8890</span></div></footer></div></body></html>

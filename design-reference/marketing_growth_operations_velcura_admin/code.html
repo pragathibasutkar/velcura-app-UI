@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#ffdeaa","on-primary-fixed":"#002022","primary":"#00363a","on-background":"#181c1b","surface-container-lowest":"#ffffff","surface-dim":"#d8dbd9","surface-container":"#eceeed","tertiary":"#263424","outline":"#707979","secondary":"#7d5700","surface-bright":"#f7faf8","on-surface-variant":"#404849","primary-fixed":"#b7ecf0","on-tertiary-fixed-variant":"#3c4b39","on-error":"#ffffff","on-secondary-fixed-variant":"#5f4100","surface-container-highest":"#e0e3e1","background":"#f7faf8","surface-tint":"#32666a","surface":"#f7faf8","inverse-surface":"#2d3130","on-tertiary-container":"#a9baa3","error-container":"#ffdad6","tertiary-fixed":"#d6e8cf","on-secondary-container":"#704e00","on-secondary":"#ffffff","tertiary-fixed-dim":"#bacbb4","on-primary-container":"#8abec2","outline-variant":"#bfc8c9","surface-container-high":"#e6e9e7","on-error-container":"#93000a","inverse-primary":"#9bd0d4","primary-fixed-dim":"#9bd0d4","surface-container-low":"#f1f4f2","on-tertiary-fixed":"#111f10","on-secondary-fixed":"#271900","on-surface":"#181c1b","error":"#ba1a1a","secondary-fixed-dim":"#fbbc43","inverse-on-surface":"#eef1ef","surface-variant":"#e0e3e1","on-primary-fixed-variant":"#164e52","primary-container":"#164e52","on-tertiary":"#ffffff","tertiary-container":"#3c4b39","secondary-container":"#febe46","on-primary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1rem","margin-desktop":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xl":"2rem","margin":"1rem"},"fontFamily":{"body-sm":["Inter"],"headline-lg-mobile":["Newsreader"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Newsreader"],"headline-md":["Inter"],"figure-display":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"figure-display":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[264px] bg-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full overflow-hidden"><div class="h-[72px] flex items-center px-space-lg gap-space-sm shrink-0"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-surface font-semibold">Velcura</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Clinical Governance</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Core</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="overview" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md font-medium">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md font-medium">Orders</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">12</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="products" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md font-medium">Products</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="inventory" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warehouse</span><span class="font-body-md text-body-md font-medium">Inventory</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-primary-container text-primary-fixed font-label-sm text-[10px]">4</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">B2B &amp; Operations</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="b2b-quotes" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="font-body-md text-body-md font-medium">B2B Quotes</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">3</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="production" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md font-medium">Production</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md font-medium">Customers</span></div></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Growth &amp; System</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="marketing" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-body-md text-body-md font-medium">Marketing</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md font-medium">Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md font-medium">Settings</span></div></a></nav></div></div><div class="p-space-sm bg-primary-container/40 m-space-sm rounded-xl"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-fixed text-[20px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-surface font-semibold truncate">Ananya Sen</span><span class="font-label-sm text-label-sm text-on-primary-container truncate">Operations Lead</span><span class="font-body-sm text-body-sm text-primary-fixed-dim/80 truncate text-[10px]">Vastram Central Atelier</span></div></div><button class="p-1.5 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" title="Switch Facility" type="button"><span class="material-symbols-outlined text-[18px]">sync_alt</span></button></div></div></div></aside><div class="pl-[264px] min-h-screen flex flex-col bg-surface"><header class="fixed top-0 left-[264px] right-0 h-[72px] bg-surface/80 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-low text-on-surface placeholder:text-outline/70 text-body-md font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all" placeholder="Search batches, formulas, records..." type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span><span>Oct 01 – Oct 28, 2024</span></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden sm:block"></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 w-full pt-[72px] bg-surface p-space-lg max-w-[1440px] mx-auto"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Title & Global Telemetry Header Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight">Marketing &amp; Growth Operations</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider">Clinical Growth Engine</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Manage omni-channel campaigns (WhatsApp, Email, SMS), storefront banner merchandising, and clinical discount governance across DTC and Institutional cohorts.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low text-primary hover:bg-surface-container font-label-lg text-label-lg flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Telemetry (.CSV)</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center gap-2 shadow-sm transition-all" id="open-campaign-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Create Campaign</span>
+</button>
+</div>
+</div>
+<!-- Operational Metric Ledger Pill Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Audience Reach</span>
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-figure-display text-figure-display text-primary font-semibold">49,150</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">+14.2% MoM</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Verified Medical License Holders</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">WhatsApp Caduceus Delivery</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">chat</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-figure-display text-figure-display text-primary font-semibold">98.4%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">84.2% Read</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tier-1 Hospital OT Leads</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Attributed Campaign GMV</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-figure-display text-figure-display text-primary font-semibold">₹57.3L</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Q4 FY24-25</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">₹42.5L Institutional Pipeline</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Discount Efficiency</span>
+<span class="material-symbols-outlined text-surface-tint text-[20px]">sell</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-figure-display text-figure-display text-primary font-semibold">7.2%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">-1.4% burn</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Avg Margin Net 41.8%</span>
+</div>
+</div>
+<!-- Categorical Sub-Navigation Tabs -->
+<div class="flex items-center gap-space-sm bg-surface-container-low p-1.5 rounded-xl overflow-x-auto">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm whitespace-nowrap flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>Overview &amp; Campaigns (8 active)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+<span>Promotions &amp; Discount Codes (14)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">web</span>
+<span>Storefront Banners (3)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap flex items-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Clinician Audiences &amp; Segments (6)</span>
+</button>
+</div>
+<!-- SECTION 1: CAMPAIGN CARDS WITH CHANNEL ICONS & PERFORMANCE MINI-STATS -->
+<div class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">Active &amp; Scheduled Broadcasts</h2>
+<span class="h-5 px-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center">8 Total</span>
+</div>
+<!-- Filters -->
+<div class="flex items-center gap-2 flex-wrap">
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm" type="button">All Channels</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">WhatsApp</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Email</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">SMS</button>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">Live (4)</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Scheduled (2)</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Drafts (2)</button>
+</div>
+</div>
+</div>
+<!-- Grid of Campaign Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: WhatsApp Live -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-[11px] font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                LIVE
+              </span>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="pt-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Deep Teal Ayur-Flex™ Autumn Relaunch
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Audience: Verified Surgeons &amp; OT Leads
+            </p>
+</div>
+<!-- Mini telemetry grid -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Dispatched</span>
+<span class="font-label-lg text-label-lg font-semibold text-primary">14,250</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Delivered</span>
+<span class="font-label-lg text-label-lg font-semibold text-tertiary">98.4%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Read Rate</span>
+<span class="font-label-lg text-label-lg font-semibold text-primary">84.2%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Requisitions</span>
+<span class="font-label-lg text-label-lg font-semibold text-secondary">22.8%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-medium text-secondary">₹14.8L Attributed GMV</span>
+<span class="font-body-sm text-body-sm text-outline">Oct 24, 2024</span>
+</div>
+</div>
+<!-- Card 2: Email Live -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+              Clinical Email
+            </span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-[11px] font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                LIVE
+              </span>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="pt-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Aster &amp; Medanta Cleanroom Restock
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Audience: Hospital Procurement Heads (420)
+            </p>
+</div>
+<!-- Mini telemetry grid -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Open Rate</span>
+<span class="font-label-lg text-label-lg font-semibold text-primary">54.6%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Click (CTR)</span>
+<span class="font-label-lg text-label-lg font-semibold text-primary">28.1%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">RFQs Initiated</span>
+<span class="font-label-lg text-label-lg font-semibold text-tertiary">34 RFQs</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Contract Pipeline</span>
+<span class="font-label-lg text-label-lg font-semibold text-secondary">₹42.5L</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-medium text-tertiary">99.8% Inbox Health</span>
+<span class="font-body-sm text-body-sm text-outline">Oct 26, 2024</span>
+</div>
+</div>
+<!-- Card 3: SMS Scheduled -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sms</span>
+              SMS Alert
+            </span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-sm text-[11px] font-semibold">
+                SCHEDULED
+              </span>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="pt-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Doctors' Day Autoclave Monogram Offer
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Audience: All Retail Clinicians (28,400)
+            </p>
+</div>
+<!-- Mini info card -->
+<div class="bg-surface-container-low p-2.5 rounded-lg text-on-surface space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dispatch Queue</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Nov 10, 08:30 AM</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Reach</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">28,400 Clinicians</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Telecom DLT Approved</span>
+<span class="font-body-sm text-body-sm text-outline">Nov 10</span>
+</div>
+</div>
+<!-- Card 4: WhatsApp Draft -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+              WhatsApp
+            </span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[11px] font-semibold">
+                DRAFT
+              </span>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<div class="pt-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Botanical Neem-Weave™ Scrub Cap Gifting
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Audience: Resident Doctors &amp; Interns (6,500)
+            </p>
+</div>
+<!-- Mini info card -->
+<div class="bg-surface-container-low p-2.5 rounded-lg text-on-surface space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Catalog Attachment</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Cap-Capsule.pdf</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last Edited</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">2h ago by Ananya</span>
+</div>
+<div class="flex items-center gap-1 text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+<span>Needs Medical Compliance Signoff</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-on-surface-variant">
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold flex items-center gap-1" type="button">
+            Continue Setup →
+          </button>
+<span class="font-body-sm text-body-sm text-outline">Unpublished</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: EMAIL CAMPAIGN SUMMARY & PERFORMANCE ANALYTICS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-space-lg">
+<!-- Left side: Benchmark Telemetry -->
+<div class="w-full lg:w-5/12 space-y-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">insights</span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold">Clinician Email Engagement Benchmark</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            High-cadence surgical newsletters vs Healthcare &amp; Medical Industry standard medians.
+          </p>
+</div>
+<!-- Metrics Cluster -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Emails Dispatched</span>
+<div class="font-figure-display text-figure-display text-primary font-semibold">48,200</div>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              99.2% Delivery Health
+            </span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Velcura Open Rate</span>
+<div class="font-figure-display text-figure-display text-primary font-semibold">42.8%</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs Industry: 21.5%</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinician CTR</span>
+<div class="font-figure-display text-figure-display text-primary font-semibold">14.6%</div>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">3.4x MedTech Median</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Unsubscribe Rate</span>
+<div class="font-figure-display text-figure-display text-tertiary font-semibold">0.04%</div>
+<span class="font-body-sm text-body-sm text-outline">Standard: 0.32%</span>
+</div>
+</div>
+<!-- Insight callout pill -->
+<div class="p-space-md rounded-xl bg-tertiary-fixed/40 text-on-tertiary-fixed flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">verified</span>
+<div class="text-body-sm font-body-sm">
+<strong class="font-semibold text-tertiary">Clinical Authority Lift:</strong> Scrub sizing guides and fabric autoclave thermal test dossiers drive 61% of all direct wholesale reorders.
+          </div>
+</div>
+</div>
+<!-- Right side: Visual Comparison Chart -->
+<div class="w-full lg:w-7/12 space-y-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-semibold">Campaign Open &amp; Click Rates vs Industry Benchmark</span>
+<div class="flex items-center gap-4 text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-primary">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+              Velcura Open Rate
+            </span>
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+              Velcura CTR
+            </span>
+<span class="flex items-center gap-1.5 text-outline">
+<span class="w-3 h-3 rounded-sm bg-outline-variant"></span>
+              Industry Median (21%)
+            </span>
+</div>
+</div>
+<!-- SVG / Bar comparison list -->
+<div class="space-y-4 pt-2">
+<!-- Item 1 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Ayur-Flex™ Launch Briefing</span>
+<div class="flex gap-3 text-label-sm font-label-sm tabular-nums">
+<span class="text-primary font-semibold">54.6% Open</span>
+<span class="text-secondary font-semibold">28.1% CTR</span>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="bg-primary h-full rounded-full" style="width: 54.6%"></div>
+<div class="bg-secondary h-full rounded-full ml-1" style="width: 28.1%"></div>
+<!-- Industry benchmark notch -->
+<div class="absolute top-0 bottom-0 left-[21.5%] w-0.5 bg-error z-10" title="Healthcare Benchmark: 21.5%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Q3 Sizing &amp; Fitting Dossier</span>
+<div class="flex gap-3 text-label-sm font-label-sm tabular-nums">
+<span class="text-primary font-semibold">48.2% Open</span>
+<span class="text-secondary font-semibold">18.4% CTR</span>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="bg-primary h-full rounded-full" style="width: 48.2%"></div>
+<div class="bg-secondary h-full rounded-full ml-1" style="width: 18.4%"></div>
+<div class="absolute top-0 bottom-0 left-[21.5%] w-0.5 bg-error z-10"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Cleanroom Lab Coats Procurement</span>
+<div class="flex gap-3 text-label-sm font-label-sm tabular-nums">
+<span class="text-primary font-semibold">41.9% Open</span>
+<span class="text-secondary font-semibold">16.2% CTR</span>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="bg-primary h-full rounded-full" style="width: 41.9%"></div>
+<div class="bg-secondary h-full rounded-full ml-1" style="width: 16.2%"></div>
+<div class="absolute top-0 bottom-0 left-[21.5%] w-0.5 bg-error z-10"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Winter Scrub Suits Seasonal Dispatch</span>
+<div class="flex gap-3 text-label-sm font-label-sm tabular-nums">
+<span class="text-primary font-semibold">39.0% Open</span>
+<span class="text-secondary font-semibold">12.8% CTR</span>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="bg-primary h-full rounded-full" style="width: 39.0%"></div>
+<div class="bg-secondary h-full rounded-full ml-1" style="width: 12.8%"></div>
+<div class="absolute top-0 bottom-0 left-[21.5%] w-0.5 bg-error z-10"></div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-medium text-on-surface">Institutional RFP &amp; Tier Pricing Reminder</span>
+<div class="flex gap-3 text-label-sm font-label-sm tabular-nums">
+<span class="text-primary font-semibold">36.5% Open</span>
+<span class="text-secondary font-semibold">9.7% CTR</span>
+</div>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="bg-primary h-full rounded-full" style="width: 36.5%"></div>
+<div class="bg-secondary h-full rounded-full ml-1" style="width: 9.7%"></div>
+<div class="absolute top-0 bottom-0 left-[21.5%] w-0.5 bg-error z-10"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline pt-2">
+<span>Benchmark baseline: IMA Verified Practitioner Average</span>
+<span class="text-error font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+            21.5% Industry Average
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: DISCOUNT CODE TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">loyalty</span>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">Clinical Promotion Codes &amp; Institutional Rebates</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Active coupon vouchers, medical resident subsidies, and contracted hospital discount agreements.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface text-body-md placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="Filter promo codes..." type="text"/>
+</div>
+<button class="h-10 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Add Discount Code</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg w-10">
+<input class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</th>
+<th class="py-3 px-4">Coupon Code</th>
+<th class="py-3 px-4">Incentive Type</th>
+<th class="py-3 px-4">Usage &amp; Redemption Limit</th>
+<th class="py-3 px-4 text-right">Min Order Value</th>
+<th class="py-3 px-4">Contract Expiry</th>
+<th class="py-3 px-4 text-center rounded-r-lg">Live State</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<input checked="" class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-mono font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary tracking-wider font-bold">DOCTOR15</span>
+<span class="material-symbols-outlined text-outline text-[16px] cursor-pointer hover:text-primary" title="Copy code">content_copy</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+                15% Clinician Off
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>842 / 1,000 used</span>
+<span class="font-semibold text-primary">84.2%</span>
+</div>
+<div class="w-36 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 84.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-medium text-on-surface tabular-nums">₹2,499</td>
+<td class="py-4 px-4 text-on-surface-variant">Nov 30, 2024</td>
+<td class="py-4 px-4 text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<input class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-mono font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary tracking-wider font-bold">NEEMFREE</span>
+<span class="material-symbols-outlined text-outline text-[16px] cursor-pointer hover:text-primary" title="Copy code">content_copy</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+                Free Scrub Cap Addon
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>320 / 500 used</span>
+<span class="font-semibold text-primary">64.0%</span>
+</div>
+<div class="w-36 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 64%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-medium text-on-surface tabular-nums">₹3,999</td>
+<td class="py-4 px-4 text-on-surface-variant">Nov 15, 2024</td>
+<td class="py-4 px-4 text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<input class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-mono font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary tracking-wider font-bold">ASTERCARE20</span>
+<span class="material-symbols-outlined text-outline text-[16px] cursor-pointer hover:text-primary" title="Copy code">content_copy</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                B2B Tier Contract
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>14 / 20 Orders used</span>
+<span class="font-semibold text-secondary">70.0%</span>
+</div>
+<div class="w-36 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-medium text-on-surface tabular-nums">₹50,000</td>
+<td class="py-4 px-4 text-on-surface-variant font-medium text-tertiary">Contract (Mar 2025)</td>
+<td class="py-4 px-4 text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<input class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-mono font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary tracking-wider font-bold">CADUCEUS500</span>
+<span class="material-symbols-outlined text-outline text-[16px] cursor-pointer hover:text-primary" title="Copy code">content_copy</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Flat ₹500 Off INR
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>1,890 / 2,000 used</span>
+<span class="font-semibold text-primary">94.5%</span>
+</div>
+<div class="w-36 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 94.5%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-medium text-on-surface tabular-nums">₹4,500</td>
+<td class="py-4 px-4 text-on-surface-variant">Oct 31, 2024</td>
+<td class="py-4 px-4 text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+</tr>
+<!-- Row 5 (Inactive) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors opacity-75">
+<td class="py-4 px-4">
+<input class="rounded w-4 h-4 text-primary focus:ring-secondary" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-mono font-semibold text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant tracking-wider font-bold">RESIDENT10</span>
+<span class="material-symbols-outlined text-outline text-[16px]">lock</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                10% Student Rebate
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-outline">
+<span>500 / 500 (Exhausted)</span>
+<span class="font-semibold text-outline">100%</span>
+</div>
+<div class="w-36 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-medium text-outline tabular-nums">₹1,499</td>
+<td class="py-4 px-4 text-outline">Expired (Sep 30)</td>
+<td class="py-4 px-4 text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- SECTION 4: HOMEPAGE BANNER EDITOR (SPLIT LAYOUT) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">view_carousel</span>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">Storefront Hero &amp; Banner Merchandising</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Directly control above-the-fold storytelling, seasonal medical capsules, and clinical callouts across velcura.in.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          Published to Production Storefront
+        </span>
+</div>
+</div>
+<!-- Split Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg pt-2">
+<!-- LEFT PANEL: Banner Editor (~45% -> 5 cols) -->
+<div class="lg:col-span-5 space-y-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-semibold">Hero Merchandising Parameters</span>
+<span class="font-label-sm text-label-sm text-outline">Slot: #1 Above-the-fold</span>
+</div>
+<div class="space-y-3">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Banner Slot Positioning</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none">
+<option selected="">Homepage Hero #1 (Primary Above-the-fold)</option>
+<option>Homepage Mid-Page Capsule #2 (Neem Lab Fabric)</option>
+<option>Institutional B2B Procurement Header</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Headline Display Copy (Newsreader Serif)</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none" type="text" value="Ayur-Flex™ Botanical Scrubs — Engineered for 36-Hour Clinical Shifts."/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Subhead Description</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none resize-none" rows="3">Four-way ergonomic stretch infused with antimicrobial neem micro-threads. Lab-tested against 134°C autoclave sterilization.</textarea>
+</div>
+<!-- Image Asset Field -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Key Visual Asset (High-Res Clinical Studio)</label>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-2 rounded-lg">
+<img alt="Deep teal scrub top product asset preview" class="w-16 h-16 rounded-md object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDgirIJhGkY3EZM-_YAiiw8YCzSTTfbrGQ1hW2wy7WmkMCRHFpSVjlECbUGB7eOqitFSiEzYJx2Kqu5PlHMKpWfA2UBbqMf1y3MMnTXZuv_m1SlNgryAeMeqfREbO4wX-Ugvyy9m7jB37WCycEu9WUiJcBK00Wtw3Kg-OpXR798sccxAa6yIlm9LpWuKggL5kxwzJogxIscDfb5q33pnn2aFPatTf-Shduc7tWMe-7P"/>
+<div class="flex-1 min-w-0">
+<span class="block font-label-sm text-label-sm text-primary font-semibold truncate">AyurFlex_DeepTeal_Top_Studio.webp</span>
+<span class="font-body-sm text-body-sm text-outline">1024x1024 · 420 KB · RGB Calibrated</span>
+</div>
+<div class="flex flex-col gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm" type="button">Replace</button>
+<button class="px-2 py-1 rounded text-outline hover:text-on-surface font-label-sm text-label-sm" type="button">High-Res</button>
+</div>
+</div>
+</div>
+<!-- Action buttons URLs -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Primary Button Text</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none" type="text" value="Explore Surgical Collection"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Primary Destination URL</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none" type="text" value="/collections/womens-scrubs"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Secondary Action Link</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none" type="text" value="Institutional Bulk Orders →"/>
+</div>
+<div class="pt-2 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+              Live indefinitely (Starts Oct 1, 2024)
+            </span>
+<span class="text-outline text-label-sm">Auto-saved 3m ago</span>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="h-10 px-4 rounded-lg text-error hover:bg-error-container font-label-lg text-label-lg" type="button">Discard Draft</button>
+<button class="h-10 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg shadow-sm" type="button">
+              Publish Changes to Storefront
+            </button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Live Storefront Viewport Preview (~55% -> 7 cols) -->
+<div class="lg:col-span-7 space-y-space-sm flex flex-col">
+<div class="flex items-center justify-between bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2 font-mono">https://velcura.in/</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-md">
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">desktop_windows</span>
+              Desktop Preview (1440px)
+            </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">smartphone</span>
+              Mobile (390px)
+            </button>
+</div>
+</div>
+<!-- Rendered Storefront Banner Canvas inside bezel -->
+<div class="flex-1 bg-surface-container rounded-xl overflow-hidden p-3 relative flex items-center justify-center">
+<!-- The Banner Component Mockup -->
+<div class="w-full bg-[#0E3538] text-[#F7FAF8] rounded-xl overflow-hidden shadow-lg relative min-h-[360px] flex flex-col md:flex-row items-center">
+<!-- Subtle Botanical Ambient Background Effect -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#0E3538] via-[#164E52]/60 to-transparent pointer-events-none z-10"></div>
+<!-- Left copy inside banner -->
+<div class="w-full md:w-3/5 p-8 relative z-20 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#164E52] text-[#B7ECF0] text-label-sm font-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">spa</span>
+                Ayurvedic Textile Precision
+              </div>
+<h1 class="font-headline-lg text-headline-lg text-[#F7FAF8] font-semibold leading-tight tracking-tight">
+                Ayur-Flex™ Botanical Scrubs — Engineered for 36-Hour Clinical Shifts.
+              </h1>
+<p class="font-body-md text-body-md text-[#E0E3E1] max-w-md">
+                Four-way ergonomic stretch infused with antimicrobial neem micro-threads. Lab-tested against 134°C autoclave sterilization.
+              </p>
+<div class="pt-2 flex items-center gap-4 flex-wrap">
+<button class="h-10 px-5 rounded-lg bg-[#F7FAF8] text-[#00363A] font-label-lg text-label-lg font-semibold hover:bg-white transition-colors" type="button">
+                  Explore Surgical Collection
+                </button>
+<a class="font-label-lg text-label-lg text-[#B7ECF0] hover:underline flex items-center gap-1" href="#">
+                  Institutional Bulk Orders →
+                </a>
+</div>
+<div class="pt-2 flex items-center gap-6 text-[11px] text-[#8ABEC2]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                  134°C Autoclave Safe
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  IMA Certified Ergonomics
+                </span>
+</div>
+</div>
+<!-- Right Scrub Doctor Imagery -->
+<div class="w-full md:w-2/5 h-64 md:h-full relative shrink-0">
+<img alt="Doctor in deep teal medical scrubs standing in studio" class="w-full h-full object-cover object-top mix-blend-luminosity hover:mix-blend-normal transition-all duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCq6aVvpwLsKD6Pi2JDIJCyBTXOq0XpbqKCaLU5Sv_i0vc0WA3NN_CNM4qXaVsYYHCWIkGBMM6wg9MMJH-zJZHfOPKg7ch4Fe0kq1M-pLR7Dp2zS72DImh1h0cmW94VieB2yKZ8IP1d5Jc4Vr8PEmRhe2v81nGUqW-fMq8Xuny4HlhkmQtjuDJ4wODEC_QEV15yDjUTs8tf2xyLXt9IanYKQ5szIt-mUouxEFeXzKTW"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0E3538] via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant px-1">
+<span>Viewport render: 100% vector scale</span>
+<span class="text-tertiary font-medium">Rendered via Edge CDN (Mumbai)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: "CREATE CAMPAIGN" MODAL (INTERACTIVE OVERLAY CANVAS) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto" id="campaign-modal-overlay">
+<div class="bg-surface-container-lowest w-full max-w-4xl rounded-2xl shadow-xl overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="bg-primary p-space-lg text-on-primary flex items-center justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px] text-primary-fixed">rocket_launch</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">Create Omni-Channel Campaign</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Orchestrate verified communications across WhatsApp, Clinical Email, and SMS for surgeons, nurses, and hospital procurement.
+          </p>
+</div>
+<button class="p-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" id="close-campaign-modal" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Step Indicators -->
+<div class="grid grid-cols-4 bg-surface-container-low px-space-lg py-3 text-label-sm font-label-sm">
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px]">1</span>
+<span>Channel &amp; Type</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-semibold">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[11px]">2</span>
+<span>Target Audience</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="w-5 h-5 rounded-full bg-surface-container text-outline flex items-center justify-center text-[11px]">3</span>
+<span>Message &amp; Schedule</span>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="w-5 h-5 rounded-full bg-surface-container text-outline flex items-center justify-center text-[11px]">4</span>
+<span>Review &amp; Launch</span>
+</div>
+</div>
+<!-- Modal Body Content -->
+<div class="p-space-lg space-y-space-lg max-h-[72vh] overflow-y-auto">
+<!-- Step 1: Select Channel Cards -->
+<div class="space-y-space-sm">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            1. Select Transmission Channel
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- WhatsApp (Active Selected) -->
+<div class="p-space-md rounded-xl bg-primary-fixed/30 ring-2 ring-primary relative cursor-pointer flex flex-col justify-between">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">WhatsApp Broadcast</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Verified Caduceus Blue-tick message, high open rates (85%+), rich product catalog &amp; quick-replies.
+                  </p>
+</div>
+</div>
+<div class="pt-3 mt-2 text-[11px] text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                Optimal for OT Surgical Staff
+              </div>
+</div>
+<!-- Email -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex flex-col justify-between transition-colors">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<span class="w-4 h-4 rounded-full border-2 border-outline"></span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Clinical Newsletter</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Rich HTML layouts, clinical whitepapers, product dossiers, and institutional RFQs.
+                  </p>
+</div>
+</div>
+<div class="pt-3 mt-2 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+                Hospital Procurement Focus
+              </div>
+</div>
+<!-- SMS -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex flex-col justify-between transition-colors">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-lg bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</div>
+<span class="w-4 h-4 rounded-full border-2 border-outline"></span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Priority SMS Alert</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Immediate transactional alerts, flash shift discounts, concise 160-char medical copy.
+                  </p>
+</div>
+</div>
+<div class="pt-3 mt-2 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">flash_on</span>
+                Rapid Batch Reminders
+              </div>
+</div>
+</div>
+</div>
+<!-- Step 2: Target Audience Selector -->
+<div class="space-y-space-sm pt-2">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            2. Clinician Audience Cohort &amp; Segmentation
+          </label>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Select Verified Segment</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-body-md focus:ring-2 focus:ring-secondary/50 focus:outline-none">
+<option selected="">Verified Surgeons &amp; OT Department Heads (Pan-India)</option>
+<option>Resident Doctors &amp; Junior Interns (Teaching Hospitals)</option>
+<option>Private Clinic Dentists &amp; Cosmetic Surgeons</option>
+<option>Institutional Hospital Procurement Officers (Tier-1)</option>
+</select>
+</div>
+<!-- Filter Criteria Tags -->
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5">Applied Filter Rules</span>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm">
+                  Specialty: General Surgery / Anesthesia
+                  <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm">
+                  Min Lifetime Orders &gt;= 2
+                  <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm">
+                  Autoclave Reorder Window: 30 days
+                  <span class="material-symbols-outlined text-[14px] cursor-pointer">close</span>
+</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline font-semibold flex items-center gap-1" type="button">
+                  + Add Filter Rule
+                </button>
+</div>
+</div>
+<!-- Dynamic Estimated Reach Badge -->
+<div class="p-3 bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+<div>
+<span class="font-label-lg text-label-lg font-semibold text-primary">Estimated Reach: 14,250 Clinicians</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">100% WhatsApp phone-number verified · 0 recent opt-outs</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-tertiary font-semibold">
+                High Quality Score
+              </span>
+</div>
+</div>
+</div>
+<!-- Step 3: Message & Schedule Picker -->
+<div class="space-y-space-sm pt-2">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+            3. Transmission Timing &amp; Dispatch Schedule
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2 cursor-pointer">
+<div class="flex items-center gap-2">
+<input class="text-primary focus:ring-secondary" id="send_now" name="schedule_type" type="radio"/>
+<label class="font-label-lg text-label-lg font-semibold text-primary" for="send_now">Send Immediately</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">
+                Broadcast immediately upon clinical governance review sign-off.
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-primary-fixed/20 ring-1 ring-primary space-y-2 cursor-pointer">
+<div class="flex items-center gap-2">
+<input checked="" class="text-primary focus:ring-secondary" id="schedule_later" name="schedule_type" type="radio"/>
+<label class="font-label-lg text-label-lg font-semibold text-primary" for="schedule_later">Schedule for Optimal Shift Time</label>
+</div>
+<div class="pl-6 space-y-2">
+<div class="flex items-center gap-2">
+<input class="h-9 px-2 rounded bg-surface-container-lowest text-body-sm text-on-surface" type="date" value="2024-10-31"/>
+<input class="h-9 px-2 rounded bg-surface-container-lowest text-body-sm text-on-surface" type="time" value="07:00"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">IST</span>
+</div>
+<span class="block font-body-sm text-body-sm text-tertiary font-medium">
+                  • Optimal pre-rounds shift time (Surgeons check messages before 07:30 AM)
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4 Preview Card Summary -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Campaign Payload Summary</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Draft #CAM-2024-89</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 text-body-sm font-body-sm text-on-surface">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-medium text-primary">
+              Channel: WhatsApp Business API
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-medium text-primary">
+              Audience: 14,250 Verified Surgeons
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-medium text-secondary">
+              Estimated Cost: ₹0.38 / delivered
+            </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-medium text-primary">
+              Launch: Oct 31, 2024 · 07:00 AM IST
+            </span>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low p-space-md px-space-lg flex items-center justify-between">
+<button class="h-10 px-4 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg" id="cancel-campaign-modal" type="button">
+          Cancel &amp; Close
+        </button>
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-lg text-label-lg transition-colors" type="button">
+            Save as Draft
+          </button>
+<button class="h-10 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span>Proceed to Review &amp; Launch Campaign</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const modal = document.getElementById('campaign-modal-overlay');
+    const openBtn = document.getElementById('open-campaign-modal');
+    const closeBtn = document.getElementById('close-campaign-modal');
+    const cancelBtn = document.getElementById('cancel-campaign-modal');
+
+    function openModal() {
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeModal() {
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    // Close when clicking modal backdrop
+    if (modal) {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+    }
+
+    // Default state: Keep open as requested by prompt to display the modal flow,
+    // but fully interactive if the user chooses to close or re-open it.
+  })();
+</script></main></div></body></html>

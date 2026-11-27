@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed":"#271900","secondary-fixed":"#ffdeaa","on-tertiary-fixed":"#111f10","primary-fixed-dim":"#9bd0d4","on-tertiary-fixed-variant":"#3c4b39","on-primary":"#ffffff","surface":"#f7faf8","primary-container":"#164e52","surface-container-low":"#f1f4f2","on-surface":"#181c1b","outline":"#707979","on-secondary":"#ffffff","on-primary-fixed-variant":"#164e52","on-surface-variant":"#404849","on-background":"#181c1b","surface-bright":"#f7faf8","secondary-fixed-dim":"#fbbc43","surface-container-high":"#e6e9e7","surface-variant":"#e0e3e1","on-primary-container":"#8abec2","primary-fixed":"#b7ecf0","background":"#f7faf8","inverse-primary":"#9bd0d4","tertiary-container":"#3c4b39","primary":"#00363a","tertiary-fixed":"#d6e8cf","surface-dim":"#d8dbd9","surface-container":"#eceeed","outline-variant":"#bfc8c9","tertiary-fixed-dim":"#bacbb4","on-secondary-fixed-variant":"#5f4100","secondary":"#7d5700","surface-tint":"#32666a","on-tertiary":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#a9baa3","surface-container-lowest":"#ffffff","inverse-surface":"#2d3130","error":"#ba1a1a","secondary-container":"#febe46","on-primary-fixed":"#002022","tertiary":"#263424","surface-container-highest":"#e0e3e1","error-container":"#ffdad6","inverse-on-surface":"#eef1ef","on-error-container":"#93000a","on-secondary-container":"#704e00"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","margin-desktop":"1.5rem","margin":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem"},fontFamily:{"label-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Newsreader"],"body-md":["Inter"],"headline-lg":["Newsreader"],"body-sm":["Inter"],"figure-display":["Inter"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"figure-display":["24px",{lineHeight:"30px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-[1440px] mx-auto px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex flex-col justify-center"><div class="flex items-baseline gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight text-primary">Velcura</span><span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant font-medium">by Vastram</span></div><span class="font-label-sm text-label-sm text-outline hidden sm:block">Institutional Procurement &amp; Customisation Engine</span></div><div class="h-6 w-px bg-surface-container-high hidden md:block"></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="font-label-lg text-label-lg px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="procurement-overview" href="#">Overview</a><a aria-current="page" class="px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="customisation-configurator" href="#">Customisation</a><a class="font-label-lg text-label-lg px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="bulk-pricing-matrix" href="#">Bulk Matrix</a><a class="font-label-lg text-label-lg px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="specifications-audit" href="#">Compliance</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm px-space-sm py-1 rounded bg-surface-container-low"><span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">RFQ REF</span><span class="font-label-md text-label-md text-primary font-semibold">VEL-RFQ-8402</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Saved just now</span></div><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg text-primary hover:bg-surface-container-high hover:text-on-surface transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">forum</span><span class="font-label-md text-label-md">Institutional Concierge</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-64px)]"><div class="flex flex-col w-full">
+<!-- Operational Step Navigation Strip -->
+<div class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-[1440px] mx-auto px-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- 4-Step Clinical Breadcrumb -->
+<nav aria-label="Procurement Workflow Steps" class="flex items-center gap-space-sm sm:gap-space-md">
+<!-- Step 1: Organisation -->
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium hidden sm:inline">1. Organisation</span>
+</div>
+<div class="w-8 sm:w-12 h-0.5 bg-primary-container"></div>
+<!-- Step 2: Products -->
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium hidden sm:inline">2. Products</span>
+</div>
+<div class="w-8 sm:w-12 h-0.5 bg-primary-container"></div>
+<!-- Step 3: Customisation (ACTIVE) -->
+<div class="flex items-center gap-space-xs">
+<div class="relative w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-4 ring-secondary-container">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">3. Customisation</span>
+</div>
+<div class="w-8 sm:w-12 h-0.5 bg-outline-variant"></div>
+<!-- Step 4: Review -->
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-dim text-on-surface-variant flex items-center justify-center font-label-md text-label-md font-semibold">
+            4
+          </div>
+<span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline">4. Review</span>
+</div>
+</nav>
+<!-- Autosave & Reference Badge Group -->
+<div class="flex items-center gap-space-sm self-end md:self-auto">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Saved just now
+        </div>
+<div class="px-3 py-1 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant">
+          Dossier: <span class="text-primary font-semibold">RFQ-APOLLO-9842</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Viewport Canvas -->
+<div class="max-w-[1440px] w-full mx-auto px-space-lg py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: 8 Columns Configurator Studio -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- Header Banner Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+              Standard Operating Specification • Stage III
+            </div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Customise Your Team Outfitting</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              Configure institutional medical embroidery, staff designation typography, and precision placement zones. All embroidery uses high-tensile 100% German polyester thread tested for 250+ standard clinical autoclave cycles (134°C).
+            </p>
+</div>
+</div>
+<!-- COMPONENT A: Crest & Logo Upload Dropzone -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">A</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Institutional Crest &amp; Vector Artwork</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">Auto-Digitized</span>
+</div>
+<!-- Active Uploaded Asset Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[30px]">verified</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-primary truncate font-bold">apollo_hospitals_crest_v3.ai</span>
+<span class="px-2 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Vector AI (2.4 MB)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated for 250+ autoclave cycles • 4,800 micro-stitch matrix</p>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> Digitization approved for central scrub procurement
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end sm:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm" type="button">
+                Replace
+              </button>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container/20 transition-colors" title="Remove crest" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span>Accepted master clinical formats: AI, EPS, SVG, or high-res vector PDF (min 300 DPI, max 25MB)</span>
+</div>
+</section>
+<!-- COMPONENT B: Interactive Embroidery Placement Hotspots & Garment Schematic -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">B</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Garment Placement &amp; Hotspot Configuration</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click hotspot markers to review stitch zone</span>
+</div>
+<!-- Schematic Visual Display Area -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-around gap-space-lg relative overflow-hidden">
+<!-- Left Front Schematic with Hotspots -->
+<div class="relative w-full max-w-[340px] aspect-[4/5] flex items-center justify-center p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 400 480">
+<!-- V-Neck Scrub Body Front -->
+<path d="M120 40 L160 120 L240 120 L280 40 L350 110 L300 170 L280 160 L280 440 L120 440 L120 160 L100 170 L50 110 Z" fill="#F7FAF8"></path>
+<!-- Neck Line Ribbing -->
+<path d="M150 40 L200 150 L250 40" stroke-width="2"></path>
+<path d="M165 40 L200 125 L235 40" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Chest Pocket Outline -->
+<rect fill="#ECEEED" height="70" rx="3" stroke-dasharray="2 2" stroke-width="1.5" width="60" x="210" y="180"></rect>
+<path d="M210 195 L270 195" stroke-width="1"></path>
+<!-- Lower Patch Pockets -->
+<rect fill="#ECEEED" height="90" rx="4" stroke-dasharray="2 2" stroke-width="1.5" width="60" x="130" y="320"></rect>
+<rect fill="#ECEEED" height="90" rx="4" stroke-dasharray="2 2" stroke-width="1.5" width="60" x="210" y="320"></rect>
+<!-- Side Slits / Vents -->
+<line stroke="#164E52" stroke-width="4" x1="120" x2="120" y1="410" y2="440"></line>
+<line stroke="#164E52" stroke-width="4" x1="280" x2="280" y1="410" y2="440"></line>
+</svg>
+<!-- Front Elevation Label -->
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-semibold">Front Elevation</span>
+<!-- Interactive Hotspot 1: Left Chest -->
+<div class="absolute top-[37%] right-[28%] group cursor-pointer">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-60"></span>
+<span class="relative inline-flex rounded-full h-7 w-7 bg-primary text-on-primary font-label-sm text-label-sm font-bold items-center justify-center shadow-md">1</span>
+</span>
+<!-- Tooltip Marker -->
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:flex flex-col items-center z-20 pointer-events-none">
+<div class="bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-[11px] font-medium whitespace-nowrap shadow-lg">
+                    Zone 1: Apollo Crest + Cardiology
+                  </div>
+</div>
+</div>
+<!-- Interactive Hotspot 2: Right Chest -->
+<div class="absolute top-[37%] left-[32%] group cursor-pointer">
+<span class="relative flex h-7 w-7 items-center justify-center">
+<span class="inline-flex rounded-full h-6 w-6 bg-primary text-on-primary font-label-sm text-label-sm font-bold items-center justify-center shadow">2</span>
+</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:flex flex-col items-center z-20 pointer-events-none">
+<div class="bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-[11px] font-medium whitespace-nowrap shadow-lg">
+                    Zone 2: Clinician Name &amp; ID
+                  </div>
+</div>
+</div>
+<!-- Interactive Hotspot 3: Left Sleeve -->
+<div class="absolute top-[32%] right-[10%] group cursor-pointer">
+<span class="relative flex h-7 w-7 items-center justify-center">
+<span class="inline-flex rounded-full h-6 w-6 bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold items-center justify-center shadow">3</span>
+</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:flex flex-col items-center z-20 pointer-events-none">
+<div class="bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-[11px] font-medium whitespace-nowrap shadow-lg">
+                    Zone 3: NABH Accreditation Patch
+                  </div>
+</div>
+</div>
+</div>
+<!-- Right Back Schematic with Hotspots -->
+<div class="relative w-full max-w-[340px] aspect-[4/5] flex items-center justify-center p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 400 480">
+<!-- V-Neck Scrub Body Back -->
+<path d="M120 40 Q200 60 280 40 L350 110 L300 170 L280 160 L280 440 L120 440 L120 160 L100 170 L50 110 Z" fill="#F7FAF8"></path>
+<!-- Shoulder Yoke Seam -->
+<line stroke-dasharray="3 3" stroke-width="1.5" x1="120" x2="280" y1="120" y2="120"></line>
+<!-- Spine Ergonomic Double Flatlock Seam -->
+<line stroke-dasharray="2 2" stroke-width="1.5" x1="200" x2="200" y1="120" y2="440"></line>
+<!-- Side Slits / Vents -->
+<line stroke="#164E52" stroke-width="4" x1="120" x2="120" y1="410" y2="440"></line>
+<line stroke="#164E52" stroke-width="4" x1="280" x2="280" y1="410" y2="440"></line>
+</svg>
+<!-- Back Elevation Label -->
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-semibold">Rear Elevation</span>
+<!-- Interactive Hotspot 4: Upper Back Yoke -->
+<div class="absolute top-[22%] left-1/2 -translate-x-1/2 group cursor-pointer">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-40"></span>
+<span class="relative inline-flex rounded-full h-7 w-7 bg-primary text-on-primary font-label-sm text-label-sm font-bold items-center justify-center shadow-md">4</span>
+</span>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:flex flex-col items-center z-20 pointer-events-none">
+<div class="bg-inverse-surface text-inverse-on-surface px-2.5 py-1 rounded text-[11px] font-medium whitespace-nowrap shadow-lg">
+                    Zone 4: Back Yoke Block Lettering
+                  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Placement Toggles Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Zone 1 Card -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Left Chest Crest</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Included</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Apollo Seal + Primary Departmental Descriptor</p>
+</div>
+</label>
+<!-- Zone 2 Card -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Right Chest Staff ID</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Included</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clinician Name and Medical Registration Number</p>
+</div>
+</label>
+<!-- Zone 3 Card -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Right Sleeve Accreditation</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">+₹30/pc</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">NABH / JCI Accredited Hospital Emblem</p>
+</div>
+</label>
+<!-- Zone 4 Card -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Upper Back Yoke</span>
+<span class="text-secondary font-label-sm text-label-sm font-bold">+₹45/pc</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">“APOLLO EMERGENCY WING” High-Vis Bold Block</p>
+</div>
+</label>
+</div>
+</section>
+<!-- COMPONENT C: Thread Colour Selection -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">C</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Autoclave-Resistant Poly-Thread Palette</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">German Filament Standard DIN EN 14465</span>
+</div>
+<!-- Color Swatch Interactive Rail -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-space-sm">
+<!-- Swatch 1: Platinum Silver (SELECTED) -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 ring-2 ring-primary" type="button">
+<span class="w-9 h-9 rounded-full bg-slate-200 shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary font-bold text-center leading-tight">Platinum Silver</span>
+<span class="text-[10px] text-on-surface-variant font-mono">#E2E8F0</span>
+</button>
+<!-- Swatch 2: Surgical Ivory -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="w-9 h-9 rounded-full bg-[#FBF9F3] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium text-center leading-tight">Surgical Ivory</span>
+<span class="text-[10px] text-outline font-mono">#FBF9F3</span>
+</button>
+<!-- Swatch 3: Hospital Gold -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="w-9 h-9 rounded-full bg-[#D4AF37] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium text-center leading-tight">Hospital Gold</span>
+<span class="text-[10px] text-outline font-mono">#D4AF37</span>
+</button>
+<!-- Swatch 4: Saffron Clinical -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="w-9 h-9 rounded-full bg-[#E3A72F] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium text-center leading-tight">Saffron Herb</span>
+<span class="text-[10px] text-outline font-mono">#E3A72F</span>
+</button>
+<!-- Swatch 5: Deep Navy -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="w-9 h-9 rounded-full bg-[#0F2942] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium text-center leading-tight">Deep Navy</span>
+<span class="text-[10px] text-outline font-mono">#0F2942</span>
+</button>
+<!-- Swatch 6: Pure White -->
+<button class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="w-9 h-9 rounded-full bg-[#FFFFFF] shadow-inner"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium text-center leading-tight">Pure White</span>
+<span class="text-[10px] text-outline font-mono">#FFFFFF</span>
+</button>
+<!-- Swatch 7: Custom Pantone -->
+<button class="p-space-sm rounded-lg bg-surface-container flex flex-col items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px] text-secondary">palette</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold text-center leading-tight">PANTONE®</span>
+<span class="text-[10px] text-secondary font-medium">Bespoke</span>
+</button>
+</div>
+</section>
+<!-- COMPONENT D: Department Names as Editable Chips -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">D</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Departmental Sub-Text Allocations</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">5 Departments Configured • 520 Total Units</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Each scrub top will receive the designated department title under the institutional crest. Quantities auto-match your Step 2 apparel lot breakdown.
+          </p>
+<!-- Interactive Department Chips Container -->
+<div class="flex flex-wrap items-center gap-2.5 p-space-md bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-primary">
+<span class="font-label-md text-label-md font-semibold">Cardiology</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">120 pcs</span>
+<button class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-primary">
+<span class="font-label-md text-label-md font-semibold">Emergency / Trauma</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">85 pcs</span>
+<button class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-primary">
+<span class="font-label-md text-label-md font-semibold">Operation Theatre</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">210 pcs</span>
+<button class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-primary">
+<span class="font-label-md text-label-md font-semibold">Intensive Care (ICU)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">65 pcs</span>
+<button class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest rounded-full shadow-sm text-primary">
+<span class="font-label-md text-label-md font-semibold">Pediatrics</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">40 pcs</span>
+<button class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Add Department Input Trigger -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Department</span>
+</button>
+</div>
+</section>
+<!-- COMPONENT E: Font Choice for Individual Names / Titles -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">E</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Staff Designation Typography</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rendered at 8mm height</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Option 1: Modern Sans (SELECTED) -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between gap-space-sm cursor-pointer ring-2 ring-primary">
+<div class="flex items-start justify-between">
+<span class="font-label-lg text-label-lg font-bold text-primary">Modern Clinical Sans</span>
+<input checked="" class="mt-0.5 accent-primary" name="font-type" type="radio"/>
+</div>
+<div class="py-space-sm border-b border-surface-container-highest">
+<span class="font-sans text-[15px] font-semibold text-on-surface tracking-wide">DR. ARJUN MENON • MS ORTHO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inter / DIN. Recommended for maximal high-stress legibility.</p>
+</label>
+<!-- Option 2: Classic Clinical Serif -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Clinical Antiqua Serif</span>
+<input class="mt-0.5 accent-primary" name="font-type" type="radio"/>
+</div>
+<div class="py-space-sm border-b border-surface-container-highest">
+<span class="font-serif italic text-[15px] font-semibold text-on-surface">Dr. Arjun Menon, Chief Consultant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Newsreader / Garamond. Traditional academic &amp; chair physician styling.</p>
+</label>
+<!-- Option 3: Technical Monospace -->
+<label class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between gap-space-sm cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Surgical Monospace</span>
+<input class="mt-0.5 accent-primary" name="font-type" type="radio"/>
+</div>
+<div class="py-space-sm border-b border-surface-container-highest">
+<span class="font-mono text-[14px] font-bold text-on-surface">DR. A. MENON // OT-04</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Technical Code. Optimized for strict cleanroom badge mapping.</p>
+</label>
+</div>
+</section>
+<!-- COMPONENT F: Inline Validation Note -->
+<div class="rounded-xl bg-tertiary-fixed/40 p-space-md flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-lg text-label-lg text-tertiary font-bold">Stitch Density Audit Verified</span>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">
+              Total vector stitch count is digitized at <strong>4,800 stitches/garment</strong>. Fits within standard institutional Tier-A production with zero supplementary digitization setup surcharges.
+            </p>
+</div>
+</div>
+<!-- Section Navigation Footer Actions -->
+<div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+            Back to Products (Step 2)
+          </button>
+<div class="w-full sm:w-auto flex flex-col sm:flex-row items-center gap-space-md">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4" href="#">
+              Save Draft &amp; Share Dossier
+            </a>
+<button class="w-full sm:w-auto px-space-xl py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-2 shadow-md" type="button">
+              Continue to Review (Step 4)
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 4 Columns Sticky Summary Card -->
+<aside class="lg:col-span-4 sticky top-24 space-y-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-md">
+<!-- Summary Header -->
+<div class="flex items-start justify-between pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Tender Synthesis</span>
+<h2 class="font-headline-md text-headline-md text-primary">Quote Summary</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Step 3 of 4</span>
+</div>
+<!-- Institutional Dossier Chip -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">domain</span>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Apollo Hospitals Group</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Bengaluru Flagship Procurement</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded font-bold">520 Units</span>
+</div>
+<!-- Selected Garment Item Breakdown -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Allocated Line Items</span>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="space-y-0.5">
+<div class="font-label-md text-label-md text-primary font-semibold">Classic V-Neck Scrub Top</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Deep Teal • Ayur-Flex™ Cotton-Rich</div>
+</div>
+<span class="font-label-md text-label-md font-mono text-on-surface font-semibold">320 pcs</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="space-y-0.5">
+<div class="font-label-md text-label-md text-primary font-semibold">Caduceus Scrub Jogger</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Deep Teal • 8-Pocket Utility</div>
+</div>
+<span class="font-label-md text-label-md font-mono text-on-surface font-semibold">200 pcs</span>
+</div>
+</div>
+<!-- Customisation & Add-ons Ledger -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Embroidery &amp; Finishing Specs</span>
+<div class="space-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex justify-between py-1 border-b border-surface-container-highest">
+<span>Multi-Zone Crest (2 Zones)</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Included</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-container-highest">
+<span>Rear Yoke Block Embroidery</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono font-medium">₹45 / top (₹14,400)</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-container-highest">
+<span>Departmental Poly-Coding</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Complimentary</span>
+</div>
+<div class="flex justify-between py-1">
+<span>250+ Cycle Autoclave Thread Standard</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Certified</span>
+</div>
+</div>
+</div>
+<!-- Key Operational Metrics Card -->
+<div class="p-space-md rounded-lg bg-surface-container-highest space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Consignment Volume:</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">520 Units</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimated Dispatch Lead Time:</span>
+<span class="font-label-md text-label-md text-primary font-bold">18 – 22 Work Days</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Indicative Cost Per Unit:</span>
+<span class="font-label-md text-label-md text-on-surface font-mono font-semibold">₹1,240 / pc</span>
+</div>
+<div class="pt-space-xs mt-space-xs border-t border-surface-dim flex justify-between items-baseline">
+<div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Estimated Tender Total</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Excl. applicable 12% GST credit</p>
+</div>
+<span class="font-figure-display text-figure-display text-primary font-bold font-mono">₹6,44,800</span>
+</div>
+</div>
+<!-- Dusty Blue Institutional Callout Strip -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">verified</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              Final procurement rates locked by your institutional directorate upon automated digitized sample stitch-out verification.
+            </p>
+</div>
+<!-- Dedicated Key Account Manager Profile Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md shrink-0">
+              SV
+            </div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Institutional Desk Officer</div>
+<div class="font-label-md text-label-md text-primary font-bold truncate">Dr. Siddharth Varma</div>
+<div class="font-body-sm text-[11px] text-outline">Bengaluru • Corporate Health Directorate</div>
+</div>
+</div>
+</div>
+<!-- Fast Assistance Helpdesk Widget -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">contact_support</span>
+<div>
+<div class="font-label-sm text-label-sm text-primary font-bold">Need Physical Swatch Dossier?</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Express courier sample dispatched in 24 hrs</div>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-primary font-semibold transition-colors" type="button">
+            Request
+          </button>
+</div>
+</aside>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.02)] mt-auto"><div class="w-full max-w-[1440px] mx-auto px-space-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-lg"><div class="space-y-space-xs md:col-span-2"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">Velcura</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">by Vastram</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Institutional clinical textile procurement, bespoke medical apparel specifications, and supply chain governance for enterprise healthcare systems.</p><p class="font-label-sm text-label-sm text-outline">Direct Inquiries: procurement@vastram.institutional</p></div><div class="space-y-space-xs"><span class="font-label-md text-label-md uppercase tracking-wide text-on-surface font-semibold">Governance</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>ISO 13485 Clinical Textiles</li><li>Ayurvedic Herbal Mordant Standards</li><li>GOTS Certified Organic Integrity</li><li>Hospital Central Supply Logistics</li></ul></div><div class="space-y-space-xs"><span class="font-label-md text-label-md uppercase tracking-wide text-on-surface font-semibold">Support &amp; Desk</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>RFQ Reference: VEL-RFQ-8402</li><li>Dedicated Account Directorate</li><li>Contract Terms &amp; Bulk Tendering</li><li>Global Health Port Clearance</li></ul></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant"><span class="font-label-sm text-label-sm">© 2024 Vastram Textiles Private Limited. Institutional Division. All rights reserved.</span><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Security &amp; Encryption</a><a class="hover:text-on-surface transition-colors" href="#">Compliance Dossier</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Procurement</a></div></div></div></footer></body></html>

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #f7f5ef;
+  --color-surface: #ffffff;
+  --color-surface-low: #f1f4f2;
+  --color-ink: #2b2f2e;
+  --color-ink-muted: #707979;
+  --color-primary: #164e52;
+  --color-primary-dark: #0e3538;
+  --color-mint: #dce9e1;
+  --color-sage: #a7b8a1;
+  --color-sand: #d8cbb8;
+  --color-saffron: #e3a72f;
+  --color-terracotta: #b4552f;
+  --color-success: #3f7d5a;
+  --color-info: #4f7a92;
+  --color-plum: #5b3a57;
+  --radius-control: 0.625rem;
+  --radius-card: 0.75rem;
+  --radius-hero: 1.25rem;
+  --shadow-botanical: 0 8px 24px rgb(22 78 82 / 10%);
+  --shadow-modal: 0 24px 48px rgb(14 53 56 / 22%);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-inter), sans-serif; }
+button, input, select, textarea { font: inherit; }
+:focus-visible { outline: 3px solid var(--color-saffron); outline-offset: 2px; }
+.tabular { font-variant-numeric: tabular-nums; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }

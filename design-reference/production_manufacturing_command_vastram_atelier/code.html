@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#bacbb4", "on-surface-variant": "#404849", "background": "#f7faf8", "on-error": "#ffffff", "surface-container-highest": "#e0e3e1", "secondary-fixed-dim": "#fbbc43", "tertiary": "#263424", "surface-variant": "#e0e3e1", "secondary": "#7d5700", "on-secondary-fixed": "#271900", "outline": "#707979", "surface": "#f7faf8", "error-container": "#ffdad6", "on-secondary": "#ffffff", "primary": "#00363a", "surface-tint": "#32666a", "surface-container": "#eceeed", "tertiary-container": "#3c4b39", "error": "#ba1a1a", "tertiary-fixed": "#d6e8cf", "on-primary-fixed-variant": "#164e52", "primary-fixed-dim": "#9bd0d4", "on-background": "#181c1b", "on-primary-fixed": "#002022", "surface-dim": "#d8dbd9", "inverse-surface": "#2d3130", "outline-variant": "#bfc8c9", "surface-bright": "#f7faf8", "on-tertiary-fixed": "#111f10", "on-surface": "#181c1b", "on-error-container": "#93000a", "surface-container-low": "#f1f4f2", "inverse-on-surface": "#eef1ef", "on-secondary-container": "#704e00", "on-primary-container": "#8abec2", "secondary-fixed": "#ffdeaa", "on-tertiary-fixed-variant": "#3c4b39", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a9baa3", "on-primary": "#ffffff", "primary-container": "#164e52", "on-secondary-fixed-variant": "#5f4100", "on-tertiary": "#ffffff", "inverse-primary": "#9bd0d4", "primary-fixed": "#b7ecf0", "surface-container-high": "#e6e9e7", "secondary-container": "#febe46" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-sm": "0.5rem", "margin-desktop": "1.5rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-lg": [ "Inter" ], "headline-lg": [ "Newsreader" ], "headline-sm": [ "Inter" ], "headline-md": [ "Inter" ], "headline-lg-mobile": [ "Newsreader" ], "label-sm": [ "Inter" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "figure-display": [ "Inter" ], "body-lg": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "figure-display": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[264px] bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col gap-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary leading-tight">Velcura</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim leading-none">by Vastram</span></div></div><div class="h-px w-full bg-outline-variant/20 mt-space-sm"></div></div><nav class="px-space-md space-y-space-md flex-1" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">Core</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="overview" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="orders" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Orders</span></div><span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">12</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="products" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Products</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="inventory" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">warehouse</span><span>Inventory</span></div><span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold">4</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">B2B &amp; Operations</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="b2b-quotes" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">request_quote</span><span>B2B Quotes</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">3</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="production" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span><span>Production</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="customers" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">group</span><span>Customers</span></div></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">Growth &amp; System</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="marketing" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">campaign</span><span>Marketing</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="reports" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">monitoring</span><span>Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="settings" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></div></a></div></div></nav></div><div class="p-space-md border-t border-outline-variant/15 bg-primary/40"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5 min-w-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center shrink-0"><span class="font-label-md text-label-md text-on-primary-container font-semibold">AS</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-primary font-semibold truncate">Ananya Sen</span><span class="font-body-sm text-body-sm text-primary-fixed-dim truncate">Operations Lead / Admin</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim/90 truncate">Vastram Central Atelier</span></div></div><button class="p-1.5 rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary-container transition-colors shrink-0" title="Switch Account or Sign Out" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></div></aside><div class="pl-[264px]"><header class="fixed top-0 left-[264px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-9 pr-14 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-container-lowest transition-all" placeholder="Search inventory, batches, customer orders..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_today</span><span>Last 30 Days: Oct 1 – Oct 30, 2024</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-1"><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Help &amp; Documentation" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Active Sidebar Script Fix for 'Production' -->
+<script>
+    (function () {
+      const links = document.querySelectorAll('aside nav a[data-path]');
+      links.forEach((a) => {
+        if (a.getAttribute('data-path') === 'production') {
+          a.classList.remove('text-primary-fixed-dim');
+          a.classList.add('bg-primary-container', 'text-on-primary', 'font-bold', 'rounded-lg');
+        }
+      });
+    })();
+  </script>
+<!-- Page Main Container -->
+<div class="p-space-lg max-w-[1600px] mx-auto w-full space-y-6">
+<!-- 1. TOP HEADER & SUMMARY STRIP -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Production &amp; Atelier Command</h1>
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-surface-tint opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-medium tracking-wide">Live Floor Sync · Station 4 Active</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time cleanroom textile cutting, multi-head embroidery, surgical stitching, and batch QC telemetry</p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 self-start xl:self-auto shrink-0">
+<button class="inline-flex items-center gap-2 h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Export Manifest (.CSV)</span>
+</button>
+<button class="inline-flex items-center gap-2 h-10 px-4 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-colors" onclick="openBatchDrawer()" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Log Production Batch</span>
+</button>
+</div>
+</div>
+<!-- 4 Top Summary KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm space-y-3 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Batches in Progress</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-primary material-symbols-outlined text-[20px]">layers</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-figure-display text-[32px] leading-none font-bold text-on-surface">18</span>
+<span class="font-label-md text-label-md text-on-surface-variant">active batches</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span>+3 started today</span>
+<span class="text-on-surface-variant/40">·</span>
+<span class="text-on-surface-variant">6 stations running</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm space-y-3 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Due This Week</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-primary material-symbols-outlined text-[20px]">event_available</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-figure-display text-[32px] leading-none font-bold text-on-surface">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant">batches</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-primary">4,850</span>
+<span>clinical garments on schedule</span>
+</div>
+</div>
+<!-- KPI 3 (Alert) -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm space-y-3 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Delayed / Critical</span>
+<span class="p-2 rounded-lg bg-error-container text-on-error-container material-symbols-outlined text-[20px]">error_outline</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-figure-display text-[32px] leading-none font-bold text-error">2</span>
+<span class="font-label-md text-label-md text-error">batches</span>
+</div>
+<div class="flex items-center gap-1.5 text-error font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-error/10 font-semibold">+1 fabric defect</span>
+<span class="text-on-surface-variant">hold on LOT-98B</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm space-y-3 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cleanroom QC Pass Rate</span>
+<span class="p-2 rounded-lg bg-surface-container-low text-tertiary material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-figure-display text-[32px] leading-none font-bold text-on-surface">99.4%</span>
+<span class="font-label-md text-label-md text-tertiary">target 99.0%</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>0 autoclave rejects in 30 days</span>
+</div>
+</div>
+</div>
+<!-- 2. HORIZONTAL STAGE STEPPER -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Atelier Stage Pipeline</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">· 6 Real-time Workstation Clusters</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span>Filter Table by Stage</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Stepper Blocks -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
+<!-- Stage 1 -->
+<div class="group relative p-3.5 rounded-lg bg-primary text-on-primary flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Stage 01</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-primary">1. Cutting</div>
+<div class="font-body-sm text-body-sm text-primary-fixed-dim">4 batches · 1,400 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-primary-container flex items-center justify-between">
+<span>Laser Gerber #1-2</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="group relative p-3.5 rounded-lg bg-surface-container text-on-surface flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Stage 02</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">2. Stitching</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">6 batches · 2,100 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Heavy Overlock Fleet</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Stage 3 (Active Attention) -->
+<div class="group relative p-3.5 rounded-lg bg-surface-container-high text-on-surface flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Stage 03</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">Crest Run</span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">3. Embroidery</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">3 batches · 850 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-primary flex items-center justify-between">
+<span>Tajima 12-Head Multi</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="group relative p-3.5 rounded-lg bg-surface-container text-on-surface flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Stage 04</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">4. Quality Check</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">2 batches · 600 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Optical &amp; Seam Gauge</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="group relative p-3.5 rounded-lg bg-surface-container text-on-surface flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Stage 05</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">5. Cleanroom Pack</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">2 batches · 480 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center justify-between">
+<span>ISO Class 7 Vacuum</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+<!-- Stage 6 -->
+<div class="group relative p-3.5 rounded-lg bg-surface-container text-on-surface flex flex-col justify-between cursor-pointer transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Stage 06</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="mt-2 space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">6. Dispatch Ready</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">1 batch · 450 pcs</div>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Final Logistics Bay</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. CAPACITY & DELAYS TWO-COLUMN WIDGET ROW -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6">
+<!-- Left Column: Weekly Capacity & Throughput (7 cols) -->
+<div class="xl:col-span-7 rounded-xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center justify-between mb-1">
+<div class="space-y-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Weekly Capacity &amp; Throughput Analytics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily planned quota versus actual garments finished</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-label-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-surface-container-highest"></span>
+<span>Planned Quota</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-3 h-3 rounded bg-primary-container"></span>
+<span>Actual Finished</span>
+</div>
+</div>
+</div>
+<!-- Capacity Telemetry Metrics Ribbon -->
+<div class="flex flex-wrap items-center gap-6 py-3 my-2 bg-surface-container-low px-4 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nominal Atelier Ceiling</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">900 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs/day</span></span>
+</div>
+<div class="h-8 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Floor Utilization</span>
+<span class="font-headline-sm text-headline-sm text-primary">94.2% <span class="font-body-sm text-body-sm text-tertiary">Optimal</span></span>
+</div>
+<div class="h-8 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Weekly Target Output</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">5,050 <span class="font-body-sm text-body-sm text-tertiary">/ 5,000 pcs (101%)</span></span>
+</div>
+</div>
+</div>
+<!-- Bar Chart SVG Visualization -->
+<div class="w-full pt-2">
+<svg class="w-full h-48 overflow-visible" fill="none" viewbox="0 0 680 180" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid lines -->
+<line stroke="#E0E3E1" stroke-dasharray="3 3" x1="0" x2="680" y1="30" y2="30"></line>
+<line stroke="#E0E3E1" stroke-dasharray="3 3" x1="0" x2="680" y1="80" y2="80"></line>
+<line stroke="#E0E3E1" stroke-dasharray="3 3" x1="0" x2="680" y1="130" y2="130"></line>
+<line stroke="#BFC8C9" x1="0" x2="680" y1="160" y2="160"></line>
+<!-- Y-Axis labels -->
+<text fill="#707979" font-family="Inter" font-size="10" x="0" y="26">1,200</text>
+<text fill="#707979" font-family="Inter" font-size="10" x="0" y="76">900</text>
+<text fill="#707979" font-family="Inter" font-size="10" x="0" y="126">600</text>
+<!-- MON: Plan 850, Actual 820 -->
+<g transform="translate(60, 0)">
+<rect fill="#E0E3E1" height="87" rx="3" width="28" x="0" y="73"></rect>
+<rect fill="#164E52" height="83" rx="3" width="28" x="32" y="77"></rect>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Mon</text>
+<text fill="#181C1B" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="46" y="70">820</text>
+</g>
+<!-- TUE: Plan 900, Actual 940 -->
+<g transform="translate(160, 0)">
+<rect fill="#E0E3E1" height="94" rx="3" width="28" x="0" y="66"></rect>
+<rect fill="#164E52" height="100" rx="3" width="28" x="32" y="60"></rect>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Tue</text>
+<text fill="#181C1B" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="46" y="53">940</text>
+</g>
+<!-- WED: Plan 950, Actual 1080 (OVER CAPACITY) -->
+<g transform="translate(260, 0)">
+<rect fill="#E0E3E1" height="101" rx="3" width="28" x="0" y="59"></rect>
+<rect fill="#164E52" height="120" rx="3" width="28" x="32" y="40"></rect>
+<!-- Over capacity badge pill -->
+<rect fill="#FFDAD6" height="20" rx="10" width="110" x="18" y="10"></rect>
+<text fill="#BA1A1A" font-family="Inter" font-size="9.5" font-weight="700" text-anchor="middle" x="73" y="24">! Over Capacity 114%</text>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Wed</text>
+<text fill="#BA1A1A" font-family="Inter" font-size="10" font-weight="700" text-anchor="middle" x="46" y="36">1,080</text>
+</g>
+<!-- THU: Plan 900, Actual 890 -->
+<g transform="translate(370, 0)">
+<rect fill="#E0E3E1" height="94" rx="3" width="28" x="0" y="66"></rect>
+<rect fill="#164E52" height="93" rx="3" width="28" x="32" y="67"></rect>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Thu</text>
+<text fill="#181C1B" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="46" y="60">890</text>
+</g>
+<!-- FRI: Plan 850, Actual 860 -->
+<g transform="translate(480, 0)">
+<rect fill="#E0E3E1" height="87" rx="3" width="28" x="0" y="73"></rect>
+<rect fill="#164E52" height="89" rx="3" width="28" x="32" y="71"></rect>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Fri</text>
+<text fill="#181C1B" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="46" y="64">860</text>
+</g>
+<!-- SAT: Plan 500, Actual 420 -->
+<g transform="translate(580, 0)">
+<rect fill="#E0E3E1" height="55" rx="3" width="28" x="0" y="105"></rect>
+<rect fill="#164E52" height="45" rx="3" width="28" x="32" y="115"></rect>
+<text fill="#404849" font-family="Inter" font-size="11" font-weight="600" text-anchor="middle" x="30" y="174">Sat</text>
+<text fill="#181C1B" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="46" y="109">420</text>
+</g>
+</svg>
+</div>
+</div>
+<!-- Right Column: Delay Alerts & Floor Interventions List (5 cols) -->
+<div class="xl:col-span-5 rounded-xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between space-y-4">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Floor Interventions &amp; Bottlenecks</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry warnings requiring lead approval</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">2 Critical</span>
+</div>
+<div class="space-y-3">
+<!-- Card 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold">Delayed · 18h</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">#BAT-1042</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Station 3 (Embroidery)</span>
+</div>
+<div class="space-y-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Aster Care Whitefield OT Fleet (620 Sets)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Embroidery Thread Breakage &amp; Madeira Silver Lot Mismatch detected at needle head 7.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">alt_route</span>
+<span>Reroute to Station #6 &amp; Swap Lot</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm underline" type="button">Telemetry Log</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors space-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">QC Hold · 4h</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">#BAT-1049</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Station 2 (Stitching)</span>
+</div>
+<div class="space-y-1">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Medanta ICU Tunic Run (340 Sets)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inseam Stitch Tension Deviation (+1.5mm) detected on overlock bay 4 during spot audit.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">build_circle</span>
+<span>Trigger Recalibration &amp; Re-inspect</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm underline" type="button">Sample Scan</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. PRODUCTION BATCHES DATA TABLE (with View Toggle) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden space-y-0">
+<!-- Table Filter Toolbar -->
+<div class="p-5 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 bg-surface-container-lowest">
+<!-- Search and primary filters -->
+<div class="flex flex-wrap items-center gap-3 flex-1">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-container-lowest" placeholder="Search batch ID, order #, hospital, fabric..." type="text"/>
+</div>
+<!-- Stage Dropdown -->
+<div class="flex items-center gap-2 px-3 h-10 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md cursor-pointer hover:bg-surface-container">
+<span class="text-on-surface-variant">Stage:</span>
+<span class="font-semibold">All Active (18)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+<!-- Station Dropdown -->
+<div class="flex items-center gap-2 px-3 h-10 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md cursor-pointer hover:bg-surface-container">
+<span class="text-on-surface-variant">Station:</span>
+<span class="font-semibold">All (1-6)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+<!-- Priority Filter -->
+<div class="flex items-center gap-2 px-3 h-10 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md cursor-pointer hover:bg-surface-container">
+<span class="text-on-surface-variant">Priority:</span>
+<span class="font-semibold">High SLA</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- View Switcher Pills -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container-low self-start lg:self-auto shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">view_list</span>
+<span>Table View</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">view_kanban</span>
+<span>Board View</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="p-4 w-10 text-center">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4 font-semibold">Batch ID</th>
+<th class="py-3.5 px-4 font-semibold">Client &amp; Order</th>
+<th class="py-3.5 px-4 font-semibold">Garment &amp; Spec</th>
+<th class="py-3.5 px-4 font-semibold text-right">Volume</th>
+<th class="py-3.5 px-4 font-semibold">Stage</th>
+<th class="py-3.5 px-4 font-semibold w-40">Progress</th>
+<th class="py-3.5 px-4 font-semibold">Due &amp; SLA</th>
+<th class="py-3.5 px-4 font-semibold">Lead Operator</th>
+<th class="py-3.5 px-4 font-semibold text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- ROW 1 (SELECTED ROW: #BAT-1038) -->
+<tr class="bg-surface-container-high/60 hover:bg-surface-container-high transition-colors cursor-pointer" onclick="openBatchDrawer()">
+<td class="p-4 text-center" onclick="event.stopPropagation()">
+<input checked="" class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code_2</span>
+<span class="font-bold text-primary font-label-md text-label-md">#BAT-1038</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-semibold text-on-surface">Aster Care Hospital OT Fleet</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">#ORD-9425 · Fortis Central Node</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-medium text-on-surface">Ayur-Flex™ V-Neck Scrub Set</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Deep Teal / Spruce · 320 GSM Ag+ Weave</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right tabular-nums">
+<span class="font-bold text-on-surface">450 sets</span>
+<div class="text-[11px] text-on-surface-variant">900 pieces</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Embroidery
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">306/450 pcs</span>
+<span class="font-bold text-primary">68%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<span class="inline-flex items-center gap-1 text-error font-semibold font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                    Today, 18:00 IST
+                  </span>
+<div class="text-[11px] text-on-surface-variant">Urgent Air Cargo</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">
+                    RV
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Rajesh V.</span>
+<span class="text-[10px] text-on-surface-variant">Station Lead 3</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchDrawer()" title="Inspect Telemetry">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Print Traveler Card">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openBatchDrawer()">
+<td class="p-4 text-center" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">qr_code_2</span>
+<span class="font-semibold text-on-surface font-label-md text-label-md">#BAT-1044</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-semibold text-on-surface">Dr. Radhika Iyer Oncology Clinic</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">#ORD-9428 · Direct Bespoke</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-medium text-on-surface">Sterile Tailored Lab Coat + Scrub Inner</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Crisp Ivory · 360 GSM Bamboo Weft</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right tabular-nums">
+<span class="font-bold text-on-surface">24 sets</span>
+<div class="text-[11px] text-on-surface-variant">48 pieces</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Stitching
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">11/24 sets</span>
+<span class="font-bold text-on-surface">45%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">calendar_today</span>
+                    Oct 31, 14:00
+                  </span>
+<div class="text-[11px] text-tertiary">On Track</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold">
+                    PK
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Priya K.</span>
+<span class="text-[10px] text-on-surface-variant">Bespoke Atelier</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchDrawer()" title="Inspect Telemetry">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Print Traveler Card">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openBatchDrawer()">
+<td class="p-4 text-center" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">qr_code_2</span>
+<span class="font-semibold text-on-surface font-label-md text-label-md">#BAT-1035</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-semibold text-on-surface">AIIMS New Delhi Resident Cohort</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">#ORD-9414 · Govt Procurement</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-medium text-on-surface">Ayur-Flex™ Cargo Trouser + Scrub Top</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Sage Green · High Fluid Barrier</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right tabular-nums">
+<span class="font-bold text-on-surface">120 sets</span>
+<div class="text-[11px] text-on-surface-variant">240 pieces</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Quality Check
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">110/120 sets</span>
+<span class="font-bold text-tertiary">92%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">calendar_today</span>
+                    Nov 02, 10:00
+                  </span>
+<div class="text-[11px] text-tertiary">Ahead of SLA</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold">
+                    MN
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Meera N.</span>
+<span class="text-[10px] text-on-surface-variant">Lead QC Auditor</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchDrawer()" title="Inspect Telemetry">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Print Traveler Card">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4 (Delayed highlight) -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openBatchDrawer()">
+<td class="p-4 text-center" onclick="event.stopPropagation()">
+<input class="rounded w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4 font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">qr_code_2</span>
+<span class="font-bold text-error font-label-md text-label-md">#BAT-1042</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-semibold text-on-surface">Aster Care Whitefield OT Fleet</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">#ORD-9426 · Bulk OT Order</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<div class="font-medium text-on-surface">Surgeon Scrub Tunics (Custom Monogram)</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Deep Teal · Antimicrobial Ag+ Weave</div>
+</div>
+</td>
+<td class="py-4 px-4 text-right tabular-nums">
+<span class="font-bold text-on-surface">620 sets</span>
+<div class="text-[11px] text-on-surface-variant">1,240 pieces</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Thread Mismatch
+                </span>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">95/620 pcs</span>
+<span class="font-bold text-error">15%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 15%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="space-y-0.5">
+<span class="inline-flex items-center gap-1 text-error font-bold font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                    Delayed 18h
+                  </span>
+<div class="text-[11px] text-on-surface-variant">SLA at risk</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-label-sm text-label-sm font-bold">
+                    DS
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Devraj S.</span>
+<span class="text-[10px] text-on-surface-variant">Embroidery Tech</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center" onclick="event.stopPropagation()">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchDrawer()" title="Inspect Telemetry">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Print Traveler Card">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-5 py-3.5 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span>Showing <strong class="text-on-surface">1 - 4</strong> of <strong class="text-on-surface">18 active batches</strong></span>
+<span>·</span>
+<span>54,200 total clinical pieces under production</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors disabled:opacity-50" disabled="">Previous</button>
+<div class="flex items-center gap-1">
+<span class="w-7 h-7 rounded-md bg-primary text-on-primary flex items-center justify-center font-bold">1</span>
+<span class="w-7 h-7 rounded-md hover:bg-surface-container text-on-surface flex items-center justify-center cursor-pointer">2</span>
+<span class="w-7 h-7 rounded-md hover:bg-surface-container text-on-surface flex items-center justify-center cursor-pointer">3</span>
+</div>
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. BATCH DETAIL DRAWER (Right-side 580px overlay) -->
+<div class="fixed inset-0 bg-primary/30 backdrop-blur-sm z-50 transition-opacity duration-300" id="batchDrawerScrim" onclick="closeBatchDrawer()">
+<!-- Drawer Container -->
+<div class="fixed top-0 right-0 h-full w-full max-w-[580px] bg-surface-container-lowest shadow-2xl flex flex-col justify-between z-50 transform transition-transform duration-300 ease-in-out translate-x-0" id="batchDrawerPanel" onclick="event.stopPropagation()">
+<!-- Drawer Top Bar -->
+<div class="p-6 bg-surface-container-low/70 space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer">Batches</span>
+<span>/</span>
+<span class="font-bold text-primary">#BAT-1038</span>
+<span>/</span>
+<span class="text-on-surface">Station Telemetry</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeBatchDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">Batch #BAT-1038 · Aster Care Hospital</h2>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Station 3: Multi-Head Embroidery · In Progress (68%)
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">High SLA Priority</span>
+</div>
+</div>
+<!-- Quick Spec Matrix -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Order Volume</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">450 Sets (900 Pcs)</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Color &amp; Fabric</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">Deep Teal · 320GSM</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Dispatch Bay</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">Fortis/Aster Node</div>
+</div>
+</div>
+</div>
+<!-- Drawer Scrollable Content Body -->
+<div class="flex-1 overflow-y-auto p-6 space-y-6">
+<!-- Stage History Timeline -->
+<div class="space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Station Execution History</h3>
+<div class="relative pl-6 space-y-4">
+<!-- Timeline vertical line -->
+<div class="absolute left-2.5 top-1 bottom-1 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1 Complete -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 mt-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Stage 1: Cutting Complete</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 28, 09:30 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated Gerber CNC Laser bed #2. Tolerance deviation: 0.12mm (Nominal &lt;0.5mm).</p>
+</div>
+</div>
+<!-- Step 2 Complete -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 mt-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Stage 2: Overlock Stitching Complete</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 29, 02:15 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Station 2 · 8 operators. Gusset reinforcements verified across 450 pairs.</p>
+</div>
+</div>
+<!-- Step 3 In-Progress (Current) -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 mt-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center ring-4 ring-primary-fixed">
+<span class="material-symbols-outlined text-[13px]">play_arrow</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-primary">Stage 3: Crest &amp; Caduceus Embroidery</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-[10px]">CURRENT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Tajima 12-Head Multi-needle running Madeira Silver micro-thread. 306 of 450 completed (68%).</p>
+</div>
+</div>
+<!-- Step 4 Pending -->
+<div class="relative flex items-start gap-3 opacity-60">
+<div class="absolute -left-6 mt-1 w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md font-medium text-on-surface">Stage 4: Autoclave QC &amp; Microbe Swab</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cleanroom Inspection Station 4 queued.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Cleanroom QC Checklist -->
+<div class="space-y-3 p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cleanroom QC Standard Operating Procedure</h3>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">3 of 5 Passed</span>
+</div>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary" type="checkbox"/>
+<div class="flex-1 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Laser Cut Margin Tolerance &lt;= 0.5mm</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Passed</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary" type="checkbox"/>
+<div class="flex-1 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Silver Micro-Thread Antimicrobial Weave Integrity</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Passed</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary" type="checkbox"/>
+<div class="flex-1 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Monogram Caduceus Stitch Density (14,200 stitches)</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Passed</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest opacity-80 cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary" type="checkbox"/>
+<div class="flex-1 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Hydrophobic Fluid Repellency Spray Test</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending Station 4</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-lowest opacity-80 cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary" type="checkbox"/>
+<div class="flex-1 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">134°C Autoclave Heat Shrinkage Baseline (&lt;1%)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending Chamber B</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Defect Counter Telemetry Widget -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Inspection Defect Counts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Inspected: <strong class="text-on-surface">320 pcs</strong></span>
+</div>
+<div class="grid grid-cols-3 gap-3 text-center">
+<div class="p-3 rounded-lg bg-surface-container-lowest">
+<div class="font-figure-display text-[22px] font-bold text-secondary">2</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Minor Defects (Loop)</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest">
+<div class="font-figure-display text-[22px] font-bold text-tertiary">0</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Major Defects</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest">
+<div class="font-figure-display text-[22px] font-bold text-tertiary">0</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Critical / Reject</div>
+</div>
+</div>
+</div>
+<!-- QC Floor Photo Upload / Inspection Proof Grid -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Workstation Proof &amp; Telemetry Photos</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 live snapshots</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<!-- Proof 1 -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container aspect-square">
+<img class="w-full h-full object-cover" data-alt="High-resolution clinical macro photography of a multi-head embroidery machine needle threading metallic silver caduceus emblem on deep teal organic scrub fabric in an ultra-clean industrial textile atelier, soft natural lighting, precision medical textile craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwN1I8zwpeN0Vv_wE7AsGPduxOBdvZlwQ7kllXjdvKWywuIlbdkpWbjiNPiPdY4QjEWytyqBYmyo7Y1UqbtDSdJJK0LjgKyqvx_u00HE_5cPepgEJUbNd4XfUdacFn0NP-sFcJzN70rkZ7r9otuqOoRJTAKyfgDTO-fk1uByGQRLo_u9OX2R8EEG-7c8fT3LxIhXl2eEnvOnKKDOshzkEab5Jj8BVDTswied2_G04"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Proof 2 -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container aspect-square">
+<img class="w-full h-full object-cover" data-alt="Automated CNC laser cutting bed slicing multi-ply spruce green clinical medical apparel fabric, glowing laser guide beam, sterile stainless steel workspace, clinical textile manufacturing atelier, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8kpgxOWXt97Nj5ONPcAcQd4eru1m-_A2RjHrqy2bItAJP6GgmEG6JXuf2vL-FQQP-QEkgESqBwvFDLgJYYuVocr_P0deYmKaO279mz_o8b8bCAOtn_fkQ3Zsj35mNBE1b5I5Gdw983W5GAIotRU4Iyl5MTdmHVoENz8-PBm3Kg-zBVxUEeDR-mPXw9xMEz4Uze6iQ6rvxFzz0DqA3dFay0fR7rZB4pR0BLmGtCJc"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Proof 3 -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container aspect-square">
+<img class="w-full h-full object-cover" data-alt="Quality inspector hands in sterile gloves using digital seam gauge calipers to measure precision flat-felled seam on deep teal medical scrub garment under crisp cleanroom fluorescent laboratory lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnbpbKRo1DpS8KFJ2oPtP5bns4qdB_lIBAvJ9jF5zA818uCez7YXKU_qlmtEh8QuhhuMqhtQFw3fTlUQ6Crb6tqKIiI8Ygv0_FR0G7QtxLkeuKYIFcmwhasjokHkxL0a0wVhmTtWrxTCy4pR62Hk5mH42cCR0vlapu9ZRYV1WHt-EkOKdD9rOawIGLQimAQQSwMXT2X7U_OpBb2Jxy7fxtYFCPosPZEtWh53kMzF8"/>
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Add Dropzone -->
+<button class="rounded-lg border border-dashed border-outline/40 hover:border-primary hover:bg-surface-container-low transition-colors flex flex-col items-center justify-center gap-1 aspect-square text-on-surface-variant p-2" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary">add_a_photo</span>
+<span class="text-[10px] font-label-sm text-center leading-tight">Add Station Proof</span>
+</button>
+</div>
+</div>
+<!-- Atelier Internal Notes -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">sticky_note_2</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Floor Lead Observation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Caduceus embroidery run completed on scrub tops. Trousers currently staged at Bay 3 for bar-tack pocket reinforcement. Batch is tracking 20 mins ahead of shift change handover."
+          </p>
+<div class="text-[11px] text-on-surface-variant/80 text-right">— Rajesh V., 14:12 IST</div>
+</div>
+</div>
+<!-- Sticky Drawer Footer -->
+<div class="p-4 px-6 bg-surface-container-low/90 backdrop-blur-md flex items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Traveler</span>
+</button>
+<button class="inline-flex items-center gap-1.5 h-10 px-3.5 rounded-lg bg-surface-container-lowest text-error font-label-md text-label-md hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+<span>Hold Batch</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-2 h-10 px-5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-colors" onclick="advanceBatch()" type="button">
+<span>Advance to Quality Check (Station 4)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Inline JavaScript for Batch Drawer -->
+<script>
+    function openBatchDrawer() {
+      const scrim = document.getElementById('batchDrawerScrim');
+      const panel = document.getElementById('batchDrawerPanel');
+      scrim.classList.remove('hidden');
+      scrim.classList.remove('pointer-events-none');
+      scrim.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+    }
+
+    function closeBatchDrawer() {
+      const scrim = document.getElementById('batchDrawerScrim');
+      const panel = document.getElementById('batchDrawerPanel');
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+      setTimeout(() => {
+        scrim.classList.add('hidden');
+      }, 300);
+    }
+
+    function advanceBatch() {
+      alert('Batch #BAT-1038 routing telemetry updated: Transferred to Cleanroom Station 4 (Quality & Fluid Barrier Inspection). Floor operator alerted.');
+      closeBatchDrawer();
+    }
+  </script>
+</div></main></div></body></html>

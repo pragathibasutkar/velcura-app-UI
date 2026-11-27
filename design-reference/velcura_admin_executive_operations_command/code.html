@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#bacbb4", "on-surface-variant": "#404849", "background": "#f7faf8", "on-error": "#ffffff", "surface-container-highest": "#e0e3e1", "secondary-fixed-dim": "#fbbc43", "tertiary": "#263424", "surface-variant": "#e0e3e1", "secondary": "#7d5700", "on-secondary-fixed": "#271900", "outline": "#707979", "surface": "#f7faf8", "error-container": "#ffdad6", "on-secondary": "#ffffff", "primary": "#00363a", "surface-tint": "#32666a", "surface-container": "#eceeed", "tertiary-container": "#3c4b39", "error": "#ba1a1a", "tertiary-fixed": "#d6e8cf", "on-primary-fixed-variant": "#164e52", "primary-fixed-dim": "#9bd0d4", "on-background": "#181c1b", "on-primary-fixed": "#002022", "surface-dim": "#d8dbd9", "inverse-surface": "#2d3130", "outline-variant": "#bfc8c9", "surface-bright": "#f7faf8", "on-tertiary-fixed": "#111f10", "on-surface": "#181c1b", "on-error-container": "#93000a", "surface-container-low": "#f1f4f2", "inverse-on-surface": "#eef1ef", "on-secondary-container": "#704e00", "on-primary-container": "#8abec2", "secondary-fixed": "#ffdeaa", "on-tertiary-fixed-variant": "#3c4b39", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a9baa3", "on-primary": "#ffffff", "primary-container": "#164e52", "on-secondary-fixed-variant": "#5f4100", "on-tertiary": "#ffffff", "inverse-primary": "#9bd0d4", "primary-fixed": "#b7ecf0", "surface-container-high": "#e6e9e7", "secondary-container": "#febe46" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-sm": "0.5rem", "margin-desktop": "1.5rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "label-lg": [ "Inter" ], "headline-lg": [ "Newsreader" ], "headline-sm": [ "Inter" ], "headline-md": [ "Inter" ], "headline-lg-mobile": [ "Newsreader" ], "label-sm": [ "Inter" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "figure-display": [ "Inter" ], "body-lg": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "figure-display": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[264px] bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col gap-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary leading-tight">Velcura</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim leading-none">by Vastram</span></div></div><div class="h-px w-full bg-outline-variant/20 mt-space-sm"></div></div><nav class="px-space-md space-y-space-md flex-1" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">Core</div><div class="space-y-0.5"><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="overview" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="orders" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Orders</span></div><span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">12</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="products" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Products</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="inventory" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">warehouse</span><span>Inventory</span></div><span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold">4</span></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">B2B &amp; Operations</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="b2b-quotes" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">request_quote</span><span>B2B Quotes</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">3</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="production" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span><span>Production</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="customers" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">group</span><span>Customers</span></div></a></div></div><div class="space-y-1"><div class="px-space-sm py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80">Growth &amp; System</div><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="marketing" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">campaign</span><span>Marketing</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="reports" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">monitoring</span><span>Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors font-label-md text-label-md" data-path="settings" href="#"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></div></a></div></div></nav></div><div class="p-space-md border-t border-outline-variant/15 bg-primary/40"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5 min-w-0"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center shrink-0"><span class="font-label-md text-label-md text-on-primary-container font-semibold">AS</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-primary font-semibold truncate">Ananya Sen</span><span class="font-body-sm text-body-sm text-primary-fixed-dim truncate">Operations Lead / Admin</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim/90 truncate">Vastram Central Atelier</span></div></div><button class="p-1.5 rounded-lg text-primary-fixed-dim hover:text-on-primary hover:bg-primary-container transition-colors shrink-0" title="Switch Account or Sign Out" type="button"><span class="material-symbols-outlined text-[20px]">swap_horiz</span></button></div></div></aside><div class="pl-[264px]"><header class="fixed top-0 left-[264px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-9 pr-14 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-container-lowest transition-all" placeholder="Search inventory, batches, customer orders..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_today</span><span>Last 30 Days: Oct 1 – Oct 30, 2024</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-1"><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Help &amp; Documentation" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-lg py-space-lg flex flex-col gap-space-lg max-w-[1440px] mx-auto w-full">
+<!-- 1. Header & Context Action Bar -->
+<header class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Executive Operations Command</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            Live Sync Active
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time retail storefront, institutional fulfillment, and atelier production telemetry</p>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Segment Switcher -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md" role="tablist">
+<button aria-selected="true" class="px-3 py-1.5 rounded bg-surface-container-lowest text-primary font-semibold shadow-sm transition-all" role="tab" type="button">
+            All Channels (Retail + B2B)
+          </button>
+<button aria-selected="false" class="px-3 py-1.5 rounded hover:text-on-surface transition-colors" role="tab" type="button">
+            Retail DTC Only
+          </button>
+<button aria-selected="false" class="px-3 py-1.5 rounded hover:text-on-surface transition-colors" role="tab" type="button">
+            Institutional Portal
+          </button>
+</div>
+<!-- Export Action Button -->
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Data Dossier (.CSV)</span>
+</button>
+</div>
+</header>
+<!-- 2. Row of 4 KPI Metric Cards -->
+<section aria-label="Key Performance Telemetry" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Revenue -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden transition-all hover:bg-surface-bright">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Consolidated Revenue</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display font-semibold text-primary tracking-tight tabular-nums">₹18.4L</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +14.8%
+          </span>
+</div>
+<!-- 7-day SVG Sparkline -->
+<div class="h-10 w-full flex items-end">
+<svg class="w-full h-9 overflow-visible text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0 32 Q 30 28, 55 24 T 110 18 T 155 12 L 200 6" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" vector-effect="non-scaling-stroke"></path>
+<path d="M0 32 Q 30 28, 55 24 T 110 18 T 155 12 L 200 6 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="200" cy="6" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant">
+<span>Channel Split</span>
+<span class="tabular-nums font-medium text-on-surface">₹12.1L B2B · ₹6.3L Retail</span>
+</div>
+</div>
+<!-- KPI 2: Orders -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden transition-all hover:bg-surface-bright">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Order Throughput</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display font-semibold text-on-surface tracking-tight tabular-nums">1,284</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +8.2%
+          </span>
+</div>
+<!-- 7-day SVG Sparkline -->
+<div class="h-10 w-full flex items-end">
+<svg class="w-full h-9 overflow-visible text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0 28 Q 40 32, 70 14 T 130 8 T 170 18 L 200 10" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" vector-effect="non-scaling-stroke"></path>
+<path d="M0 28 Q 40 32, 70 14 T 130 8 T 170 18 L 200 10 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="200" cy="10" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant">
+<span>Logistics State</span>
+<span class="tabular-nums font-medium text-on-surface">1,142 Delivered · 142 In Transit</span>
+</div>
+</div>
+<!-- KPI 3: Conversion Rate -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden transition-all hover:bg-surface-bright">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Conversion Rate</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display font-semibold text-on-surface tracking-tight tabular-nums">3.2%</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_down</span>
+            -0.4%
+          </span>
+</div>
+<!-- 7-day SVG Sparkline -->
+<div class="h-10 w-full flex items-end">
+<svg class="w-full h-9 overflow-visible text-error" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0 12 Q 40 10, 80 18 T 140 26 T 175 22 L 200 28" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" vector-effect="non-scaling-stroke"></path>
+<path d="M0 12 Q 40 10, 80 18 T 140 26 T 175 22 L 200 28 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="200" cy="28" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant">
+<span>E-Comm Cohort</span>
+<span class="tabular-nums font-medium text-on-surface">Benchmark: 2.8% Industry</span>
+</div>
+</div>
+<!-- KPI 4: AOV -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden transition-all hover:bg-surface-bright">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Average Order Value (AOV)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-figure-display text-figure-display font-semibold text-on-surface tracking-tight tabular-nums">₹1,432</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +5.6%
+          </span>
+</div>
+<!-- 7-day SVG Sparkline -->
+<div class="h-10 w-full flex items-end">
+<svg class="w-full h-9 overflow-visible text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0 30 Q 30 26, 60 22 T 120 18 T 160 10 L 200 8" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" vector-effect="non-scaling-stroke"></path>
+<path d="M0 30 Q 30 26, 60 22 T 120 18 T 160 10 L 200 8 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="200" cy="8" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant">
+<span>Basket Profile</span>
+<span class="tabular-nums font-medium text-on-surface">DTC: ₹1,120 · B2B: ₹42.5k</span>
+</div>
+</div>
+</section>
+<!-- 3. Large Revenue Analytics Section (Line & Trend Chart) -->
+<section aria-labelledby="revenue-chart-title" class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-1 border-b border-outline-variant/20">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight" id="revenue-chart-title">Gross Revenue Trajectory &amp; Channel Distribution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily operational run rate across B2B Institutional Portals and Direct-to-Clinician storefronts</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<!-- Interactive Toggle for Dimensions -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-semibold shadow-sm transition-all" type="button">
+              Retail vs. B2B
+            </button>
+<button class="px-2.5 py-1 rounded hover:text-on-surface transition-colors" type="button">
+              Total Combined
+            </button>
+<button class="px-2.5 py-1 rounded hover:text-on-surface transition-colors" type="button">
+              By Region
+            </button>
+</div>
+<!-- Timeframe tabs -->
+<div class="inline-flex rounded-lg bg-surface-container-low p-1 text-on-surface-variant font-label-sm text-label-sm">
+<button class="px-2 py-1 rounded hover:text-on-surface transition-colors" type="button">7D</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm" type="button">30D (Selected)</button>
+<button class="px-2 py-1 rounded hover:text-on-surface transition-colors" type="button">90D</button>
+<button class="px-2 py-1 rounded hover:text-on-surface transition-colors" type="button">YTD</button>
+</div>
+</div>
+</div>
+<!-- Chart Legend Key -->
+<div class="flex flex-wrap items-center gap-5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-1 rounded-full bg-primary"></span>
+<span class="font-semibold text-on-surface">B2B Institutional Revenue</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-1 rounded-full bg-surface-tint"></span>
+<span class="font-semibold text-on-surface">Retail DTC Storefront</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-0.5 border-t border-dashed border-outline"></span>
+<span>Previous Period Baseline (Sep 1 – Sep 30)</span>
+</div>
+<div class="ml-auto text-on-surface-variant/70 font-label-sm text-label-sm">
+          Currency: INR (₹) Tabular
+        </div>
+</div>
+<!-- High-Fidelity SVG Interactive Chart Area -->
+<div class="relative w-full h-[320px] pt-4 select-none">
+<!-- Background Grid & Y-Axis Labels -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none pb-7 text-on-surface-variant/60 font-label-sm text-label-sm">
+<div class="flex items-center w-full">
+<span class="w-14 text-right pr-3 shrink-0 tabular-nums">₹1,00,000</span>
+<div class="flex-1 h-px bg-outline-variant/20"></div>
+</div>
+<div class="flex items-center w-full">
+<span class="w-14 text-right pr-3 shrink-0 tabular-nums">₹75,000</span>
+<div class="flex-1 h-px bg-outline-variant/20"></div>
+</div>
+<div class="flex items-center w-full">
+<span class="w-14 text-right pr-3 shrink-0 tabular-nums">₹50,000</span>
+<div class="flex-1 h-px bg-outline-variant/20"></div>
+</div>
+<div class="flex items-center w-full">
+<span class="w-14 text-right pr-3 shrink-0 tabular-nums">₹25,000</span>
+<div class="flex-1 h-px bg-outline-variant/20"></div>
+</div>
+<div class="flex items-center w-full">
+<span class="w-14 text-right pr-3 shrink-0 tabular-nums">₹0</span>
+<div class="flex-1 h-px bg-outline-variant/30"></div>
+</div>
+</div>
+<!-- SVG Vectors for Data Series -->
+<div class="absolute inset-0 pl-14 pb-7 pr-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 960 250">
+<defs>
+<lineargradient id="b2b-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00363a" stop-opacity="0.16"></stop>
+<stop offset="100%" stop-color="#00363a" stop-opacity="0.00"></stop>
+</lineargradient>
+<lineargradient id="retail-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#32666a" stop-opacity="0.12"></stop>
+<stop offset="100%" stop-color="#32666a" stop-opacity="0.00"></stop>
+</lineargradient>
+</defs>
+<!-- Previous Period Baseline (Dashed) -->
+<path d="M 0 170 C 60 165, 120 180, 180 160 C 240 140, 300 155, 360 145 C 420 135, 480 150, 540 120 C 600 110, 660 130, 720 100 C 780 90, 840 95, 960 70" fill="none" stroke="#707979" stroke-dasharray="4 4" stroke-linecap="round" stroke-width="1.8"></path>
+<!-- B2B Institutional Area & Curve (Deep Teal #00363a) -->
+<path d="M 0 180 C 70 175, 140 140, 210 130 C 280 120, 350 160, 420 110 C 490 90, 560 105, 630 75 C 700 65, 770 45, 840 50 C 890 52, 925 38, 960 30 L 960 250 L 0 250 Z" fill="url(#b2b-gradient)"></path>
+<path d="M 0 180 C 70 175, 140 140, 210 130 C 280 120, 350 160, 420 110 C 490 90, 560 105, 630 75 C 700 65, 770 45, 840 50 C 890 52, 925 38, 960 30" fill="none" stroke="#00363a" stroke-linecap="round" stroke-width="2.6"></path>
+<!-- Retail DTC Storefront Curve (Dusty Blue/Teal #32666a) -->
+<path d="M 0 215 C 80 205, 150 200, 230 190 C 310 180, 380 185, 460 165 C 540 155, 620 160, 700 145 C 770 135, 840 140, 960 120 L 960 250 L 0 250 Z" fill="url(#retail-gradient)"></path>
+<path d="M 0 215 C 80 205, 150 200, 230 190 C 310 180, 380 185, 460 165 C 540 155, 620 160, 700 145 C 770 135, 840 140, 960 120" fill="none" stroke="#32666a" stroke-linecap="round" stroke-width="2.2"></path>
+<!-- Oct 24 Anchor Vertical Guide Line (at ~78% width: X = 748) -->
+<line opacity="0.6" stroke="#00363a" stroke-dasharray="3 3" stroke-width="1.5" x1="748" x2="748" y1="0" y2="250"></line>
+<!-- Interactive Anchor Points at Oct 24 -->
+<!-- Baseline Anchor -->
+<circle cx="748" cy="95" fill="#ffffff" r="4" stroke="#707979" stroke-width="2"></circle>
+<!-- B2B Anchor -->
+<circle cx="748" cy="48" fill="#00363a" r="5.5" stroke="#ffffff" stroke-width="2.5"></circle>
+<!-- Retail Anchor -->
+<circle cx="748" cy="138" fill="#32666a" r="5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<!-- PROMINENT INTERACTIVE TOOLTIP STATE (Oct 24) -->
+<div class="absolute left-[78%] top-2 -translate-x-1/2 -ml-2 pointer-events-auto z-10 w-72 rounded-lg bg-primary text-on-primary p-3 shadow-xl ring-1 ring-on-primary/10">
+<div class="flex items-center justify-between pb-1.5 border-b border-primary-container">
+<span class="font-label-sm text-label-sm font-semibold tracking-wide text-secondary-fixed">Thursday, Oct 24, 2024</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold">+18.4% YoY</span>
+</div>
+<div class="mt-2 space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-primary-container font-medium">Total Daily Run Rate:</span>
+<span class="font-figure-display text-[15px] font-bold text-on-primary tabular-nums">₹84,250</span>
+</div>
+<div class="flex flex-col gap-0.5 pt-1 border-t border-primary-container/60">
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="text-primary-fixed-dim">B2B Institutional:</span>
+</div>
+<span class="font-semibold tabular-nums text-on-primary">₹58,400</span>
+</div>
+<span class="text-[10px] text-primary-fixed-dim/80 pl-3.5 italic">Aster Care PO + Manipal Batch</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between text-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="text-primary-fixed-dim">Retail DTC:</span>
+</div>
+<span class="font-semibold tabular-nums text-on-primary">₹25,850</span>
+</div>
+<span class="text-[10px] text-primary-fixed-dim/80 pl-3.5 italic">19 storefront orders</span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-primary-container/40 text-[11px] text-primary-fixed-dim">
+<span>Prior Period (Sep 24):</span>
+<span class="tabular-nums">₹71,100</span>
+</div>
+</div>
+</div>
+</div>
+<!-- X-Axis Dates across October -->
+<div class="absolute bottom-0 left-14 right-2 h-6 flex justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Oct 1</span>
+<span>Oct 5</span>
+<span>Oct 10</span>
+<span>Oct 15</span>
+<span>Oct 20</span>
+<span class="font-bold text-primary">Oct 24</span>
+<span>Oct 27</span>
+<span>Oct 30</span>
+</div>
+</div>
+</section>
+<!-- 4. Multi-Column Operational Grid Below Chart -->
+<section aria-label="Operational Telemetry Panels" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- COLUMN 1: Top Performing Products -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Top Products by Velocity</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant tabular-nums">4 Active</span>
+</div>
+<!-- Filter toggle -->
+<div class="flex items-center gap-1 p-0.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<button class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-semibold" type="button">Tops</button>
+<button class="px-2 py-0.5 rounded hover:text-on-surface" type="button">Pants</button>
+<button class="px-2 py-0.5 rounded hover:text-on-surface" type="button">Lab Coats</button>
+</div>
+</div>
+<!-- Product List -->
+<div class="space-y-3.5">
+<!-- Item 1 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2.5">
+<img alt="Ayur-Flex Classic V-Neck Top" class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDgirIJhGkY3EZM-_YAiiw8YCzSTTfbrGQ1hW2wy7WmkMCRHFpSVjlECbUGB7eOqitFSiEzYJx2Kqu5PlHMKpWfA2UBbqMf1y3MMnTXZuv_m1SlNgryAeMeqfREbO4wX-Ugvyy9m7jB37WCycEu9WUiJcBK00Wtw3Kg-OpXR798sccxAa6yIlm9LpWuKggL5kxwzJogxIscDfb5q33pnn2aFPatTf-Shduc7tWMe-7P"/>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ayur-Flex™ Classic V-Neck Top</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Deep Teal · 542 units</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary tabular-nums">₹10.2L</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 92%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">styler</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ayur-Flex™ 8-Pocket Cargo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Navy · 388 units</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary tabular-nums">₹8.9L</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full transition-all duration-500" style="width: 74%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Silver-Weave Lab Coat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">White · 194 units</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary tabular-nums">₹4.8L</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 46%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">checkroom</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Mandarin Collar Scrub Suit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Plum · 142 units</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary tabular-nums">₹5.2L</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-500" style="width: 35%"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center font-semibold" type="button">
+          View Complete Catalog Velocity
+        </button>
+</div>
+<!-- COLUMN 2: Low-Stock & Autoclave Fabric Alerts -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Atelier Stock Deficit Alerts</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Raw textiles &amp; trims below threshold</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">4 Critical</span>
+</div>
+<!-- Deficit List -->
+<div class="space-y-3">
+<!-- Item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ayur-Flex™ Roll 320GSM (Deep Teal)</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase shrink-0">Critical Deficit</span>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span>Only <strong class="text-error font-semibold">42m</strong> left (Threshold: 200m)</span>
+<button class="px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+                Reorder Fabric
+              </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Silver Thread (Madeira #1801)</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase shrink-0">Low Stock</span>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span><strong>14 spools</strong> remaining</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                Reorder
+              </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ayur-Flex™ Pants (Size M - Teal)</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase shrink-0">Breached</span>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span><strong>8 sets</strong> finished stock</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                Reorder
+              </button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Botanical Sage Dye Extract (B-9)</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-bold uppercase shrink-0">Restock Soon</span>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<span><strong>2.4 kg</strong> concentrate</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                Reorder
+              </button>
+</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center font-semibold" type="button">
+          Open Supply Chain Ledger
+        </button>
+</div>
+<!-- COLUMN 3: Orders Requiring Attention -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fulfillment &amp; QC Exceptions</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operational bottlenecks requiring sign-off</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">4 Action Required</span>
+</div>
+<!-- Exception List -->
+<div class="space-y-3">
+<!-- Item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">#ORD-9412 · Dr. Arvind Rao</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-bold">QC Hold</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monogram Caduceus Stitch Ambiguity</p>
+<div class="pt-1 flex justify-end">
+<button class="font-label-sm text-label-sm font-semibold text-primary hover:underline" type="button">
+                Resolve Proof →
+              </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">#PO-AST-9824 · Aster Care</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold">Inst. SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cleanroom Packaging Sign-off Pending</p>
+<div class="pt-1 flex justify-end">
+<button class="font-label-sm text-label-sm font-semibold text-primary hover:underline" type="button">
+                Review Certificate →
+              </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">#ORD-9390 · Dr. Priya Sharma</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed-dim text-on-secondary-fixed font-label-sm text-[10px] font-bold">Courier Exception</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Address Landmark Verification Needed</p>
+<div class="pt-1 flex justify-end">
+<button class="font-label-sm text-label-sm font-semibold text-primary hover:underline" type="button">
+                Contact Clinician →
+              </button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary">#ORD-9381 · Apollo Hospitals</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-[10px] font-bold">Partial Dispatch</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fabric Lot Batch #28 Split Consignment</p>
+<div class="pt-1 flex justify-end">
+<button class="font-label-sm text-label-sm font-semibold text-primary hover:underline" type="button">
+                View Batch →
+              </button>
+</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center font-semibold" type="button">
+          Review All 12 Open Exceptions
+        </button>
+</div>
+<!-- COLUMN 4: Sales by Metro & Clinical Hubs -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Geographic Velocity</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pan-India hospital network density</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+</div>
+<!-- Metro List -->
+<div class="space-y-4">
+<!-- Metro 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-semibold text-on-surface">Bengaluru Hub</span>
+<span class="font-bold text-primary tabular-nums">₹8.4L (45.6%)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apollo, Manipal &amp; Aster Clusters</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden mt-0.5">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 45.6%"></div>
+</div>
+</div>
+<!-- Metro 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-semibold text-on-surface">Mumbai &amp; Navi Mumbai</span>
+<span class="font-bold text-primary tabular-nums">₹4.2L (22.8%)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lilavati, Kokilaben &amp; Reliance</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden mt-0.5">
+<div class="h-full bg-surface-tint rounded-full transition-all duration-500" style="width: 22.8%"></div>
+</div>
+</div>
+<!-- Metro 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-semibold text-on-surface">Delhi NCR</span>
+<span class="font-bold text-primary tabular-nums">₹3.1L (16.8%)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Max Healthcare &amp; Medanta</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden mt-0.5">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 16.8%"></div>
+</div>
+</div>
+<!-- Metro 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-semibold text-on-surface">Chennai &amp; Hyderabad</span>
+<span class="font-bold text-primary tabular-nums">₹2.7L (14.8%)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apollo Greams, KIMS &amp; Yashoda</span>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden mt-0.5">
+<div class="h-full bg-outline rounded-full transition-all duration-500" style="width: 14.8%"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors text-center font-semibold" type="button">
+          Expand Regional Heatmap
+        </button>
+</div>
+</section>
+<!-- 5. Integrated Skeleton Loading State Preview Strip -->
+<section class="mt-space-xs rounded-xl bg-surface-container-lowest p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" id="skeleton-section">
+<div class="flex items-center justify-between cursor-pointer select-none" id="skeleton-toggle-btn">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">bolt</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Async Loading Skeleton Telemetry State</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">System Preview</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span id="skeleton-toggle-text">Toggle Preview Simulation</span>
+<span class="material-symbols-outlined text-[18px] transition-transform" id="skeleton-chevron">expand_more</span>
+</div>
+</div>
+<!-- Collapsible Shimmer Panel -->
+<div class="hidden flex-col gap-space-md pt-space-sm border-t border-outline-variant/20" id="skeleton-preview-panel">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low animate-pulse space-y-3">
+<div class="h-3 w-28 bg-surface-container-highest rounded"></div>
+<div class="h-7 w-20 bg-surface-container-highest rounded"></div>
+<div class="h-6 w-full bg-surface-container-highest rounded"></div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low animate-pulse space-y-3">
+<div class="h-3 w-28 bg-surface-container-highest rounded"></div>
+<div class="h-7 w-20 bg-surface-container-highest rounded"></div>
+<div class="h-6 w-full bg-surface-container-highest rounded"></div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low animate-pulse space-y-3">
+<div class="h-3 w-28 bg-surface-container-highest rounded"></div>
+<div class="h-7 w-20 bg-surface-container-highest rounded"></div>
+<div class="h-6 w-full bg-surface-container-highest rounded"></div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low animate-pulse space-y-3">
+<div class="h-3 w-28 bg-surface-container-highest rounded"></div>
+<div class="h-7 w-20 bg-surface-container-highest rounded"></div>
+<div class="h-6 w-full bg-surface-container-highest rounded"></div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low animate-pulse space-y-4">
+<div class="flex items-center justify-between">
+<div class="h-5 w-48 bg-surface-container-highest rounded"></div>
+<div class="h-7 w-36 bg-surface-container-highest rounded"></div>
+</div>
+<div class="h-44 w-full bg-surface-container-highest rounded-lg"></div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for skeleton toggle
+  const toggleBtn = document.getElementById('skeleton-toggle-btn');
+  const previewPanel = document.getElementById('skeleton-preview-panel');
+  const chevron = document.getElementById('skeleton-chevron');
+  const toggleText = document.getElementById('skeleton-toggle-text');
+
+  if (toggleBtn && previewPanel && chevron) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = previewPanel.classList.contains('hidden');
+      if (isHidden) {
+        previewPanel.classList.remove('hidden');
+        previewPanel.classList.add('flex');
+        chevron.classList.add('rotate-180');
+        toggleText.textContent = 'Hide Simulation';
+      } else {
+        previewPanel.classList.add('hidden');
+        previewPanel.classList.remove('flex');
+        chevron.classList.remove('rotate-180');
+        toggleText.textContent = 'Toggle Preview Simulation';
+      }
+    });
+  }
+</script></main></div></body></html>

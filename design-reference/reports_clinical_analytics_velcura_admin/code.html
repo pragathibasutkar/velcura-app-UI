@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#ffdeaa","on-primary-fixed":"#002022","primary":"#00363a","on-background":"#181c1b","surface-container-lowest":"#ffffff","surface-dim":"#d8dbd9","surface-container":"#eceeed","tertiary":"#263424","outline":"#707979","secondary":"#7d5700","surface-bright":"#f7faf8","on-surface-variant":"#404849","primary-fixed":"#b7ecf0","on-tertiary-fixed-variant":"#3c4b39","on-error":"#ffffff","on-secondary-fixed-variant":"#5f4100","surface-container-highest":"#e0e3e1","background":"#f7faf8","surface-tint":"#32666a","surface":"#f7faf8","inverse-surface":"#2d3130","on-tertiary-container":"#a9baa3","error-container":"#ffdad6","tertiary-fixed":"#d6e8cf","on-secondary-container":"#704e00","on-secondary":"#ffffff","tertiary-fixed-dim":"#bacbb4","on-primary-container":"#8abec2","outline-variant":"#bfc8c9","surface-container-high":"#e6e9e7","on-error-container":"#93000a","inverse-primary":"#9bd0d4","primary-fixed-dim":"#9bd0d4","surface-container-low":"#f1f4f2","on-tertiary-fixed":"#111f10","on-secondary-fixed":"#271900","on-surface":"#181c1b","error":"#ba1a1a","secondary-fixed-dim":"#fbbc43","inverse-on-surface":"#eef1ef","surface-variant":"#e0e3e1","on-primary-fixed-variant":"#164e52","primary-container":"#164e52","on-tertiary":"#ffffff","tertiary-container":"#3c4b39","secondary-container":"#febe46","on-primary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1rem","margin-desktop":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xl":"2rem","margin":"1rem"},"fontFamily":{"body-sm":["Inter"],"headline-lg-mobile":["Newsreader"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Newsreader"],"headline-md":["Inter"],"figure-display":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"figure-display":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[264px] bg-primary z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full overflow-hidden"><div class="h-[72px] flex items-center px-space-lg gap-space-sm shrink-0"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-surface font-semibold">Velcura</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Clinical Governance</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md"><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Core</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="overview" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md font-medium">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-md text-body-md font-medium">Orders</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">12</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="products" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-md text-body-md font-medium">Products</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="inventory" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warehouse</span><span class="font-body-md text-body-md font-medium">Inventory</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-primary-container text-primary-fixed font-label-sm text-[10px]">4</span></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">B2B &amp; Operations</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="b2b-quotes" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="font-body-md text-body-md font-medium">B2B Quotes</span></div><span class="h-5 min-w-[20px] px-1.5 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">3</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="production" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-body-md text-body-md font-medium">Production</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md font-medium">Customers</span></div></a></nav></div><div class="space-y-space-xs"><div class="px-space-sm font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase opacity-70">Growth &amp; System</div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="marketing" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-body-md text-body-md font-medium">Marketing</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-all duration-150 bg-primary-container text-on-primary font-label-lg rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-md text-body-md font-medium">Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-all duration-150" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md font-medium">Settings</span></div></a></nav></div></div><div class="p-space-sm bg-primary-container/40 m-space-sm rounded-xl"><div class="flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-fixed text-[20px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-surface font-semibold truncate">Ananya Sen</span><span class="font-label-sm text-label-sm text-on-primary-container truncate">Operations Lead</span><span class="font-body-sm text-body-sm text-primary-fixed-dim/80 truncate text-[10px]">Vastram Central Atelier</span></div></div><button class="p-1.5 rounded-lg text-primary-fixed-dim hover:bg-primary-container hover:text-on-primary transition-colors" title="Switch Facility" type="button"><span class="material-symbols-outlined text-[18px]">sync_alt</span></button></div></div></div></aside><div class="pl-[264px] min-h-screen flex flex-col bg-surface"><header class="fixed top-0 left-[264px] right-0 h-[72px] bg-surface/80 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-low text-on-surface placeholder:text-outline/70 text-body-md font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all" placeholder="Search batches, formulas, records..." type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span><span>Oct 01 – Oct 28, 2024</span></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden sm:block"></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 w-full pt-[72px] bg-surface p-space-lg max-w-[1440px] mx-auto"><div class="flex flex-col w-full space-y-space-lg">
+<!-- 1. Executive Header & Operational Toolbar -->
+<header class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Reports &amp; Clinical Analytics</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider">Audit Validated</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Comprehensive revenue, conversion funnels, institutional cohorts, and product velocity telemetry across direct clinician and multi-hospital channels.
+      </p>
+</div>
+<!-- Controls Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Date Range Dropdown -->
+<div class="relative inline-flex items-center">
+<button class="h-10 px-3.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-2 shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">date_range</span>
+<span>Last 30 Days (Oct 1 – Oct 30, 2024)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</button>
+</div>
+<!-- Comparison Dropdown -->
+<div class="relative inline-flex items-center">
+<button class="h-10 px-3.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-2 shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-outline text-[18px]">compare_arrows</span>
+<span>vs. Previous Period</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">+14.8%</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</button>
+</div>
+<!-- Granularity Switcher -->
+<div class="flex items-center h-10 p-1 bg-surface-container-high rounded-lg">
+<button class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm rounded hover:text-on-surface transition-colors" type="button">Daily</button>
+<button class="px-3 py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded shadow-sm font-semibold" type="button">Weekly</button>
+<button class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm rounded hover:text-on-surface transition-colors" type="button">Monthly</button>
+</div>
+<!-- Export / Schedule Actions -->
+<div class="relative group">
+<button class="h-10 px-3.5 bg-surface-container-lowest text-primary font-label-md text-label-md rounded-lg flex items-center gap-2 shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Report</span>
+<span class="material-symbols-outlined text-[18px]">arrow_drop_down</span>
+</button>
+<div class="hidden group-hover:block absolute right-0 mt-1 w-56 bg-surface-container-lowest rounded-xl shadow-xl p-1 z-30">
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface hover:bg-surface-container-low rounded-lg font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-outline text-[18px]">table_view</span> Download CSV (.csv)
+          </a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface hover:bg-surface-container-low rounded-lg font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-outline text-[18px]">picture_as_pdf</span> Executive PDF Summary (.pdf)
+          </a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface hover:bg-surface-container-low rounded-lg font-body-sm text-body-sm" href="#">
+<span class="material-symbols-outlined text-outline text-[18px]">database</span> Raw SQL Telemetry Extract
+          </a>
+</div>
+</div>
+<button class="h-10 px-3.5 bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 shadow-sm hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_alarm</span>
+<span>Schedule Report</span>
+</button>
+</div>
+</header>
+<!-- 2. Navigation Tabs with Count Pills -->
+<nav aria-label="Analytics Sections" class="flex items-center gap-space-sm overflow-x-auto pb-1">
+<a class="relative flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest shadow-sm text-primary font-label-lg text-label-lg shrink-0" href="#">
+<span>Sales &amp; Revenue</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">₹1.42 Cr</span>
+<div class="absolute bottom-0 left-4 right-4 h-0.5 bg-primary rounded-full"></div>
+</a>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg shrink-0" href="#">
+<span>Customers &amp; Accounts</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">3,420</span>
+</a>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg shrink-0" href="#">
+<span>Products &amp; SKUs</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">48 active</span>
+</a>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg shrink-0" href="#">
+<span>Marketing &amp; Attribution</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">4.2x ROAS</span>
+</a>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg shrink-0" href="#">
+<span>Fulfilment &amp; OT SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">99.4% on-time</span>
+</a>
+</nav>
+<!-- 3. Automated Executive Insight Banner (Mint Mist Palette) -->
+<section class="rounded-xl bg-surface-container-low shadow-sm p-space-lg relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-primary-fixed shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Atelier Intelligence Pulse</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-outline">Engine Telemetry: Synced 12m ago</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Hospital institutional orders are up <span class="text-tertiary">+22.4%</span> month-on-month (driven by Aster Care &amp; Medanta bulk OT requisitions), while retail return rates dropped to a record low of 0.8%.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Ayur-Flex™ Deep Teal scrub sets represent 44.2% of total October GMV with an autoclave reorder velocity of 18 days.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 lg:self-center pl-14 lg:pl-0">
+<button class="px-4 py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1.5" type="button">
+<span>View Institutional Breakdown</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="p-2 text-outline hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" title="Dismiss insight" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 4. Primary Metric Cards Row -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Gross Merchandise Value (GMV)</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +18.2%
+        </span>
+</div>
+<div class="my-3 flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">₹1,42,85,600</div>
+<!-- Sparkline mini -->
+<svg class="w-20 h-7 text-tertiary shrink-0" fill="none" viewbox="0 0 80 28">
+<path d="M2 24 L18 20 L34 22 L50 12 L66 14 L78 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>₹94.2L Institutional</span>
+<span class="text-outline">·</span>
+<span>₹48.6L Direct DTC</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Blended Conversion Rate</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +0.6%
+        </span>
+</div>
+<div class="my-3 flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">3.84%</div>
+<svg class="w-20 h-7 text-primary shrink-0" fill="none" viewbox="0 0 80 28">
+<path d="M2 22 L20 18 L38 19 L54 11 L68 13 L78 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>DTC Store: 2.92%</span>
+<span class="text-outline">·</span>
+<span>RFQs: 14.2%</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Average Order Value (AOV)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12.1%
+        </span>
+</div>
+<div class="my-3 flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">₹8,420</div>
+<svg class="w-20 h-7 text-secondary shrink-0" fill="none" viewbox="0 0 80 28">
+<path d="M2 20 L22 19 L36 12 L52 14 L66 7 L78 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Retail: ₹3,850</span>
+<span class="text-outline">·</span>
+<span>B2B: ₹4.85 Lakh</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Repeat Clinician Rate</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +4.3%
+        </span>
+</div>
+<div class="my-3 flex items-baseline justify-between">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">46.8%</div>
+<svg class="w-20 h-7 text-primary-container shrink-0" fill="none" viewbox="0 0 80 28">
+<path d="M2 24 L20 22 L38 15 L54 16 L68 9 L78 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</div>
+<div class="pt-2 flex items-center text-on-surface-variant font-body-sm text-body-sm truncate">
+<span>90-day replenishment across 1,602 verified doctors</span>
+</div>
+</div>
+</section>
+<!-- 5. Main Charts Grid: Row A -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left: Multi-Series Line Chart (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Gross Revenue &amp; Channel Trajectory</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative weekly velocity across B2B Institutional, Direct Clinician Web, and WhatsApp Concierge</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface rounded-lg bg-surface-container-low font-label-sm text-label-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">table_rows</span>
+<span>Data View</span>
+</button>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex flex-wrap items-center gap-4 text-body-sm font-body-sm mb-4">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Institutional Contracts</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#5B8C9E]"></span>
+<span class="text-on-surface font-medium">DTC Storefront</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">WhatsApp Concierge Reorders</span>
+</div>
+</div>
+<!-- Interactive SVG Chart with Annotations -->
+<div class="relative w-full h-[280px] bg-surface-container-lowest">
+<!-- SVG Canvas -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 740 240">
+<defs>
+<lineargradient id="gradTeal" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#164E52" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#164E52" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="gradBlue" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#5B8C9E" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#5B8C9E" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Gridlines & Y-Axis Labels -->
+<g class="text-outline-variant font-label-sm opacity-40">
+<line stroke="currentColor" stroke-dasharray="3 3" x1="45" x2="720" y1="20" y2="20"></line>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="end" x="35" y="24">₹50L</text>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="45" x2="720" y1="65" y2="65"></line>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="end" x="35" y="69">₹40L</text>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="45" x2="720" y1="110" y2="110"></line>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="end" x="35" y="114">₹30L</text>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="45" x2="720" y1="155" y2="155"></line>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="end" x="35" y="159">₹20L</text>
+<line stroke="currentColor" stroke-dasharray="3 3" x1="45" x2="720" y1="200" y2="200"></line>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="end" x="35" y="204">₹10L</text>
+</g>
+<!-- Vertical Guidance Indicator at Week 4 (X=550) -->
+<line opacity="0.6" stroke="#707979" stroke-dasharray="4 4" stroke-width="1.2" x1="550" x2="550" y1="15" y2="210"></line>
+<!-- Area Fills -->
+<path d="M 60 140 Q 200 120, 360 95 T 550 55 T 700 38 L 700 210 L 60 210 Z" fill="url(#gradTeal)"></path>
+<path d="M 60 180 Q 200 170, 360 162 T 550 145 T 700 135 L 700 210 L 60 210 Z" fill="url(#gradBlue)"></path>
+<!-- Spline 1: Institutional Contracts (#164E52) -->
+<path d="M 60 140 Q 200 120, 360 95 T 550 55 T 700 38" fill="none" stroke="#00363a" stroke-linecap="round" stroke-width="3"></path>
+<!-- Spline 2: DTC Storefront (#5B8C9E) -->
+<path d="M 60 180 Q 200 170, 360 162 T 550 145 T 700 135" fill="none" stroke="#5B8C9E" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Spline 3: WhatsApp Concierge (#7d5700) -->
+<path d="M 60 198 Q 200 192, 360 188 T 550 175 T 700 168" fill="none" stroke="#7d5700" stroke-dasharray="6 3" stroke-linecap="round" stroke-width="2"></path>
+<!-- Points at Week 4 -->
+<circle cx="550" cy="55" fill="#00363a" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="550" cy="145" fill="#5B8C9E" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="550" cy="175" fill="#7d5700" r="4" stroke="#ffffff" stroke-width="2"></circle>
+<!-- X Axis Labels -->
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="middle" x="60" y="230">Week 1 (Oct 1–7)</text>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="middle" x="220" y="230">Week 2 (Oct 8–14)</text>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="middle" x="380" y="230">Week 3 (Oct 15–21)</text>
+<text class="font-label-sm text-[11px] font-bold" fill="#00363a" text-anchor="middle" x="550" y="230">Week 4 (Oct 22–28)</text>
+<text class="font-label-sm text-[11px]" fill="#707979" text-anchor="middle" x="700" y="230">Week 5 (Oct 29–31)</text>
+</svg>
+<!-- Hover Tooltip pinned at Week 4 -->
+<div class="absolute right-[24%] top-3 w-60 bg-primary text-on-primary rounded-xl p-3 shadow-xl pointer-events-none z-20">
+<div class="flex items-center justify-between pb-1.5 mb-1.5">
+<span class="font-label-sm text-[11px] text-primary-fixed uppercase tracking-wider font-semibold">Week 4 (Oct 22–28)</span>
+<span class="font-label-sm text-[11px] text-primary-fixed-dim">Finalized</span>
+</div>
+<div class="space-y-1 font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-fixed"></span> Institutional:</span>
+<span class="font-semibold tabular-nums">₹36.40L <span class="text-primary-fixed text-[10px]">(+24%)</span></span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#5B8C9E]"></span> DTC Direct:</span>
+<span class="font-semibold tabular-nums">₹14.20L <span class="text-primary-fixed text-[10px]">(+8%)</span></span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> WhatsApp:</span>
+<span class="font-semibold tabular-nums">₹6.80L <span class="text-secondary-fixed text-[10px]">(+12%)</span></span>
+</div>
+<div class="pt-1 mt-1 flex justify-between font-semibold">
+<span class="text-on-primary-container">Weekly Gross:</span>
+<span class="text-surface font-bold">₹57.40L</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Conversion Funnel (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Storefront &amp; Requisition Funnel</h2>
+<button class="text-outline hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">End-to-end clinical purchasing step progression</p>
+<!-- Funnel Progression Bars -->
+<div class="space-y-3">
+<!-- Step 1 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-medium text-on-surface">1. Total Clinician Sessions</span>
+<span class="font-semibold tabular-nums">1,42,500 <span class="text-outline font-normal">(100%)</span></span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<div class="flex justify-end">
+<span class="font-label-sm text-[10px] text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> 38.2% drop-off
+              </span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-medium text-on-surface">2. Product &amp; Spec Views</span>
+<span class="font-semibold tabular-nums">88,065 <span class="text-outline font-normal">(61.8%)</span></span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 61.8%;"></div>
+</div>
+<div class="flex justify-end">
+<span class="font-label-sm text-[10px] text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> 64.5% drop-off
+              </span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-medium text-on-surface">3. Sample / Cart Request</span>
+<span class="font-semibold tabular-nums">31,260 <span class="text-outline font-normal">(21.9%)</span></span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-[#5B8C9E] rounded-full" style="width: 21.9%;"></div>
+</div>
+<div class="flex justify-end">
+<span class="font-label-sm text-[10px] text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> 46.8% drop-off
+              </span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-medium text-on-surface">4. Requisition Initiated</span>
+<span class="font-semibold tabular-nums">16,630 <span class="text-outline font-normal">(11.7%)</span></span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 11.7%;"></div>
+</div>
+<div class="flex justify-end">
+<span class="font-label-sm text-[10px] text-error flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> 29.4% drop-off
+              </span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="font-semibold text-tertiary">5. Completed Purchase</span>
+<span class="font-bold text-tertiary tabular-nums">5,472 orders <span class="font-normal">(3.84%)</span></span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 3.84%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Funnel Benchmark Pill -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+<div class="text-body-sm font-body-sm">
+<span class="font-semibold text-on-surface">Benchmark: 2.1%</span>
+<span class="text-on-surface-variant"> · Velcura outperforming industry peer group by </span>
+<span class="font-semibold text-tertiary">+1.74%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Main Charts Grid: Row B -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left: Stacked Category Sales Distribution (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sales Distribution by Clinical Apparel Category</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">October 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Volume contribution across clinical and cleanroom lines</p>
+<!-- Visual Stacked Bar -->
+<div class="h-6 w-full rounded-lg overflow-hidden flex shadow-sm mb-6">
+<div class="bg-primary h-full hover:opacity-90 transition-opacity" style="width: 48%;" title="Ayur-Flex™ Scrubs: 48%"></div>
+<div class="bg-[#5B8C9E] h-full hover:opacity-90 transition-opacity" style="width: 22%;" title="Cleanroom Lab Coats: 22%"></div>
+<div class="bg-secondary h-full hover:opacity-90 transition-opacity" style="width: 16%;" title="Surgical OT Specialty: 16%"></div>
+<div class="bg-tertiary h-full hover:opacity-90 transition-opacity" style="width: 9%;" title="Ergonomic Under-layers: 9%"></div>
+<div class="bg-[#C85A32] h-full hover:opacity-90 transition-opacity" style="width: 5%;" title="Maternity &amp; Fits: 5%"></div>
+</div>
+<!-- Category Breakdown Table -->
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-primary shrink-0"></span>
+<span class="font-medium text-on-surface">Ayur-Flex™ Medical Scrubs</span>
+</div>
+<div class="flex items-center gap-4 tabular-nums">
+<span class="text-on-surface font-semibold">₹68.5L (48%)</span>
+<span class="text-tertiary font-medium">+16.4%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-[#5B8C9E] shrink-0"></span>
+<span class="font-medium text-on-surface">Cleanroom Barrier Lab Coats</span>
+</div>
+<div class="flex items-center gap-4 tabular-nums">
+<span class="text-on-surface font-semibold">₹31.4L (22%)</span>
+<span class="text-tertiary font-medium">+28.2%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-secondary shrink-0"></span>
+<span class="font-medium text-on-surface">Surgical OT Specialty Suits</span>
+</div>
+<div class="flex items-center gap-4 tabular-nums">
+<span class="text-on-surface font-semibold">₹22.8L (16%)</span>
+<span class="text-tertiary font-medium">+9.5%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-tertiary shrink-0"></span>
+<span class="font-medium text-on-surface">Ergonomic Under-layers &amp; Caps</span>
+</div>
+<div class="flex items-center gap-4 tabular-nums">
+<span class="text-on-surface font-semibold">₹12.8L (9%)</span>
+<span class="text-on-surface-variant font-medium">+3.1%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-[#C85A32] shrink-0"></span>
+<span class="font-medium text-on-surface">Maternity &amp; Custom Atelier Fits</span>
+</div>
+<div class="flex items-center gap-4 tabular-nums">
+<span class="text-on-surface font-semibold">₹7.1L (5%)</span>
+<span class="text-tertiary font-medium">+14.0%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Combined Margin: 67.2%</span>
+<span>Autoclave Recycled Volume: 1,840 units</span>
+</div>
+</div>
+<!-- Right: Cohort Retention Heatmap (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Clinician Cohort Retention Matrix</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Replenishment Velocity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Repeat replenishment velocity over 6 months post-initial batch</p>
+<!-- Heatmap Legend -->
+<div class="flex items-center gap-2 text-[10px] font-label-sm mb-4">
+<span class="text-outline">Retention Rate:</span>
+<span class="px-2 py-0.5 rounded bg-[#E8F1EF] text-on-surface">&lt;15%</span>
+<span class="px-2 py-0.5 rounded bg-[#A3C9C4] text-on-surface">15–25%</span>
+<span class="px-2 py-0.5 rounded bg-[#5E9E98] text-surface">26–40%</span>
+<span class="px-2 py-0.5 rounded bg-[#247570] text-surface">41–55%</span>
+<span class="px-2 py-0.5 rounded bg-[#0E3538] text-surface font-bold">&gt;55%</span>
+</div>
+<!-- Heatmap Grid -->
+<div class="overflow-x-auto">
+<table class="w-full text-center border-collapse text-body-sm font-body-sm tabular-nums">
+<thead>
+<tr class="text-outline font-label-sm text-[11px] uppercase tracking-wider">
+<th class="text-left pb-2 font-medium">Cohort</th>
+<th class="pb-2">M0</th>
+<th class="pb-2">M1</th>
+<th class="pb-2">M2</th>
+<th class="pb-2">M3</th>
+<th class="pb-2">M4</th>
+<th class="pb-2">M5</th>
+</tr>
+</thead>
+<tbody class="space-y-1">
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">May '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">42%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#5E9E98] text-surface">36%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#5E9E98] text-surface">31%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#A3C9C4] text-on-surface">29%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#A3C9C4] text-on-surface">28%</div></td>
+</tr>
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">Jun '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">46%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#5E9E98] text-surface">39%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#5E9E98] text-surface">35%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#5E9E98] text-surface">33%</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+</tr>
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">Jul '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">51%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">44%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">41%</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+</tr>
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">Aug '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-bold ring-2 ring-secondary/50">58%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#247570] text-surface">49%</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+</tr>
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">Sep '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-bold">62%</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+</tr>
+<tr>
+<td class="text-left font-semibold text-on-surface py-1.5 pr-2">Oct '24</td>
+<td class="p-1"><div class="rounded py-1 bg-[#0E3538] text-surface font-semibold">100%</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+<td class="p-1"><div class="rounded py-1 text-outline-variant">–</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Micro Callout Note -->
+<div class="mt-4 p-2.5 rounded-lg bg-surface-container-low text-body-sm font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">tips_and_updates</span>
+<p class="text-on-surface-variant text-[12px]">
+<span class="font-semibold text-on-surface">Caduceus Profile Lift:</span> August cohort reached a record <span class="font-bold text-tertiary">58% Month 1 reorder rate</span> following automated CAD monogram profile persistence.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. Bottom Full-Width Section: Top Products Performance Table -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<!-- Header with Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Top Performing Clinical Apparel &amp; Atelier SKUs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ranked by revenue contribution, margin stability, and institutional autoclave frequency</p>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Category Filter Pills -->
+<div class="flex items-center p-1 bg-surface-container-high rounded-lg">
+<button class="px-2.5 py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded shadow-sm font-semibold" type="button">All</button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded" type="button">Scrubs</button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded" type="button">Lab Coats</button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded" type="button">Specialty Sets</button>
+</div>
+<!-- Search SKU -->
+<div class="relative w-48">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-outline text-[16px]">search</span>
+<input class="w-full h-8 pl-8 pr-3 bg-surface-container-low text-on-surface rounded-lg text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Filter SKU..." type="text"/>
+</div>
+<button class="h-8 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Table</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Rank &amp; Product</th>
+<th class="py-3 px-3">30-Day Velocity</th>
+<th class="py-3 px-3 text-right">Units Sold</th>
+<th class="py-3 px-3 text-right">Gross Revenue</th>
+<th class="py-3 px-3 text-right">Gross Margin</th>
+<th class="py-3 px-3 text-right">Autoclave Cycle</th>
+<th class="py-3 px-4 rounded-r-lg text-right">Stock Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-md font-body-md">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<span class="font-mono text-outline text-[12px] font-bold">01</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Ayur-Flex classic Deep Teal medical scrub top folded pristinely against soft ivory clinical desk backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRYQ-7h0j7TrAilFVo1Q0pujT48JwJrThGaIKhs5ey2EDP0TsVa-_3gOHBpg5wOlpEyat9zRp7HraeqlxvlosBQVz0igEGCUNteWjd-86ENuY_0Xd3RaOm3HAcGFxksateA_gnn-6eNWZCZXZQs56clTDy8iUyRS0TB8hgIjdKBmTbcu7SDCKA90CQ5_kX-yD9liKnHLG5-blQzocyJ4GogimurimJNzsgT3AKKeQ"/>
+</div>
+<div>
+<div class="font-semibold text-on-surface text-[14px]">Ayur-Flex™ Classic V-Neck Scrub Top</div>
+<div class="flex items-center gap-2 text-[11px] text-outline font-mono">
+<span>SKU: AYR-VT-01-TL</span>
+<span>·</span>
+<span class="text-on-surface-variant font-sans">Deep Teal</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<svg class="w-20 h-5 text-tertiary" fill="none" viewbox="0 0 60 20">
+<path d="M2 16 L15 14 L28 15 L40 6 L58 3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-3 text-right font-medium tabular-nums">4,820</td>
+<td class="py-3 px-3 text-right font-semibold text-primary tabular-nums">₹91,53,180</td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary font-medium">66.4%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface-variant">21 days</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Healthy (1,420)
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<span class="font-mono text-outline text-[12px] font-bold">02</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Ergonomic Ayur-Flex multi-pocket medical cargo joggers in deep botanical navy laid flat in studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp2carZ0fahB6Kge4oHB2s9KdoVuuhslzheovSp0IsPg2i54wnJh1TfpKhvCXr9Ak5-tHmy41GiK2WckP_pbc82jBthIFRzTE4fITrwqS7aYxdH54BwNFtxXRA15Kz5yMQTrWxWIwbCKxPht72dNfhbnsYKn6NFSvTHOyVQZBNQBDfDof8u6hNXEIhxtFzigVI-f0_kZ_vEkw9ZP8rtjKxkNwPZDoS8bc6VgLaQm8"/>
+</div>
+<div>
+<div class="font-semibold text-on-surface text-[14px]">Ayur-Flex™ 8-Pocket Cargo Joggers</div>
+<div class="flex items-center gap-2 text-[11px] text-outline font-mono">
+<span>SKU: AYR-JG-08-NV</span>
+<span>·</span>
+<span class="text-on-surface-variant font-sans">Navy / Teal</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<svg class="w-20 h-5 text-tertiary" fill="none" viewbox="0 0 60 20">
+<path d="M2 18 L16 12 L30 14 L44 8 L58 4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-3 text-right font-medium tabular-nums">3,940</td>
+<td class="py-3 px-3 text-right font-semibold text-primary tabular-nums">₹74,82,060</td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary font-medium">63.8%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface-variant">24 days</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Low Stock: 18 left
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<span class="font-mono text-outline text-[12px] font-bold">03</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Mandarin collar tailored clinical scrub suit in subtle graphite fabric with embroidered doctor insignia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNriApiPsrsjAt9fJJ0y0X9U7naiXYN2VKyxy82o_vXnj3o4IubjiLvpJSSI4dhXXLA3iMMhbCCJjKOUIV_9JGMczawPBc-sAxtmWyd75W4a4rmfmzcx5_n6_yQ8ivDx1QhWqMLZg05vho6-D6gUE0h91PV_v2RzJSVDHBRR7w1YO99nBKZeydKbYZoeDKYPQast9lG0xTMyIcF1aXhmt0OCOnFZCQHItjY4V9ykg"/>
+</div>
+<div>
+<div class="font-semibold text-on-surface text-[14px]">Mandarin Collar Tailored Scrub Suit</div>
+<div class="flex items-center gap-2 text-[11px] text-outline font-mono">
+<span>SKU: AYR-MC-04-GP</span>
+<span>·</span>
+<span class="text-on-surface-variant font-sans">Graphite Plum</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<svg class="w-20 h-5 text-primary" fill="none" viewbox="0 0 60 20">
+<path d="M2 12 L14 11 L28 13 L42 10 L58 7" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-3 text-right font-medium tabular-nums">1,650</td>
+<td class="py-3 px-3 text-right font-semibold text-primary tabular-nums">₹61,03,350</td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary font-medium">68.2%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface-variant">32 days</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Healthy (450)
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<span class="font-mono text-outline text-[12px] font-bold">04</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cleanroom barrier ISO Class 5 lab coat with fluid shield weave hung on clinical atelier timber stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJP7o1zEE9Pzi6Lf2b3LFPg6b6OjXhbFjPU9rxmXxKWJsrtRHNiBkS8sJr-RgZf_CcQwMMLUKt-cCycetBo7RvzygLRQxuIXWpqx8cz1-bBoaTWssXXpFrNxWYFFevtQkNN-3TkuKMSpGlBElgZOuCRQc53xPGaNgMxNmw40MP0pIOgJqwNVoGNov67PiuOrR8BieDd-Z-1VtAMRd7tN_q2Z9gGw4B3JBEFJpRz14"/>
+</div>
+<div>
+<div class="font-semibold text-on-surface text-[14px]">Botanical Cleanroom Barrier Lab Coat</div>
+<div class="flex items-center gap-2 text-[11px] text-outline font-mono">
+<span>SKU: LAB-FS-ISO5-WH</span>
+<span>·</span>
+<span class="text-on-surface-variant font-sans">Fluid-Shield ISO 5</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<svg class="w-20 h-5 text-tertiary" fill="none" viewbox="0 0 60 20">
+<path d="M2 17 L16 16 L30 11 L42 9 L58 2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-3 text-right font-medium tabular-nums">1,220</td>
+<td class="py-3 px-3 text-right font-semibold text-primary tabular-nums">₹46,34,780</td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary font-medium">71.0%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface-variant">45 days</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Healthy (310)
+              </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<span class="font-mono text-outline text-[12px] font-bold">05</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Maternity empire waist tailored medical scrub in calm terracotta sage tone with stretch side paneling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUJ6ntiCdyBBxjboXGJ5WH48uXum2gANFGKPWiWcbKB3e7k0itI_H4qn0uOreZ5X_mDwbdZVMhDD9FoqGRHfIv9H8f7CHpvNNFk7pxTHirlXGixtDZlnMdoLnOdJLoXCu2vIw1cpLjh6xWmBOm0_Wp8EsyUJEYzNKB8LuYaBVtEkD_Vdod33HiPdCdzUb93s6fQl2-SsoR-cTj6xAzuwjR8GSWPrASpeByk7dJ01A"/>
+</div>
+<div>
+<div class="font-semibold text-on-surface text-[14px]">Ayur-Flex™ Maternity Scrub Top</div>
+<div class="flex items-center gap-2 text-[11px] text-outline font-mono">
+<span>SKU: MAT-EM-02-TC</span>
+<span>·</span>
+<span class="text-on-surface-variant font-sans">Terracotta Olive</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<svg class="w-20 h-5 text-tertiary" fill="none" viewbox="0 0 60 20">
+<path d="M2 18 L15 15 L28 14 L42 6 L58 2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-3 text-right font-medium tabular-nums">840</td>
+<td class="py-3 px-3 text-right font-semibold text-primary tabular-nums">₹20,99,160</td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary font-medium">61.5%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface-variant">19 days</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Healthy (280)
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Footer Aggregate -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing 5 of 48 active SKUs</span>
+<span>·</span>
+<span class="font-medium text-on-surface">Aggregate Portfolio Margin: <strong class="text-tertiary">65.8%</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">1</span>
+<button class="px-3 py-1 rounded hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">2</button>
+<button class="px-3 py-1 rounded hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors" type="button">3</button>
+<button class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
